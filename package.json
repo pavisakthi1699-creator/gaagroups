@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:gaa && npm run build:ff && npm run build:hf",
+    "build": "npm run build:gaa && npm run build:ff && npm run build:hf && node scripts/copy-dist.mjs",
     "build:gaa": "vite build --mode gaa && node scripts/seo-pages.mjs gaa",
     "build:ff": "vite build --mode ff && node scripts/seo-pages.mjs ff",
     "build:hf": "vite build --mode hf && node scripts/seo-pages.mjs hf",
