@@ -1,116 +1,77 @@
-import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
+import React, { useEffect } from "react";
+import { usePath, navigate } from "./group/router.jsx";
+import { useSeo } from "./group/seo.js";
+import GroupHome from "./group/GroupHome.jsx";
+import GroupAbout from "./group/GroupAbout.jsx";
+import GroupContactPage, { NotFound } from "./group/GroupContactPage.jsx";
+import { COMPANIES } from "./group/sites.js";
+import { CURRENT, LOCAL } from "./brand.js";
 import GaaSite from "./pages/gaa/GaaSite";
+import FFHome from "./ff/FFHome.jsx";
+import { FFService, FFCalendar } from "./ff/FFPages.jsx";
+import { getService } from "./ff/ffData.js";
+import HFHome from "./hf/HFHome.jsx";
+import { HFTalent, HFCategory, HFHire } from "./hf/HFPages.jsx";
+import { getCategory } from "./hf/hfData.js";
+import { seoFor, brandOfPath } from "./routes.js";
 
-// In-page anchors on the GAA Consulting home page
-const GAA_ANCHORS = ["#practices", "#about-gaa", "#hubs", "#advantage", "#top"];
+/* One codebase, three domains.
+   Every domain:      /  /about  /contact             shared GAA Group pages
+   gaaconsulting.com: /gaa-consulting/...             GAA Consulting
+   filingsfirst.com:  /filings-first/...              Filings First
+   hiringsfirst.com:  /hirings-first/...              Hirings First
+   Locally (npm run dev) all of them work on one address. */
 
-/* Parse "#/gaa-consulting/practices/fdi-fema", "#/contact?brand=gaa", "#/about" ...
-   The first path segment decides the page; for GAA the rest is the sub path. */
-function parseHash(rawHash) {
-  const hash = (rawHash || "").toLowerCase();
-  const path = hash.replace(/^#\/?/, "").split("?")[0];
-  const seg = path.split("/").filter(Boolean);
-  const first = seg[0] || "";
-  if (first.startsWith("gaa")) return { page: "gaa-consulting", gaaPath: seg.slice(1).join("/") };
-  if (first.startsWith("about")) return { page: "about" };
-  if (first.startsWith("contact")) return { page: "contact" };
-  return { page: "home", section: first };
+// Old #/ links (bookmarks, earlier review links) are redirected to the new real URLs.
+function useLegacyHashRedirect() {
+  useEffect(() => {
+    const h = window.location.hash;
+    if (h.startsWith("#/")) navigate(h.slice(1).split("?")[0] || "/", { replace: true });
+  }, []);
+}
+
+// Page names used by the GAA pages' onNavigate(...) calls → real paths
+function toPath(page) {
+  if (!page || page === "home") return "/";
+  if (page === "about") return "/about";
+  if (page === "contact") return "/contact?company=gaa";
+  if (page === "gaa" || page === "gaa-consulting") return "/gaa-consulting";
+  return "/" + page.replace(/^\/+/, "");
+}
+
+function Page({ path }) {
+  const onNavigate = (page) => navigate(toPath(page));
+  if (path === "/") return <GroupHome />;
+  if (path === "/about") return <GroupAbout />;
+  if (path === "/contact") return <GroupContactPage />;
+
+  if (path === "/gaa-consulting" || path.startsWith("/gaa-consulting/"))
+    return <GaaSite path={path.replace(/^\/gaa-consulting\/?/, "")} onNavigate={onNavigate} />;
+
+  if (path === "/filings-first") return <FFHome />;
+  if (path === "/filings-first/compliance-calendar") return <FFCalendar />;
+  const fs = path.match(/^\/filings-first\/services\/([a-z-]+)$/);
+  if (fs && getService(fs[1])) return <FFService key={fs[1]} slug={fs[1]} />;
+
+  if (path === "/hirings-first") return <HFHome />;
+  if (path === "/hirings-first/talent") return <HFTalent />;
+  if (path === "/hirings-first/hire") return <HFHire />;
+  const hc = path.match(/^\/hirings-first\/talent\/([a-z-]+)$/);
+  if (hc && getCategory(hc[1])) return <HFCategory key={hc[1]} slug={hc[1]} />;
+
+  return <NotFound />;
 }
 
 export default function App() {
-  const initial = parseHash(window.location.hash);
-  const [currentPage, setCurrentPage] = useState(initial.page);
-  const [gaaPath, setGaaPath] = useState(initial.gaaPath || "");
+  useLegacyHashRedirect();
+  const path = usePath();
+  useSeo(seoFor(path, CURRENT));
 
-  // Handle browser back/forward and initial URL hash routing
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.toLowerCase();
-      if (GAA_ANCHORS.includes(hash)) {
-        const el = document.getElementById(hash.replace("#", ""));
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-        return;
-      }
-
-      const r = parseHash(hash);
-      setCurrentPage(r.page);
-      if (r.page === "gaa-consulting") setGaaPath(r.gaaPath);
-
-      if (r.page === "home" && r.section && r.section !== "top") {
-        setTimeout(() => {
-          const el = document.getElementById(r.section);
-          if (el) el.scrollIntoView({ behavior: "smooth" });
-        }, 150);
-      } else {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    };
-
-    window.addEventListener("hashchange", handleHashChange);
-    window.addEventListener("popstate", handleHashChange);
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-      window.removeEventListener("popstate", handleHashChange);
-    };
-  }, []);
-
-  const handleNavigate = (page, sectionId = null) => {
-    // GAA Consulting site and its sub pages, e.g. "gaa-consulting/practices/fdi-fema"
-    if (page === "gaa" || (page && page.startsWith("gaa-consulting"))) {
-      const sub = page === "gaa" ? "" : page.replace(/^gaa-consulting\/?/, "");
-      setCurrentPage("gaa-consulting");
-      setGaaPath(sub);
-      window.history.pushState(null, "", sub ? `#/gaa-consulting/${sub}` : "#/gaa-consulting");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (page === "about") {
-      setCurrentPage("about");
-      window.history.pushState(null, "", "#/about");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (page === "contact") {
-      setCurrentPage("contact");
-      window.history.pushState(null, "", "#/contact");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      setCurrentPage("home");
-      if (sectionId) {
-        window.history.pushState(null, "", `#${sectionId}`);
-        setTimeout(() => {
-          const el = document.getElementById(sectionId);
-          if (el) el.scrollIntoView({ behavior: "smooth" });
-        }, 120);
-      } else {
-        window.history.pushState(null, "", "#/");
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    }
-  };
-
-  const isDedicatedSite = currentPage === "gaa-consulting";
-
-  return (
-    <div className="app-root">
-      {/* About Us has its own header and footer (from the About Us design) */}
-      {!isDedicatedSite && currentPage !== "about" && (
-        <Header
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-          onNavigate={handleNavigate}
-        />
-      )}
-
-      <main id="main-content">
-        {currentPage === "home" && <HomePage onNavigate={handleNavigate} />}
-        {currentPage === "about" && <AboutPage onNavigate={handleNavigate} />}
-        {currentPage === "contact" && <ContactPage onNavigate={handleNavigate} />}
-        {currentPage === "gaa-consulting" && <GaaSite path={gaaPath} onNavigate={handleNavigate} />}
-      </main>
-
-      {!isDedicatedSite && currentPage !== "about" && <Footer onNavigate={handleNavigate} />}
-    </div>
-  );
+  // On a live domain, another company's pages belong on that company's domain.
+  const brand = brandOfPath(path);
+  if (!LOCAL && brand && brand !== CURRENT) {
+    window.location.replace(COMPANIES[brand].domain + path + window.location.search);
+    return null;
+  }
+  return <Page path={path} />;
 }

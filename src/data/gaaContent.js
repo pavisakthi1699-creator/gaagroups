@@ -516,8 +516,6 @@ export const GAA_NAV = [
   ["@about", "About Us"],
   ["practices", "Services"], // opens the services menu
   ["industries", "Industries"],
-  ["experience", "Case Studies"],
-  ["insights", "Insights"],
   ["people", "Our Team"],
   ["@contact", "Contact Us"],
 ];
@@ -531,6 +529,6 @@ export const GAA_FOOTER_GROUPS = [
     ["practices/regulatory-advisory", "Regulatory advisory"],
     ["india-entry", "Set Up in India"],
   ]],
-  ["Company", [["@about", "About Us"], ["people", "Our Team"], ["experience", "Case Studies"], ["industries", "Industries"], ["how-we-work", "How We Work"]]],
-  ["Resources", [["insights", "Insights"], ["insights#calendar", "Compliance Calendar"], ["@contact", "Contact Us"], ["disclaimer", "Disclaimer"]]],
+  ["Company", [["@about", "About Us"], ["people", "Our Team"], ["careers", "Careers & CS Training"], ["industries", "Industries"], ["how-we-work", "How We Work"]]],
+  ["Resources", [["@contact", "Contact Us"], ["disclaimer", "Disclaimer"]]],
 ];

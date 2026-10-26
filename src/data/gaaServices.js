@@ -67,16 +67,20 @@ export const GAA_STEPS = [
 ];
 
 // The two sister firms, shown in "Often paired with" and the header.
-// Their sites are switched off for now, so these render as non-clickable.
+// Each links to its own website (domains are set in src/group/sites.js).
 export const OTHER_FIRMS = [
   {
     key: "hirings",
+    site: "hf",
+    home: "/hirings-first",
     name: "Hirings First",
     area: "Talent & workforce solutions",
     services: ["IT & corporate recruitment", "Leadership hiring", "Campus placements", "Workforce outsourcing"],
   },
   {
     key: "filings",
+    site: "ff",
+    home: "/filings-first",
     name: "Filings First",
     area: "Compliance & financial services",
     services: ["Accounting", "Bookkeeping", "Taxation", "GST", "Corporate compliance"],

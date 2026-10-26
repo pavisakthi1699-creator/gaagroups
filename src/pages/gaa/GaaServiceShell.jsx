@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import logoMain from "../../assets/logo-main.png";
 import { GAA_FIRM, OTHER_FIRMS } from "../../data/gaaServices";
+import { siteHref } from "../../group/sites.js";
 
 /* Shared pieces for the GAA Consulting Services page and the service detail pages,
    built from the "Service Detail" / "GAA Consulting Services" designs. */
@@ -48,7 +49,7 @@ export function useScrollState(onMeasure) {
 // Internal link helper: page names are the ones App.handleNavigate understands
 export function useNav(onNavigate) {
   return (page) => ({
-    href: page === "home" ? "#/" : `#/${page}`,
+    href: page === "home" ? "/" : page === "contact" ? "/contact?company=gaa" : `/${page}`,
     onClick: (e) => {
       if (e.metaKey || e.ctrlKey || e.shiftKey) return;
       e.preventDefault();
@@ -78,8 +79,7 @@ export function SvHeader({ up, nav }) {
           <a {...nav("home")}>Home</a>
           <a {...nav("about")}>About us</a>
           {OTHER_FIRMS.map((f) => (
-            // Sister-firm sites are switched off for now
-            <span key={f.key} className="sv-firm x-off" aria-disabled="true">{f.name}</span>
+            <a key={f.key} href={siteHref(f.site, f.home)} className="sv-firm">{f.name}</a>
           ))}
           <a {...nav(SERVICES_PAGE)} className="sv-firm x-cur" aria-current="page">{GAA_FIRM.name}</a>
         </nav>
@@ -116,7 +116,7 @@ export function SvFootBar({ nav }) {
       <span className="x-lgw"><img src={logoMain} alt="GAA Consulting" /></span>
       <div>
         {OTHER_FIRMS.map((f) => (
-          <span key={f.key} className="x-off">{f.name}</span>
+          <a key={f.key} href={siteHref(f.site, f.home)}>{f.name}</a>
         ))}
         <a {...nav(SERVICES_PAGE)}>{GAA_FIRM.name}</a>
       </div>

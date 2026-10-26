@@ -95,7 +95,7 @@ export default function GaaPeoplePage({ onNavigate }) {
             <div className="tx">
               <p>Interested in joining GAA Consulting? Send us your CV and the kind of work you want to do.</p>
               <div className="acts">
-                <a className="btn o" {...link("@contact")}>Send your CV <span className="ar">→</span></a>
+                <a className="btn o" {...link("careers")}>Careers &amp; CS training <span className="ar">→</span></a>
                 <a className="btn g" {...link("@about")}>Meet the whole group</a>
               </div>
             </div>

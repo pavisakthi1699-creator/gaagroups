@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GAA_NAV, GAA_FOOTER_GROUPS } from "../../data/gaaContent";
 import { GAA_SERVICES } from "../../data/gaaServices";
+import { siteHref } from "../../group/sites.js";
+
+// Sister companies live on their own domains
+const EXTERNAL = { "filings-first": () => siteHref("ff", "/filings-first"), "hirings-first": () => siteHref("hf", "/hirings-first") };
 
 // Services menu uses the five services from the GAA Consulting Services design
 const MENU = GAA_SERVICES.map((s) => ({ slug: s.slug, navName: s.name, navDesc: s.ideal }));
@@ -14,7 +18,8 @@ export function useLink(onNavigate) {
     const [path, anchor] = to.split("#");
     const group = path.startsWith("@");
     const page = group ? path.slice(1) : path ? `gaa-consulting/${path}` : "gaa-consulting";
-    const href = page === "home" ? "#/" : page === "contact" ? "#/contact?brand=gaa" : `#/${page}`;
+    if (group && EXTERNAL[page]) return { href: EXTERNAL[page]() };
+    const href = page === "home" ? "/" : page === "contact" ? "/contact?company=gaa" : `/${page}`;
     return {
       href,
       onClick: (e) => {
@@ -22,7 +27,6 @@ export function useLink(onNavigate) {
         e.preventDefault();
         if (extra.before) extra.before();
         if (onNavigate) onNavigate(page, extra.intent || null);
-        else window.location.hash = href;
         if (anchor)
           setTimeout(() => document.getElementById(anchor)?.scrollIntoView({ behavior: "smooth" }), 450);
       },
@@ -165,8 +169,6 @@ export function GaaHeader({ link, active = "" }) {
             </div>
           </details>
           <a {...link("industries", shut)} tabIndex={mob ? 0 : -1}>Industries</a>
-          <a {...link("experience", shut)} tabIndex={mob ? 0 : -1}>Case Studies</a>
-          <a {...link("insights", shut)} tabIndex={mob ? 0 : -1}>Insights</a>
           <a {...link("people", shut)} tabIndex={mob ? 0 : -1}>Our Team</a>
           <a {...link("@contact", shut)} tabIndex={mob ? 0 : -1}>Contact Us</a>
           <a className="btn o" {...link("@contact", shut)} tabIndex={mob ? 0 : -1}>
@@ -230,8 +232,8 @@ export function GaaFooter({ link }) {
         <img src="/gaa-consulting-logo.png" alt="GAA Consulting" />
         <div>
           <a data-site="gaa" {...link("")}>GAA Consulting</a>
-          <span style={{ color: "var(--m)", cursor: "default", userSelect: "none" }}>Filings First</span>
-          <span style={{ color: "var(--m)", cursor: "default", userSelect: "none" }}>Hirings First</span>
+          <a data-site="filings" {...link("@filings-first")}>Filings First ↗</a>
+          <a data-site="hirings" {...link("@hirings-first")}>Hirings First ↗</a>
           <a {...link("@about")}>About us</a>
           <a {...link("@contact")}>Contact us</a>
         </div>
@@ -296,8 +298,8 @@ export function SubHero({ tag, lines, em, sub, actions, aside, facts, ticker, va
           </div>
           {facts && (
             <dl className="facts e3" style={{ "--t": ".75s" }}>
-              {facts.map(([n, l]) => (
-                <div key={l}>
+              {facts.map(([n, l], i) => (
+                <div key={`${n}-${l}-${i}`}>
                   <dt>{n}</dt>
                   <dd>{l}</dd>
                 </div>

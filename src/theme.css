@@ -1,0 +1,9 @@
+/* GAA Group design tokens: one font, black, white and orange. */
+:root{
+  --font:"Instrument Sans Variable","Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --black:#0A0A0A; --white:#FFFFFF; --orange:#FF5B14; --orange-d:#E64A06; --orange-soft:#FFF1EA;
+  --g1:#F5F5F5; --g2:#E8E8E8; --g3:#BDBDBD; --g4:#8A8A8A; --g5:#4A4A4A;
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);background:#fff;color:var(--black);-webkit-font-smoothing:antialiased}
+::selection{background:var(--orange);color:#fff}

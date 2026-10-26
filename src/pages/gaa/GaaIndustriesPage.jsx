@@ -61,7 +61,7 @@ export default function GaaIndustriesPage({ onNavigate }) {
             <div className="tx">
               <p>We staff each engagement with people who have seen your kind of business before, so you spend less time explaining and more time deciding.</p>
               <div className="acts">
-                <a className="btn o" {...link("experience")}>See case studies <span className="ar">→</span></a>
+                <a className="btn o" {...link("practices")}>Explore services <span className="ar">→</span></a>
               </div>
             </div>
           </div>
