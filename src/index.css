@@ -1,0 +1,4 @@
+/* The Home and About Us pages are full-page designs (src/designs). This file only resets the outer app shell. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; background: #fff; }
+body { overflow: hidden; }
