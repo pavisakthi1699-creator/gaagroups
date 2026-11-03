@@ -1,0 +1,180 @@
+/* ================= FAQ (all service pages) ================= */
+.fq{padding:clamp(72px,10vh,112px) 0;background:linear-gradient(180deg,#fff 0%,#FBF8F4 100%)}
+.fq-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,6vw,110px);align-items:start}
+.fq-l{position:sticky;top:120px}
+.fq-l .ff-h2 span{display:block}
+.fq-help{margin-top:30px;display:flex;align-items:center;gap:16px;padding:18px 18px 18px 18px;border-radius:18px;background:#141414;color:#fff;box-shadow:0 30px 50px -36px rgba(0,0,0,.6)}
+.fq-help-i{display:grid;place-items:center;flex:none;width:46px;height:46px;border-radius:12px;background:var(--ff-og)}
+.fq-help-i .i{width:22px;height:22px;color:#fff}
+.fq-help b{display:block;font:600 17px "Outfit",sans-serif}
+.fq-help div span{display:block;margin-top:2px;font:400 13.5px "Poppins",sans-serif;color:#bdbdbd}
+.fq-help-a{margin-left:auto;display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:50%;background:#fff;color:#141414;transition:transform .4s var(--ff-ez),background .3s,color .3s}
+.fq-help-a .i{width:20px;height:20px;stroke-width:2.2}
+.fq-help-a:hover{transform:translateX(4px);background:#F08A5D;color:#fff}
+.fq-list{display:flex;flex-direction:column;gap:12px;counter-reset:fq}
+.fq-it{position:relative;overflow:hidden;border-radius:18px;background:#fff;box-shadow:inset 0 0 0 1px #EFE6DE;transition:background .45s var(--ff-ez),box-shadow .4s,transform .4s var(--ff-ez)}
+.fq-it::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--ff-og);transform:scaleY(0);transform-origin:50% 0;transition:transform .5s var(--ff-ez)}
+.fq-it:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1.5px #F2C3AB,0 20px 40px -32px rgba(224,97,47,.6)}
+.fq-it.open{background:#141414;box-shadow:0 30px 60px -36px rgba(0,0,0,.55);transform:none}
+.fq-it.open::before{transform:none}
+.fq-it button{width:100%;display:flex;align-items:center;gap:18px;padding:22px 24px 22px 26px;border:0;background:none;text-align:left;cursor:pointer;font:inherit}
+.fq-n{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#FBF3EE;font:700 14px "Outfit",sans-serif;color:var(--ff-o);transition:background .4s,color .4s}
+.fq-it.open .fq-n{background:var(--ff-og);color:#fff}
+.fq-q{flex:1;font:600 18px/1.4 "Outfit",sans-serif;letter-spacing:-.01em;color:#141414;transition:color .3s}
+.fq-it:hover .fq-q{color:var(--ff-o)}
+.fq-it.open .fq-q{color:#fff}
+.fq-ic{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #EADFD6;color:var(--ff-o);transition:transform .5s var(--ff-ez),box-shadow .3s,background .3s,color .3s}
+.fq-ic .i{width:18px;height:18px;stroke-width:2.2}
+.fq-it.open .fq-ic{transform:rotate(135deg);background:#fff;box-shadow:none;color:#141414}
+.fq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ff-ez)}
+.fq-it.open .fq-a{grid-template-rows:1fr}
+.fq-a>div{overflow:hidden}
+.fq-a p{padding:0 82px 24px 84px;font:400 15px/1.75 "Poppins",sans-serif;color:#c9c9cd}
+@media(max-width:899px){
+  .fq{padding:44px 0}
+  .fq-in{grid-template-columns:minmax(0,1fr);gap:22px}
+  .fq-l{position:static}
+  .fq-l .ff-p{margin-top:10px}
+  .fq-help{margin-top:18px;padding:14px}
+  .fq-it button{padding:16px 14px;gap:12px}
+  .fq-n{width:32px;height:32px;font-size:12px;border-radius:9px}
+  .fq-q{font-size:15.5px}
+  .fq-ic{width:32px;height:32px}
+  .fq-a p{padding:0 16px 18px 58px;font-size:14px}
+}
+
+/* ================= minimal CTA above the footer (all pages) ================= */
+.mc{padding:clamp(28px,4vh,44px) 0;background:#fff;border-top:1px solid #F1EAE4}
+.mc-in{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.mc-t{display:flex;align-items:center;gap:14px;min-width:0}
+.mc-dot{flex:none;width:10px;height:10px;border-radius:50%;background:var(--ff-og);box-shadow:0 0 0 6px #FCE9DF;animation:mc-p 2.4s ease-in-out infinite}
+@keyframes mc-p{50%{box-shadow:0 0 0 10px rgba(252,233,223,.4)}}
+.mc-t p{font:400 16px/1.5 "Poppins",sans-serif;color:#55555c}
+.mc-t b{font:600 18px "Outfit",sans-serif;letter-spacing:-.01em;color:#141414;margin-right:6px}
+.mc-r{display:flex;align-items:center;gap:22px;flex:none}
+.mc-ph{display:flex;align-items:center;gap:8px;font:500 14.5px "Poppins",sans-serif;color:#2a2a2e;transition:color .3s}
+.mc-ph .i{width:18px;height:18px;color:var(--ff-o)}
+.mc-ph:hover{color:var(--ff-o)}
+.mc-btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 22px;border-radius:999px;background:#141414;font:600 14.5px "Poppins",sans-serif;color:#fff;transition:background .3s,transform .35s var(--ff-ez)}
+.mc-btn .i{width:17px;height:17px;stroke-width:2.2;transition:transform .4s var(--ff-ez)}
+.mc-btn:hover{background:var(--ff-o);transform:translateY(-2px)}
+.mc-btn:hover .i{transform:translateX(4px)}
+@media(max-width:899px){
+  .mc{padding:24px 0}
+  .mc-in{flex-direction:column;align-items:flex-start;gap:14px}
+  .mc-t{align-items:flex-start}
+  .mc-dot{margin-top:7px}
+  .mc-t p{font-size:14px}
+  .mc-t b{display:block;font-size:16.5px;margin:0 0 2px}
+  .mc-r{width:100%;justify-content:space-between;gap:12px}
+  .mc-btn{height:44px;padding:0 18px;font-size:13.5px}
+  .mc-ph{font-size:13.5px}
+}
+
+/* ================= Our Team: partners ================= */
+.pt{position:relative;overflow:hidden;padding:clamp(72px,10vh,112px) 0;background:#0d0d0d;color:#fff}
+.pt::before{content:"";position:absolute;right:-12%;top:-30%;width:60vw;height:60vw;border-radius:50%;background:radial-gradient(closest-side,rgba(224,97,47,.22),transparent 70%);pointer-events:none}
+.pt .ff-hd{position:relative}
+.pt .ff-h2{color:#fff}
+.pt .ff-h2 span{display:block}
+.pt .ff-p{color:#a9a9ae}
+.pt-g{position:relative;display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:16px}
+.pt-c{position:relative;overflow:hidden;isolation:isolate;min-height:300px;border-radius:22px;background:#1a1a1a;box-shadow:inset 0 0 0 1px #262626;transition:transform .6s var(--ff-ez),box-shadow .4s}
+.pt-c:first-child{grid-row:span 2;min-height:620px}
+.pt-c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:grayscale(1) contrast(1.05);transition:filter .6s,transform 1s var(--ff-ez);z-index:-2}
+.pt-c::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,13,13,0) 35%,rgba(13,13,13,.92) 100%)}
+.pt-c:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1.5px var(--ff-o),0 40px 60px -40px rgba(224,97,47,.7)}
+.pt-c:hover img{filter:none;transform:scale(1.05)}
+.pt-b{position:absolute;left:0;right:0;bottom:0;padding:24px 24px 22px}
+.pt-tag{display:inline-block;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.12);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:600 11px "Poppins",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#fff}
+.pt-c h3{margin-top:12px;font:700 24px "Outfit",sans-serif;letter-spacing:-.02em}
+.pt-c:first-child h3{font-size:34px}
+.pt-c p{margin-top:4px;font:400 14px/1.5 "Poppins",sans-serif;color:#d0d0d4}
+.pt-bar{display:block;margin-top:14px;width:42px;height:3px;border-radius:3px;background:var(--ff-og);transition:width .5s var(--ff-ez)}
+.pt-c:hover .pt-bar{width:90px}
+.pt-in{position:absolute;right:20px;top:20px;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.14);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:700 15px "Poppins",sans-serif;color:#fff;transition:background .3s,transform .4s var(--ff-ez)}
+.pt-in:hover{background:var(--ff-o);transform:scale(1.08)}
+@media(max-width:1180px) and (min-width:900px){.pt-g{grid-template-columns:1fr 1fr}.pt-c:first-child{grid-row:span 1;min-height:340px}}
+@media(max-width:899px){
+  .pt{padding:48px 0}
+  .pt-g{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;gap:10px}
+  .pt-c{min-height:220px;border-radius:16px}
+  .pt-c:first-child{grid-column:1/-1;grid-row:auto;min-height:340px}
+  .pt-b{padding:14px}
+  .pt-c h3{font-size:17px;margin-top:8px}
+  .pt-c:first-child h3{font-size:24px}
+  .pt-c p{font-size:12px}
+  .pt-tag{font-size:9.5px;padding:4px 8px}
+  .pt-in{width:34px;height:34px;right:12px;top:12px;font-size:13px}
+}
+
+/* ================= tighter spacing on phones (all pages) ================= */
+@media(max-width:899px){
+  .ff-sec{padding:44px 0!important}
+  .ff-hd{margin-bottom:22px!important}
+  .ff-h2{margin-top:10px!important}
+  .ff-p{margin-top:10px!important}
+  .sv-hero,.hf-hero,.hfh-hero,.in-hero,.pst-hero,.ab-hero{padding-top:92px!important}
+  .sv-hero-in,.hf-hero-in,.hfh-hero-in{padding-bottom:36px!important;gap:30px!important}
+  .hh{padding-top:92px!important}
+  .hh-in{padding-bottom:32px!important;gap:28px!important}
+  .in-hero{padding-bottom:40px!important}
+  .sv-more{padding-bottom:40px!important}
+  .in-ntf{padding-bottom:40px!important}
+  .hp-who{margin-top:32px!important}
+  .ie-sec{padding:36px 0!important}
+  .gch .gc-sec{padding-top:40px!important;padding-bottom:40px!important}
+  .gcu .nx-in{padding-top:40px!important;padding-bottom:40px!important}
+  .pst-body{padding:28px 0!important}
+}
+/* the team page resets spacing inside .gtm; restore it for the partners section */
+.gtm .pt .ff-in{padding:0 86px}
+.gtm .pt .ff-hd{margin-bottom:clamp(36px,5vh,56px)}
+.gtm .pt .ff-h2{margin-top:16px}
+.gtm .pt .ff-p{margin-top:0}
+@media(max-width:1180px) and (min-width:900px){.gtm .pt .ff-in{padding:0 48px}}
+@media(max-width:899px){.gtm .pt .ff-in{padding:0 20px}.gtm .pt .ff-hd{margin-bottom:22px}.gtm .pt .ff-h2{margin-top:10px}.gtm .pt .ff-p{margin-top:10px}}
+@media(max-width:899px){
+  .ie-steps{gap:22px!important;row-gap:22px!important}
+  .ie-st{padding:0!important;margin:0!important}
+}
+@media(max-width:899px){
+  .hf-bento{grid-auto-rows:auto!important;gap:10px!important}
+  .hf-bx{padding:20px!important}
+  .hf-bx h3{margin-top:14px!important}
+  .hf-bx p{margin:6px 0 12px!important}
+  .hf-bx.big{padding:24px!important}
+  .hf-bx.big h3{margin-top:18px!important;font-size:24px!important}
+  .hf-chips{gap:8px!important}
+  .hf-tl{gap:10px!important}
+}
+
+/* ---- Nov 3 changes ---- */
+/* mobile header: search icon sits next to the menu button */
+@media(max-width:899px){.ie-hr{margin-left:auto;gap:4px}.ie-hr+.burger,.burger{margin-left:6px}}
+/* partners: blank placeholders until photos arrive */
+.pt-ph{position:absolute;inset:0;z-index:-2;background:linear-gradient(160deg,#2a2a2a,#161616)}
+.pt-c:hover .pt-ph{background:linear-gradient(160deg,#2f2a27,#181513)}
+/* service pages: cards are information only, no links or hover */
+
+.ff-row-st{cursor:default}
+.ff-row-st:hover{background:transparent}
+.ff-row-st:hover b{color:inherit}
+.ff-row-st:hover .ff-n{color:inherit}
+.hf-bx-st:hover{transform:none;background:#FBF8F4;box-shadow:none}
+.hf-bx-st:hover .ff-ic{background:inherit;color:inherit;transform:none}
+/* "Service focus" CTA: one compact 200px band */
+.ie-focus .ie-dark{height:200px;display:flex;align-items:center}
+.ie-focus .ie-dark-top{display:block;width:100%;padding:0 clamp(36px,4vw,64px)}
+.ie-focus .ie-dark-l{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto auto;column-gap:40px;align-items:center}
+.ie-focus .ie-tag{grid-column:1;justify-self:start;padding:5px 14px;font-size:11.5px}
+.ie-focus .ie-dark h2{grid-column:1;margin-top:10px;font-size:clamp(24px,2vw,30px);line-height:1.15}
+.ie-focus .ie-dark h2 br{display:none}
+.ie-focus .ie-dark p{grid-column:1;margin-top:6px;max-width:58em;font-size:14.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ie-focus .ie-btns{grid-column:2;grid-row:1/4;margin:0}
+@media(max-width:899px){
+  .ie-focus .ie-dark{height:auto;min-height:200px;padding:26px 0}
+  .ie-focus .ie-dark-top{padding:0 22px}
+  .ie-focus .ie-dark-l{display:block}
+  .ie-focus .ie-btns{margin-top:16px}
+}

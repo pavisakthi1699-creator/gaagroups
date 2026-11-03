@@ -1,4 +1,4 @@
-# Push this website to GitHub (pavisakthi1699-creator/gaagroups) in one step.
+# Push this website to GitHub in one step. First create an empty repository on GitHub and put its address in $Repo below.
 #
 # How to use (Windows):
 #   1. Unzip the website zip anywhere (for example Downloads).
@@ -7,17 +7,17 @@
 #
 # What it does: downloads the current repository into a temporary folder, replaces its files with
 # the ones in this folder (keeping the Git history), commits and pushes to the main branch.
-# Vercel then deploys the new version automatically.
+# Then upload the new build (dist folder) to your hosting.
 
 param(
-  [string]$Repo = "https://github.com/pavisakthi1699-creator/gaagroups.git",
+  [string]$Repo = "https://github.com/YOUR-GITHUB-USER/gaa-group-website.git",
   [string]$Branch = "main",
   [string]$Message = "Website update"
 )
 
 $ErrorActionPreference = "Stop"
 $src = $PSScriptRoot
-$work = Join-Path $env:TEMP ("gaagroups-push-" + (Get-Date -Format "yyyyMMddHHmmss"))
+$work = Join-Path $env:TEMP ("gaa-group-push-" + (Get-Date -Format "yyyyMMddHHmmss"))
 
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
   Write-Host "Git is not installed. Install it from https://git-scm.com/download/win and run this again." -ForegroundColor Red
@@ -41,7 +41,7 @@ $changes = git status --porcelain
 if (-not $changes) { Write-Host "Nothing changed. GitHub already has this version." -ForegroundColor Yellow; exit 0 }
 
 if (-not (git config user.email)) { git config user.email "outreach.highbizz@gmail.com" }
-if (-not (git config user.name))  { git config user.name "GAA Group" }
+if (-not (git config user.name))  { git config user.name "GAA Consulting" }
 git commit --quiet -m $Message
 
 Write-Host "Pushing to GitHub..." -ForegroundColor Cyan

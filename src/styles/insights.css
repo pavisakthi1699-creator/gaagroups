@@ -1,0 +1,148 @@
+/* ================= Filings First insights (own design: dark hero, planner, topic shelf) ================= */
+.inx{background:#fff}
+
+/* 1. dark hero */
+.in-hero{position:relative;overflow:hidden;isolation:isolate;padding:calc(96px + clamp(30px,6vh,72px)) 0 clamp(56px,9vh,96px);background:#0d0d0d;color:#fff}
+.in-glow{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 50% 60% at 85% 20%,rgba(224,97,47,.35),transparent 70%),radial-gradient(ellipse 40% 50% at 0% 100%,rgba(233,138,69,.18),transparent 70%)}
+.in-glow::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(180deg,#000,transparent)}
+.in-hero-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(40px,5vw,96px);align-items:center}
+.in-hero .sv-bc{color:#8d8d93}
+.in-hero .sv-bc b{color:#F08A5D}
+.in-hero .ff-eye{margin-top:26px}
+.in-hero .ff-h1{margin-top:20px;color:#fff}
+.in-hero .ff-h1 span{display:block}
+.in-p{margin-top:22px;max-width:580px;font:400 16.5px/1.75 "Poppins",sans-serif;color:#b9b9be}
+.in-hero-l>*{animation:sv-up .9s var(--ff-ez) both}
+.in-hero-l>:nth-child(3){animation-delay:.08s}.in-hero-l>:nth-child(4){animation-delay:.16s}.in-hero-l>:nth-child(5){animation-delay:.24s}.in-hero-l>:nth-child(6){animation-delay:.32s}
+.in-srch{margin-top:32px;display:flex;align-items:center;gap:12px;max-width:560px;height:62px;padding:0 8px 0 22px;border-radius:14px;background:#fff;box-shadow:0 20px 40px -24px rgba(0,0,0,.6);transition:box-shadow .3s}
+.in-srch:focus-within{box-shadow:0 0 0 3px rgba(224,97,47,.55),0 20px 40px -24px rgba(0,0,0,.6)}
+.in-srch>.i{width:22px;height:22px;color:var(--ff-o)}
+.in-srch input{flex:1;min-width:0;height:100%;border:0;outline:0;background:none;font:400 15.5px "Poppins",sans-serif;color:#141414}
+.in-srch button{display:grid;place-items:center;width:46px;height:46px;border:0;border-radius:10px;background:var(--ff-og);color:#fff;cursor:pointer;transition:transform .3s var(--ff-ez)}
+.in-srch button:hover{transform:translateX(3px)}
+.in-srch button .i{width:20px;height:20px;stroke-width:2.2}
+.in-pop{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:400 13.5px "Poppins",sans-serif;color:#8d8d93}
+.in-pop button{padding:7px 14px;border:0;border-radius:999px;background:#1d1d1d;box-shadow:inset 0 0 0 1px #2e2e2e;font:500 13px "Poppins",sans-serif;color:#e8e8e8;cursor:pointer;transition:background .3s,box-shadow .3s,color .3s}
+.in-pop button:hover{background:#2a1a12;box-shadow:inset 0 0 0 1px var(--ff-o);color:#F08A5D}
+.in-due{padding:22px;border-radius:22px;background:#fff;color:#141414;box-shadow:0 40px 80px -40px rgba(0,0,0,.7);animation:sv-in 1s .2s var(--ff-ez) both}
+.in-due-h{display:flex;align-items:center;justify-content:space-between;padding:4px 6px 16px}
+.in-due-h span{display:flex;align-items:center;gap:10px;font:600 18px "Outfit",sans-serif}
+.in-due-h span .i{width:22px;height:22px;color:var(--ff-o)}
+.in-due-h a{display:flex;align-items:center;gap:6px;font:600 13.5px "Poppins",sans-serif;color:var(--ff-o)}
+.in-due-h a .i{width:15px;height:15px;stroke-width:2.2;transition:transform .3s}
+.in-due-h a:hover .i{transform:translateX(4px)}
+.in-due .ds li{box-shadow:none;background:#FBF8F4}
+
+/* 2. planner */
+.in-plan{background:var(--ff-cream)}
+.ip-box{border-radius:22px;background:#fff;box-shadow:0 0 0 1px #EFE6DE,0 40px 80px -60px rgba(120,60,30,.4);overflow:hidden}
+.ip-months{display:grid;grid-template-columns:repeat(12,1fr);border-bottom:1px solid #F1EAE4}
+.ip-months button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:16px 4px;border:0;background:none;cursor:pointer;transition:background .3s,color .3s;position:relative}
+.ip-months button+button{box-shadow:inset 1px 0 0 #F4EEE9}
+.ip-months b{font:600 16px "Outfit",sans-serif;color:#2a2a2e}
+.ip-months small{font:400 11.5px "Poppins",sans-serif;color:#9a9aa0}
+.ip-months button::after{content:"";position:absolute;left:18%;right:18%;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--ff-og);transform:scaleX(0);transition:transform .4s var(--ff-ez)}
+.ip-months button:hover{background:#FFFAF7}
+.ip-months button.on{background:#FFF4EE}
+.ip-months button.on b{color:var(--ff-o)}
+.ip-months button.on::after{transform:none}
+.ip-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 30px;border-bottom:1px solid #F1EAE4}
+.ip-bar h3{font:700 26px "Outfit",sans-serif;letter-spacing:-.025em}
+.ip-cats{display:flex;flex-wrap:wrap;gap:6px;padding:5px;border-radius:999px;background:#F7F3EF}
+.ip-cats button{padding:8px 16px;border:0;border-radius:999px;background:none;font:500 13.5px "Poppins",sans-serif;color:#55555c;cursor:pointer;transition:background .3s,color .3s,box-shadow .3s}
+.ip-cats button:hover{color:var(--ff-o)}
+.ip-cats button.on{background:#fff;color:var(--ff-o);box-shadow:0 6px 16px -10px rgba(120,60,30,.5)}
+.ip-list{padding:10px 30px 20px}
+.ip-day{position:relative;display:grid;grid-template-columns:90px 1fr;gap:24px;padding:20px 0;border-bottom:1px dashed #EDE3DA;animation:sv-row .55s calc(var(--k) * .06s) var(--ff-ez) both}
+.ip-day:last-child{border-bottom:0}
+.ip-date{display:flex;flex-direction:column;align-items:center;justify-content:center;height:78px;border-radius:16px;background:var(--ff-og);color:#fff}
+.ip-date b{font:700 30px/1 "Outfit",sans-serif}
+.ip-date small{margin-top:4px;font:500 12px "Poppins",sans-serif;letter-spacing:.1em;text-transform:uppercase;opacity:.9}
+.ip-items{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.ip-it{padding:16px 18px;border-radius:14px;background:#FBF8F4;transition:background .3s,transform .4s var(--ff-ez)}
+.ip-it:hover{background:#FFF1E9;transform:translateY(-3px)}
+.ip-it em{display:inline-block;padding:3px 10px;border-radius:999px;font:600 11px "Poppins",sans-serif;font-style:normal;letter-spacing:.08em;text-transform:uppercase}
+.c-gst{background:#FCE9DF;color:#C9461F}
+.c-tds{background:#EAF1FB;color:#2B5DA8}
+.c-tax{background:#EEF6EC;color:#2E7D32}
+.c-pay{background:#F3ECF9;color:#7347A8}
+.c-roc{background:#FFF3DC;color:#A36A00}
+.ip-it b{display:block;margin-top:10px;font:600 17px "Outfit",sans-serif;letter-spacing:-.01em}
+.ip-it p{margin-top:4px;font:400 13.5px/1.55 "Poppins",sans-serif;color:#66666d}
+.ip-day.past .ip-date{background:#E9E4DF;color:#8a8a91}
+.ip-day.past .ip-it{opacity:.6}
+.ip-gone{position:absolute;left:0;top:8px;padding:2px 8px;border-radius:6px;background:#141414;font:600 10.5px "Poppins",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.ip-empty{padding:30px 0;font:400 15px "Poppins",sans-serif;color:#77777d}
+.ip-note{display:flex;align-items:flex-start;gap:10px;padding:18px 30px 22px;background:#FFFAF7;border-top:1px solid #F4E6DC;font:400 13.5px/1.6 "Poppins",sans-serif;color:#6b6b72}
+.ip-note .i{width:18px;height:18px;flex:none;margin-top:1px;color:var(--ff-o)}
+.ip-note a{font-weight:600;color:var(--ff-o)}
+
+/* 3. topic shelf */
+.in-clr{margin-left:10px;padding:4px 12px;border:0;border-radius:999px;background:#FCE9DF;font:600 12.5px "Poppins",sans-serif;color:var(--ff-o);cursor:pointer}
+.in-shelf{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:24px;align-items:start}
+.in-tabs{display:flex;flex-direction:column;gap:8px}
+.in-tabs button{display:flex;align-items:center;gap:16px;padding:14px 18px;border:0;border-radius:14px;background:none;text-align:left;cursor:pointer;transition:background .3s,transform .35s var(--ff-ez)}
+.in-tabs button b{display:block;font:600 18px "Outfit",sans-serif;letter-spacing:-.01em;color:#141414;transition:color .3s}
+.in-tabs button small{display:block;margin-top:2px;font:500 12px "Poppins",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#9a9aa0}
+.in-tabs button>.i{margin-left:auto;width:22px;height:22px;color:var(--ff-o);opacity:0;transform:translateX(-8px);transition:opacity .3s,transform .4s var(--ff-ez)}
+.in-tabs button:hover{background:#FFF8F4}
+.in-tabs button:hover b{color:var(--ff-o)}
+.in-tabs button.on{background:var(--ff-peach2)}
+.in-tabs button.on b{color:var(--ff-o)}
+.in-tabs button.on>.i,.in-tabs button:hover>.i{opacity:1;transform:none}
+.in-tabs button.on .ff-ic{background:var(--ff-og);color:#fff}
+.in-tabs .ff-ic{width:46px;height:46px;border-radius:12px}
+.in-panel{position:sticky;top:110px;padding:clamp(30px,3.4vw,48px);border-radius:22px;background:#141414;color:#fff;animation:sv-fade .5s var(--ff-ez)}
+.in-cat{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--ff-og);font:600 11.5px "Poppins",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.in-panel h3{margin-top:18px;font:700 clamp(28px,2.4vw,38px)/1.15 "Outfit",sans-serif;letter-spacing:-.03em}
+.in-panel>p{margin-top:12px;font:400 15.5px/1.7 "Poppins",sans-serif;color:#b9b9be}
+.in-k{display:block;margin-top:30px;font:600 12px "Poppins",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#F08A5D}
+.in-panel ul{list-style:none;margin-top:12px;display:flex;flex-direction:column}
+.in-panel li{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #2a2a2a;animation:sv-row .5s calc(var(--k) * .08s) var(--ff-ez) both}
+.in-n{font:600 13px "Poppins",sans-serif;color:#5a5a5a}
+.in-panel li b{font:500 16px/1.4 "Poppins",sans-serif}
+.in-panel li em{margin-left:auto;flex:none;padding:4px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px #3a3a3a;font:500 11.5px "Poppins",sans-serif;font-style:normal;color:#a9a9ae}
+.in-panel-f{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;font:400 14px "Poppins",sans-serif;color:#b9b9be}
+.in-panel-f .ff-lk{color:#F08A5D}
+.in-none{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:36px;border-radius:20px;background:#FFF8F4}
+.in-none p{font:400 16px "Poppins",sans-serif;color:#55555c}
+
+/* 4. notify */
+.in-ntf{padding:0 0 clamp(56px,8vh,88px)}
+.in-ntf-box{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center;padding:clamp(34px,4vw,56px);border-radius:24px;background:#FBF8F4;box-shadow:inset 0 0 0 1px #F0E6DE}
+.in-row{display:flex;align-items:center;gap:12px;height:64px;padding:0 8px 0 20px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1px #E9DFD7;transition:box-shadow .3s}
+.in-row:focus-within{box-shadow:inset 0 0 0 1.5px var(--ff-o)}
+.in-row>.i{width:20px;height:20px;color:#9a9aa0}
+.in-row input{flex:1;min-width:0;border:0;outline:0;background:none;font:400 15.5px "Poppins",sans-serif}
+.in-row .ff-btn{height:48px;padding:0 22px}
+.in-cn{display:flex;align-items:flex-start;gap:10px;margin-top:14px;font:400 13px/1.5 "Poppins",sans-serif;color:#6b6b72}
+.in-cn input{margin-top:3px;accent-color:#E0612F}
+.in-cn a{color:var(--ff-o);text-decoration:underline}
+.in-err{margin-top:10px;font:500 13.5px "Poppins",sans-serif;color:#C9461F}
+.in-ok{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:26px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1.5px #F2C3AB}
+.in-ok .i{width:40px;height:40px;color:var(--ff-o)}
+.in-ok b{font:600 20px "Outfit",sans-serif}
+.in-ok span{font:400 14.5px "Poppins",sans-serif;color:#66666d}
+
+@media(max-width:899px){
+  .in-hero{padding-top:110px}
+  .in-hero-in,.in-shelf,.in-ntf-box{grid-template-columns:minmax(0,1fr);gap:36px}
+  .in-p{font-size:15px}
+  .in-srch{height:56px}
+  .ip-months{display:flex;overflow-x:auto}
+  .ip-months button{flex:none;width:72px}
+  .ip-bar{flex-direction:column;align-items:flex-start;padding:20px 16px;gap:14px}
+  .ip-cats{border-radius:14px}
+  .ip-list{padding:6px 16px 14px}
+  .ip-day{grid-template-columns:60px 1fr;gap:14px}
+  .ip-date{height:62px}
+  .ip-date b{font-size:24px}
+  .ip-items{grid-template-columns:minmax(0,1fr)}
+  .ip-note{padding:16px}
+  .in-panel{position:static;padding:26px 20px}
+  .in-panel li{flex-wrap:wrap;gap:8px 12px}
+  .in-panel li em{margin-left:28px}
+  .in-ntf-box{padding:26px 18px}
+  .in-row{height:auto;flex-wrap:wrap;padding:10px}
+  .in-row .ff-btn{width:100%}
+}

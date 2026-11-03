@@ -5,3 +5,8 @@ dist
 .env.*
 !.env.example
 .DS_Store
+dist-ssr
+public/api/config.php
+public/api/storage/cv
+public/uploads/blog
+public/api/install/install.lock

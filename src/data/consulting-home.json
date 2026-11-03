@@ -1,0 +1,142 @@
+{
+ "services": [
+  {
+   "title": "Corporate Legal & Governance",
+   "points": [
+    "Corporate law advisory",
+    "Corporate governance",
+    "Secretarial audits",
+    "Agreements and documentation",
+    "Regulatory representation"
+   ],
+   "icon": "layers"
+  },
+  {
+   "title": "NBFC & Financial Regulatory Advisory",
+   "points": [
+    "NBFC registration",
+    "RBI regulatory advisory",
+    "Licensing and compliance",
+    "Ongoing regulatory requirements"
+   ],
+   "icon": "bank"
+  },
+  {
+   "title": "FEMA & Cross-Border Advisory",
+   "points": [
+    "Foreign Direct Investment",
+    "Overseas Direct Investment",
+    "Foreign investment reporting",
+    "Cross-border transactions",
+    "FEMA compliance"
+   ],
+   "icon": "plane"
+  },
+  {
+   "title": "Capital Markets & Securities Advisory",
+   "points": [
+    "SEBI regulatory advisory",
+    "Listed company compliance",
+    "Securities regulations",
+    "IPO-related advisory where applicable"
+   ],
+   "icon": "bars"
+  },
+  {
+   "title": "Transaction & Corporate Restructuring",
+   "points": [
+    "Mergers and amalgamations",
+    "Due diligence",
+    "Fundraising",
+    "Capital restructuring",
+    "Transaction advisory"
+   ],
+   "icon": "gear"
+  },
+  {
+   "title": "Startup & Emerging Business Advisory",
+   "points": [
+    "Business structuring",
+    "Shareholder agreements",
+    "ESOP advisory",
+    "Startup compliance",
+    "Fundraising support"
+   ],
+   "icon": "bulb"
+  }
+ ],
+ "why": [
+  {
+   "title": "Professional Expertise",
+   "text": "Specialized knowledge of corporate laws and regulatory frameworks.",
+   "icon": "user"
+  },
+  {
+   "title": "Practical Solutions",
+   "text": "Advice focused on real business requirements and execution.",
+   "icon": "bulb"
+  },
+  {
+   "title": "Regulatory Precision",
+   "text": "A structured approach to compliance and governance.",
+   "icon": "shield"
+  },
+  {
+   "title": "Long-term Partnership",
+   "text": "Building trusted professional relationships with clients.",
+   "icon": "infinity"
+  }
+ ],
+ "process": [
+  {
+   "title": "Understand",
+   "text": "Understand business objectives and specific requirements."
+  },
+  {
+   "title": "Assess",
+   "text": "Evaluate legal, regulatory and transactional considerations."
+  },
+  {
+   "title": "Advise",
+   "text": "Develop a practical approach based on client requirements."
+  },
+  {
+   "title": "Execute",
+   "text": "Assist with implementation, documentation, filings and agreed deliverables."
+  }
+ ],
+ "insights": [
+  {
+   "cat": "RBI & FEMA Updates",
+   "text": "Briefings on RBI and FEMA changes that affect foreign investment, cross-border transactions and NBFCs."
+  },
+  {
+   "cat": "Companies Act & MCA Updates",
+   "text": "What new MCA rules, forms and filing changes mean for boards and company secretaries."
+  },
+  {
+   "cat": "Startup & Fundraising Insights",
+   "text": "Practical notes on structuring, ESOPs, shareholder agreements and investment rounds."
+  }
+ ],
+ "cats": [
+  "RBI & FEMA Updates",
+  "SEBI & Capital Markets",
+  "Companies Act & MCA Updates",
+  "NBFC Regulatory Updates",
+  "Startup & Fundraising Insights",
+  "Corporate Governance",
+  "Mergers & Acquisitions"
+ ],
+ "audience": [
+  "Business founders",
+  "CEOs and CFOs",
+  "Board members",
+  "Investors",
+  "NBFCs and financial institutions",
+  "Startups and growing enterprises",
+  "International businesses",
+  "Manufacturing companies",
+  "Professional service firms"
+ ]
+}

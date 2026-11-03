@@ -1,12 +1,14 @@
 {
   "name": "gaa-group-website",
   "private": true,
-  "version": "1.0.0",
+  "version": "3.0.0",
   "type": "module",
+  "description": "GAA Group website (GAA Group, GAA Consulting, Filings First, Hirings First) on one domain: React, pre-rendered for SEO, with a PHP + MySQL backend for the blog, forms and admin panel.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs",
-    "preview": "vite preview"
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "node scripts/serve.mjs",
+    "api": "php -S localhost:8000 -t public"
   },
   "dependencies": {
     "react": "^19.2.8",

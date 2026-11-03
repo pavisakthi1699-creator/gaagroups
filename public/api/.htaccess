@@ -1,0 +1,5 @@
+# The API folder: only the endpoint files can be reached directly
+Options -Indexes
+<FilesMatch "^(config\.php|config\.sample\.php)$">
+  Require all denied
+</FilesMatch>

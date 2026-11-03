@@ -1,0 +1,213 @@
+/* ================= Filings First service page (one design for all three services) ================= */
+.sv{background:#fff}
+
+/* 1. hero: split, with a live status board */
+.sv-hero{position:relative;overflow:hidden;isolation:isolate;padding-top:calc(96px + clamp(28px,5vh,56px));background:linear-gradient(180deg,#FFF7F1 0%,#FBF8F4 60%,#fff 100%)}
+.sv-grid{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(224,97,47,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(224,97,47,.07) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 70% at 75% 40%,#000 0%,transparent 75%)}
+.sv-hero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,5vw,96px);align-items:center;padding-bottom:clamp(48px,7vh,80px)}
+.sv-bc{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font:400 13px "Poppins",sans-serif;color:#8a8a91}
+.sv-bc a{transition:color .25s}.sv-bc a:hover{color:var(--ff-o)}
+.sv-bc b{font-weight:500;color:var(--ff-o)}
+.sv-pill{margin-top:26px;display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px #F1DCCF,0 10px 24px -18px rgba(224,97,47,.6);font:600 12px "Poppins",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ff-o)}
+.sv-pill .i{width:28px;height:28px;padding:5px;border-radius:50%;background:var(--ff-og);color:#fff;stroke-width:2}
+.sv-hero .ff-h1{margin-top:22px}
+
+.sv-lead{margin-top:22px;max-width:600px;font:400 16.5px/1.75 "Poppins",sans-serif;color:#55555c}
+.sv-hero .ff-btns{margin-top:34px}
+.sv-hero-l>*{animation:sv-up .9s var(--ff-ez) both}
+.sv-hero-l>:nth-child(2){animation-delay:.08s}.sv-hero-l>:nth-child(3){animation-delay:.16s}.sv-hero-l>:nth-child(4){animation-delay:.24s}.sv-hero-l>:nth-child(5){animation-delay:.32s}
+@keyframes sv-up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+.sv-hero-r{position:relative;display:flex;justify-content:center}
+.sv-board{position:relative;width:min(100%,520px);padding:26px 26px 22px;border-radius:22px;background:#fff;box-shadow:0 0 0 1px #F0E6DE,0 40px 80px -40px rgba(120,60,30,.35);animation:sv-in 1s .2s var(--ff-ez) both;transition:transform .6s var(--ff-ez)}
+.sv-board:hover{transform:translateY(-6px) rotate(-.4deg)}
+@keyframes sv-in{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:none}}
+.sv-board::before{content:"";position:absolute;inset:-14px 30px auto;height:40px;z-index:-1;border-radius:22px;background:#FCE9DF;transform:translateY(-6px)}
+.sv-bd-h{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:18px;border-bottom:1px dashed #EADFD6}
+.sv-bd-h b{display:block;font:600 20px "Outfit",sans-serif;letter-spacing:-.02em}
+.sv-bd-h small{display:block;margin-top:4px;font:400 13px "Poppins",sans-serif;color:#8a8a91}
+.sv-ring{position:relative;width:72px;height:72px}
+.sv-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.sv-ring circle{fill:none;stroke-width:7}
+.sv-ring .bg{stroke:#F6EEE8}
+.sv-ring .fg{stroke:url(#x);stroke:#E0612F;stroke-linecap:round;stroke-dashoffset:var(--c);animation:sv-ring 1.6s .7s var(--ff-ez) forwards}
+@keyframes sv-ring{to{stroke-dashoffset:var(--off)}}
+.sv-ring span{position:absolute;inset:0;display:grid;place-items:center;font:700 16px "Outfit",sans-serif}
+.sv-board ul{list-style:none;margin-top:8px}
+.sv-board li{display:flex;align-items:center;gap:14px;padding:12px 4px;border-bottom:1px solid #F4EEE9;opacity:0;animation:sv-row .6s calc(.6s + var(--k) * .14s) var(--ff-ez) forwards}
+@keyframes sv-row{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+.sv-dot{display:grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%}
+.sv-dot .i{width:17px;height:17px;stroke-width:2}
+.sv-dot.ok{background:#E9F6EE;color:#1F8A4C}
+.sv-dot.wip{background:#FFF3E2;color:#C9790E}
+.sv-dot.due{background:#FCE9DF;color:#E0612F}
+.sv-bd-t{font:500 14.5px "Poppins",sans-serif;color:#2a2a2e}
+.sv-board em{margin-left:auto;padding:5px 11px;border-radius:999px;font:600 11.5px "Poppins",sans-serif;font-style:normal;white-space:nowrap}
+.sv-board em.ok{background:#E9F6EE;color:#1F8A4C}
+.sv-board em.wip{background:#FFF3E2;color:#B36A08}
+.sv-board em.due{background:#FCE9DF;color:#C9461F}
+.sv-bd-f{display:flex;align-items:center;gap:8px;margin-top:16px;font:500 13px "Poppins",sans-serif;color:#5f5f66}
+.sv-bd-f .i{width:18px;height:18px;color:var(--ff-o)}
+.sv-float{position:absolute;right:-40px;bottom:-30px;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border-radius:14px;background:#141414;color:#fff;box-shadow:0 24px 40px -20px rgba(0,0,0,.5);animation:sv-in .9s 1.4s var(--ff-ez) both,sv-bob 5s 2.4s ease-in-out infinite}
+.sv-float .i{width:36px;height:36px;padding:8px;border-radius:10px;background:var(--ff-og);stroke-width:2}
+.sv-float b{display:block;font:600 14px "Outfit",sans-serif}
+.sv-float small{display:block;margin-top:2px;font:400 12px "Poppins",sans-serif;color:#bdbdbd}
+@keyframes sv-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+.sv-strip{background:#0d0d0d;color:#fff}
+.sv-strip-in{display:grid;grid-template-columns:repeat(4,1fr)}
+.sv-strip span{display:flex;align-items:center;justify-content:center;gap:12px;padding:22px 16px;font:500 15px "Poppins",sans-serif;transition:color .3s}
+.sv-strip span+span{border-left:1px solid #262626}
+.sv-strip .i{width:22px;height:22px;color:#F08A5D}
+.sv-strip span:hover{color:#F08A5D}
+
+/* 2. scope: sticky intro + rows */
+.sv-scope-in{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,110px);align-items:start}
+.sv-sticky{position:sticky;top:120px}
+.sv-sticky .ff-btn{margin-top:30px}
+.sv-list .ff-row{border-bottom:1px solid #F1EAE4;border-radius:12px}
+.sv-list .ff-row b{font-size:clamp(19px,1.45vw,23px)}
+
+/* 3. audience: dark grid */
+.sv-aud{background:#0d0d0d;color:#fff}
+.sv-aud .ff-h2{color:#fff;max-width:640px}
+.sv-aud .ff-p{color:#a9a9ae}
+.sv-aud-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#262626;border-radius:20px;overflow:hidden;box-shadow:0 0 0 1px #262626}
+.sv-aud-c{position:relative;padding:34px 32px 36px;background:#0d0d0d;transition:background .4s}
+.sv-aud-c::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--ff-og);transform:scaleX(0);transform-origin:0 50%;transition:transform .5s var(--ff-ez)}
+.sv-aud-c:hover{background:#151515}
+.sv-aud-c:hover::after{transform:none}
+.sv-aud-c .ff-ic{background:#1d1d1d;color:#F08A5D}
+.sv-aud-c:hover .ff-ic{background:var(--ff-og);color:#fff;transform:translateY(-4px) rotate(-6deg)}
+.sv-aud-n{position:absolute;right:28px;top:30px;font:600 13px "Poppins",sans-serif;letter-spacing:.1em;color:#4a4a4a}
+.sv-aud-c h3{margin-top:24px;font:600 22px "Outfit",sans-serif;letter-spacing:-.02em}
+.sv-aud-c p{margin-top:8px;font:400 14.5px/1.65 "Poppins",sans-serif;color:#a9a9ae}
+
+/* 4. how we work: tabs + panel */
+.sv-how{background:var(--ff-cream)}
+.sv-steps{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px;align-items:stretch}
+.sv-tabs{list-style:none;display:flex;flex-direction:column;gap:10px}
+.sv-tabs button{position:relative;overflow:hidden;width:100%;display:flex;align-items:center;gap:18px;padding:20px 24px;border:0;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1px #EFE6DE;text-align:left;cursor:pointer;transition:background .35s,box-shadow .35s,transform .35s var(--ff-ez)}
+.sv-tabs button:hover{transform:translateX(4px);box-shadow:inset 0 0 0 1px #F0C9B5}
+.sv-tn{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #E7D8CC;font:600 13px "Poppins",sans-serif;color:#9a8f86;transition:all .35s}
+.sv-tt{font:600 19px "Outfit",sans-serif;letter-spacing:-.01em;color:#2a2a2e}
+.sv-tabs button.past .sv-tn{background:#FCE9DF;box-shadow:none;color:var(--ff-o)}
+.sv-tabs button.on{background:#141414;box-shadow:none;transform:none}
+.sv-tabs button.on .sv-tn{background:var(--ff-og);box-shadow:none;color:#fff}
+.sv-tabs button.on .sv-tt{color:#fff}
+.sv-bar{position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--ff-og);transform:scaleX(0);transform-origin:0 50%}
+.sv-steps.auto .sv-tabs button.on .sv-bar{animation:sv-bar 5.2s linear forwards}
+.sv-steps:not(.auto) .sv-tabs button.on .sv-bar{transform:none}
+@keyframes sv-bar{to{transform:none}}
+.sv-panel{position:relative;overflow:hidden;padding:clamp(34px,4vw,56px);border-radius:20px;background:#fff;box-shadow:0 0 0 1px #EFE6DE,0 30px 60px -40px rgba(120,60,30,.3);animation:sv-fade .6s var(--ff-ez)}
+@keyframes sv-fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.sv-big{position:absolute;right:28px;top:-10px;font:800 180px/1 "Outfit",sans-serif;letter-spacing:-.06em;color:#FBF1EA;pointer-events:none}
+.sv-panel h3{position:relative;margin-top:16px;font:700 clamp(30px,2.6vw,42px) "Outfit",sans-serif;letter-spacing:-.035em}
+.sv-panel>p{position:relative;margin-top:14px;max-width:520px;font:400 16px/1.75 "Poppins",sans-serif;color:#55555c}
+.sv-gg{position:relative;margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sv-gg div{padding:20px 22px;border-radius:14px;background:#F8F4F0}
+.sv-gg .we{background:#FFF1E9;box-shadow:inset 0 0 0 1px #F6D3C0}
+.sv-gg small{display:block;font:600 11.5px "Poppins",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8a8a91}
+.sv-gg .we small{color:var(--ff-o)}
+.sv-gg b{display:block;margin-top:8px;font:500 15.5px/1.5 "Poppins",sans-serif;color:#1d1d1f}
+
+/* 5. key dates: timeline */
+.sv-dates{background:#fff}
+.sv-dates .ff-h2{max-width:640px}
+.sv-tl{list-style:none;position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:16px;overflow-x:auto;padding:4px 2px 18px;scrollbar-width:thin}
+.sv-tl::before{content:"";position:absolute;left:0;right:0;top:66px;height:2px;background:repeating-linear-gradient(90deg,#F1C7B1 0 8px,transparent 8px 14px)}
+.sv-tl li{position:relative;padding:20px 22px 24px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px #F0E6DE;transition:box-shadow .35s,transform .45s var(--ff-ez)}
+.sv-tl li:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1.5px var(--ff-o),0 24px 40px -28px rgba(224,97,47,.6)}
+.sv-tl-d{display:inline-block;padding:6px 12px;border-radius:8px;background:var(--ff-peach);font:600 13px "Poppins",sans-serif;color:var(--ff-o);white-space:nowrap}
+.sv-tl i{display:block;margin:16px 0 18px;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--ff-o);transition:background .3s}
+.sv-tl li:hover i{background:var(--ff-o)}
+.sv-tl b{display:block;font:600 19px "Outfit",sans-serif;letter-spacing:-.01em}
+.sv-tl p{margin-top:6px;font:400 14px/1.6 "Poppins",sans-serif;color:#66666d}
+.sv-note{margin-top:22px;display:flex;align-items:flex-start;gap:10px;max-width:900px;font:400 13.5px/1.6 "Poppins",sans-serif;color:#7a7a80}
+.sv-note .i{width:18px;height:18px;flex:none;margin-top:1px;color:var(--ff-o)}
+
+/* 6. plans: comparison table */
+.sv-plans{background:linear-gradient(180deg,#FBF8F4,#fff)}
+.sv-mx{border-radius:20px;background:#fff;box-shadow:0 0 0 1px #EFE6DE,0 40px 80px -60px rgba(120,60,30,.4);overflow:hidden}
+.sv-mx-r{display:grid;grid-template-columns:1.5fr repeat(3,1fr);align-items:stretch;border-top:1px solid #F3EDE8;transition:background .25s}
+.sv-mx-r:not(.sv-mx-h):not(.sv-mx-f):hover{background:#FFFAF7}
+.sv-mx-r>span{display:flex;align-items:center;justify-content:center;padding:16px 18px;text-align:center}
+.sv-mx-r>span.pop{background:#FFF6F1}
+.sv-mx-k{justify-content:flex-start!important;text-align:left!important;font:500 15px "Poppins",sans-serif;color:#2a2a2e}
+.sv-mx-h{border-top:0}
+.sv-mx-h>span{flex-direction:column;gap:4px;padding:30px 18px 24px}
+.sv-mx-h .sv-mx-k{font:600 12px "Poppins",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8a8a91;justify-content:flex-end!important}
+.sv-mx-h b{font:700 21px "Outfit",sans-serif;letter-spacing:-.02em}
+.sv-mx-h small{font:400 13px "Poppins",sans-serif;color:#77777d}
+.sv-mx-h .pop{position:relative;background:#141414!important;color:#fff}
+.sv-mx-h .pop small{color:#c9c9c9}
+.sv-mx-h em{margin-bottom:6px;padding:4px 10px;border-radius:999px;background:var(--ff-og);font:600 11px "Poppins",sans-serif;font-style:normal;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.sv-mx-r .y .i{width:24px;height:24px;color:#fff;fill:#E0612F;stroke:#fff;stroke-width:1.8}
+.sv-mx-r .n i{display:block;width:14px;height:2px;border-radius:2px;background:#D8D0C8}
+.sv-mx-f>span{padding:22px 18px 26px}
+.sv-mx-f .ff-btn{height:48px;width:100%;max-width:220px}
+
+/* 7. questions */
+.sv-faqs-in{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(40px,6vw,110px);align-items:start}
+.sv-faqs-l .ff-lk{margin-top:24px}
+.sv-faq{display:flex;flex-direction:column;gap:12px}
+.sv-q{border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px #EFE6DE;transition:box-shadow .35s,background .35s}
+.sv-q.open{background:#FFF8F4;box-shadow:inset 0 0 0 1.5px #F2C3AB}
+.sv-q button{width:100%;display:flex;align-items:center;gap:18px;padding:22px 24px;border:0;background:none;text-align:left;cursor:pointer}
+.sv-qn{flex:none;font:600 13px "Poppins",sans-serif;letter-spacing:.1em;color:#b8aea5;transition:color .3s}
+.sv-qt{font:600 18px/1.4 "Outfit",sans-serif;letter-spacing:-.01em;color:#141414;transition:color .3s}
+.sv-qi{margin-left:auto;display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #E7D8CC;color:var(--ff-o);transition:transform .45s var(--ff-ez),background .3s,color .3s}
+.sv-qi .i{width:18px;height:18px;stroke-width:2.2}
+.sv-q button:hover .sv-qt,.sv-q.open .sv-qt,.sv-q.open .sv-qn{color:var(--ff-o)}
+.sv-q.open .sv-qi{transform:rotate(45deg);background:var(--ff-og);color:#fff;box-shadow:none}
+.sv-qa{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ff-ez)}
+.sv-q.open .sv-qa{grid-template-rows:1fr}
+.sv-qa>div{overflow:hidden}
+.sv-qa p{padding:0 80px 24px 56px;font:400 15px/1.75 "Poppins",sans-serif;color:#55555c}
+
+/* 8. other services */
+.sv-more{padding:0 0 clamp(56px,8vh,88px)}
+.sv-more-box{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,5vw,90px);align-items:center;padding:clamp(30px,4vw,48px);border-radius:22px;background:#FFF8F4;box-shadow:inset 0 0 0 1px #F5E1D5}
+.sv-more .ff-row{background:#fff}
+.sv-more .ff-row:hover{background:var(--ff-peach2)}
+
+@media(max-width:1180px) and (min-width:900px){
+  .sv-float{right:-12px}
+  .sv-aud-g{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:899px){
+  .sv-hero{padding-top:104px}
+  .sv-hero-in{grid-template-columns:minmax(0,1fr);gap:48px;padding-bottom:56px}
+  .sv-lead{font-size:15px}
+  .sv-board{padding:20px 18px}
+  .sv-bd-t{font-size:13.5px}
+  .sv-float{position:relative;right:auto;bottom:auto;left:auto;margin:16px 0 0;width:max-content;max-width:100%;padding:10px 14px 10px 10px;animation:sv-in .9s 1.4s var(--ff-ez) both}
+  .sv-strip-in{grid-template-columns:1fr 1fr;padding:0}
+  .sv-strip span{justify-content:flex-start;padding:16px 18px;font-size:13px}
+  .sv-strip span+span{border-left:0}
+  .sv-strip span:nth-child(even){border-left:1px solid #262626}
+  .sv-strip span:nth-child(n+3){border-top:1px solid #262626}
+  .sv-scope-in,.sv-faqs-in,.sv-more-box{grid-template-columns:minmax(0,1fr);gap:28px}
+  .sv-sticky{position:static}
+  .sv-aud-g{grid-template-columns:minmax(0,1fr)}
+  .sv-aud-c{padding:26px 22px}
+  .sv-steps{grid-template-columns:minmax(0,1fr)}
+  .sv-tabs{flex-direction:row;overflow-x:auto;gap:8px;padding-bottom:4px}
+  .sv-tabs li{flex:none}
+  .sv-tabs button{padding:12px 16px;gap:10px}
+  .sv-tabs button:hover{transform:none}
+  .sv-tn{width:32px;height:32px;font-size:12px}
+  .sv-tt{font-size:16px}
+  .sv-big{font-size:120px}
+  .sv-gg{grid-template-columns:minmax(0,1fr)}
+  .sv-tl{grid-auto-columns:76%}
+  .sv-mx{overflow-x:auto}
+  .sv-mx-r{min-width:680px;grid-template-columns:1.3fr repeat(3,1fr)}
+  .sv-mx-r>span{padding:12px 10px}
+  .sv-mx-k{font-size:13.5px}
+  .sv-mx-h b{font-size:17px}
+  .sv-q button{padding:18px 16px;gap:12px}
+  .sv-qt{font-size:16px}
+  .sv-qa p{padding:0 16px 20px 16px;font-size:14px}
+  .sv-more-box{padding:22px 16px}
+}

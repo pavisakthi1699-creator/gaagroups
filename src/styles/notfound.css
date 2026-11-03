@@ -1,0 +1,18 @@
+@media(min-width:900px){.lg-in,.nf-in{padding-left:86px!important;padding-right:86px!important}}
+
+.nf{position:relative;min-height:100vh;min-height:100svh;display:flex;background:linear-gradient(180deg,#fff 0%,#fff 55%,#FBF7F3 100%);font-family:"Poppins",sans-serif;color:#0f0f0f;overflow:hidden}
+.nf-in{position:relative;width:100%;max-width:1520px;margin:0 auto;padding:calc(96px + 4vh) 28px 6vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.nf-code{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);font:800 calc(clamp(200px,30vw,460px) * 0.86)/1 "Outfit",sans-serif;letter-spacing:-.06em;background:linear-gradient(180deg,rgba(224,97,47,.16),rgba(224,97,47,.02));-webkit-background-clip:text;background-clip:text;color:transparent;pointer-events:none;user-select:none}
+.nf-eye{position:relative;font:600 calc(13px * 0.86) "Poppins",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#E0612F}
+.nf-h1{position:relative;margin-top:14px;max-width:14em;font:700 calc(clamp(34px,min(3.8vw,7vh),60px) * 0.86)/1.06 "Outfit",sans-serif;letter-spacing:-.04em}
+.nf-h1 em{display:block}
+.nf-p{position:relative;margin-top:16px;font:400 calc(17px * 0.86)/1.6 "Poppins",sans-serif;color:#5f5f66}
+.nf-links{position:relative;margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.nf-b{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 24px;border-radius:8px;background:#fff;box-shadow:inset 0 0 0 1.5px #E2D9CF;font:500 calc(15px * 0.86) "Poppins",sans-serif;color:#141414;transition:transform .3s,box-shadow .3s,color .3s}
+.nf-b svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.nf-b:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1.5px #E0612F;color:#E0612F}
+.nf-b.pri{background:linear-gradient(90deg,#D9532B,#E98A45);color:#fff;box-shadow:0 14px 28px -18px rgba(224,97,47,.9)}
+.nf-b.pri:hover{color:#fff}
+@media(max-width:899px){.nf{min-height:0}.nf-in{padding:120px 20px 64px}.nf-links{flex-direction:column;width:100%}.nf-b{justify-content:center}}
+
+

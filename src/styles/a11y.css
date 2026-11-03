@@ -1,0 +1,5 @@
+
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+:focus-visible{outline:2px solid #E0612F;outline-offset:2px}
+.skip{position:fixed;left:16px;top:-60px;z-index:1000;padding:10px 16px;border-radius:8px;background:#141414;color:#fff;font:500 14px "Poppins",sans-serif;transition:top .2s}
+.skip:focus{top:12px}

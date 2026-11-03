@@ -1,0 +1,3 @@
+<FilesMatch "^(schema\.sql|seed-posts\.php|install\.lock)$">
+  Require all denied
+</FilesMatch>

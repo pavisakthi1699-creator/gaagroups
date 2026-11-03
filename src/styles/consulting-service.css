@@ -1,0 +1,257 @@
+/* ================= India Entry Desk (GAA Consulting) ================= */
+@media(min-width:900px){.ie-in{padding-left:86px!important;padding-right:86px!important}}
+.ie-hr{display:flex;align-items:center;gap:14px}
+.ie-srch{display:grid;place-items:center;width:42px;height:42px;border:0;border-radius:50%;background:none;color:#141414;cursor:pointer;transition:background .3s}
+.ie-srch:hover{background:#F6F1EC}
+.ie-book{display:inline-flex!important;align-items:center;gap:8px;background:linear-gradient(90deg,#E0612F,#F08A3C)!important;color:#fff!important;border:0!important;box-shadow:0 12px 24px -16px rgba(224,97,47,.9)!important}
+.ie-book .i{width:16px;height:16px}
+.ie-sp{position:absolute;left:0;right:0;top:100%;display:none;background:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.25);border-top:1px solid #eee}
+.ie-sp.open{display:block}
+.ie-sp-in{max-width:760px;margin:0 auto;padding:22px 20px}
+.ie-sp input{width:100%;height:52px;padding:0 18px;border:0;border-radius:10px;background:#F8F5F2;box-shadow:inset 0 0 0 1px #ECE4DD;font:400 16px "Poppins",sans-serif;outline:0}
+.ie-sp input:focus{box-shadow:inset 0 0 0 1.5px #E0612F}
+#ieRes a{display:block;padding:10px 6px;border-bottom:1px solid #f0ebe6;font:500 15px "Poppins",sans-serif;color:#141414}
+#ieRes a:hover{color:#E0612F}
+#ieRes p{padding:12px 6px;font:400 14px "Poppins",sans-serif;color:#6b6b72}
+.ie{font-family:"Poppins",sans-serif;color:#141414;background:#fff}
+.ie-in{width:100%;max-width:1520px;margin:0 auto;padding:0 28px}
+.ie-eye{display:block;font:600 13px "Poppins",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#E0612F}
+.ie-h2{margin-top:12px;font:700 clamp(30px,2.5vw,40px)/1.15 "Outfit",sans-serif;letter-spacing:-.03em;color:#0f0f0f}
+.ie-p{margin-top:14px;font:400 16.5px/1.7 "Poppins",sans-serif;color:#55555c}
+.ie-2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,96px);align-items:start}
+.ie-sec{padding:clamp(56px,7vh,84px) 0 0}
+.ie-panel{padding:clamp(36px,4vw,56px);border-radius:24px;background:#FCF8F4;box-shadow:0 0 0 1px #F2E9E1}
+.ie-btns{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.ie-btn{position:relative;display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 26px;border:0;border-radius:8px;background:#fff;box-shadow:inset 0 0 0 1.5px #D9CFC6;font:500 15.5px "Poppins",sans-serif;color:#141414;cursor:pointer;transition:transform .3s,box-shadow .3s,color .3s}
+.ie-btn .i{width:18px;height:18px}
+.ie-btn:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1.5px #E0612F;color:#E0612F}
+.ie-btn.pri{background:linear-gradient(90deg,#D9532B,#E98A45);color:#fff;box-shadow:0 14px 28px -18px rgba(224,97,47,.9)}
+.ie-btn.pri:hover{color:#fff}
+/* hero */
+.ie-hero{background:linear-gradient(180deg,#fff,#FFF9F5)}
+.ie-hero-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(32px,4vw,72px);align-items:stretch;padding-top:calc(96px + 18px)!important}
+.ie-hero-l{padding:8px 0 48px}
+.ie-bc{display:flex;align-items:center;gap:10px;font:400 13.5px "Poppins",sans-serif;color:#6b6b72}
+.ie-bc a:hover{color:#E0612F}.ie-bc b{font-weight:500;color:#E0612F}
+.ie-hero .ie-eye{margin-top:34px}
+.ie-h1{margin-top:14px;font:700 clamp(44px,4vw,64px)/1.06 "Outfit",sans-serif;letter-spacing:-.04em;color:#0f0f0f}
+.ie-lead{margin-top:22px;max-width:34em;font:400 17px/1.7 "Poppins",sans-serif;color:#4f4f56}
+.ie-feats{margin-top:44px;display:flex;gap:clamp(20px,2.4vw,44px);flex-wrap:wrap}
+.ie-feats span{display:flex;align-items:center;gap:14px;font:500 14.5px/1.35 "Poppins",sans-serif;color:#2a2a2e}
+.ie-feats .i{width:34px;height:34px;color:#E0612F;stroke-width:1.5}
+.ie-hero-r{position:relative;min-height:540px;border-radius:0 0 0 120px;overflow:hidden;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%)}
+.ie-sky{position:absolute;inset:0;width:100%;height:100%}
+.ie-quote{position:absolute;right:36px;top:30px;font:italic 400 clamp(22px,1.9vw,30px)/1.3 Georgia,"Times New Roman",serif;color:#fff;text-align:left;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+/* who */
+.ie-who .ie-2{padding-bottom:8px}
+.ie-checks{list-style:none;display:flex;flex-direction:column;gap:14px;padding-left:clamp(24px,3vw,48px);border-left:1px solid #EADFD6}
+.ie-checks li,.ie-plan li{display:flex;align-items:flex-start;gap:12px;font:400 16px/1.5 "Poppins",sans-serif;color:#2a2a2e}
+.ie-checks .i,.ie-plan li .i{width:22px;height:22px;color:#E0612F}
+/* services */
+.ie-svc .ie-panel{background:linear-gradient(180deg,#FFF5EE,#FCF8F4)}
+.ie-cards{margin-top:34px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.ie-card{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:26px 24px;border-radius:14px;background:#fff;box-shadow:0 0 0 1px #F0E6DE,0 18px 40px -34px rgba(80,40,20,.35);transition:transform .35s,box-shadow .35s}
+.ie-ic{display:grid;place-items:center;width:52px;height:52px;border-radius:12px;background:#FDEDE4;color:#E0612F}
+.ie-ic .i{width:26px;height:26px}
+.ie-card h3{font:600 18px/1.3 "Outfit",sans-serif;letter-spacing:-.01em}
+.ie-card h3 span{color:#141414}
+.ie-card p{margin-top:8px;font:400 14.5px/1.6 "Poppins",sans-serif;color:#5f5f66}
+.ie-card a{margin-top:14px;display:inline-flex;align-items:center;gap:8px;font:600 14px "Poppins",sans-serif;color:#E0612F}
+.ie-card a .i{width:16px;height:16px;transition:transform .3s}.ie-card a:hover .i{transform:translateX(4px)}
+/* journey */
+.ie-steps{list-style:none;margin-top:36px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(18px,2vw,36px)}
+.ie-st{position:relative}
+.ie-st+.ie-st::before{content:"";position:absolute;left:calc(clamp(18px,2vw,36px) * -1 - 2px);top:18px;width:clamp(18px,2vw,36px);height:2px;background:none}
+.ie-st:not(:last-child)::after{content:"\2192";position:absolute;right:calc(clamp(18px,2vw,36px) * -.5 - 10px);top:56px;font:400 26px/1 "Poppins",sans-serif;color:#6f6f76}
+.ie-st-h{display:flex;align-items:center;gap:22px}
+.ie-n{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#D9532B,#E98A45);font:600 14px "Poppins",sans-serif;color:#fff}
+.ie-st-h .i{width:36px;height:36px;color:#E0612F;stroke-width:1.4}
+.ie-st b{display:block;margin-top:22px;font:600 19px "Outfit",sans-serif}
+.ie-st p{margin-top:8px;font:400 14.5px/1.6 "Poppins",sans-serif;color:#5f5f66;padding-right:24px}
+/* engagement */
+.ie-eng .ie-panel{background:#FFF7F2}
+.ie-eng-h{align-items:end}
+.ie-plans{margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.ie-plan{position:relative;display:flex;flex-direction:column;padding:34px 30px 30px;border-radius:16px;background:#fff;box-shadow:0 0 0 1px #F0E6DE}
+.ie-plan>.i{width:40px;height:40px;color:#E0612F;stroke-width:1.5}
+.ie-plan h3{margin-top:22px;font:700 22px "Outfit",sans-serif;letter-spacing:-.02em}
+.ie-sub{margin-top:4px;font:500 14px "Poppins",sans-serif;color:#2a2a2e}
+.ie-plan ul{list-style:none;margin:22px 0 28px;display:flex;flex-direction:column;gap:12px}
+.ie-plan li{font-size:15px}
+.ie-plan .ie-btn{margin-top:auto;justify-content:center;width:100%;color:#E0612F;box-shadow:inset 0 0 0 1.5px #E0612F}
+.ie-plan .ie-btn.pri{color:#fff}
+.ie-plan.pop{box-shadow:0 0 0 2px #E98A45,0 30px 60px -36px rgba(224,97,47,.6);background:linear-gradient(180deg,#FFF4EC,#fff 40%)}
+.ie-pop{position:absolute;right:20px;top:18px;padding:5px 14px;border-radius:999px;background:#FDE3D4;font:600 12.5px "Poppins",sans-serif;color:#C9461F}
+/* why */
+.ie-why-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:clamp(30px,4vw,64px);align-items:center}
+.ie-why-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.ie-why-i{display:flex;flex-direction:column;align-items:center;gap:14px;padding:6px clamp(14px,1.6vw,28px);text-align:center;font:400 15px/1.5 "Poppins",sans-serif;color:#3a3a40;border-left:1px solid #EADFD6}
+.ie-why-i .i{width:40px;height:40px;color:#E0612F;stroke-width:1.4}
+/* faq */
+.ie-faq .ie-panel{background:#FAFAFA;box-shadow:0 0 0 1px #EFEFEF}
+.ie-qs{display:flex;flex-direction:column}
+.ie-q{border-bottom:1px solid #E6E6E6}
+.ie-q:first-child{border-top:1px solid #E6E6E6}
+.ie-q summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 4px;list-style:none;cursor:pointer;font:500 16.5px "Poppins",sans-serif;color:#141414}
+.ie-q summary::-webkit-details-marker{display:none}
+.ie-q summary .i{width:22px;height:22px;transition:transform .3s;color:#141414}
+.ie-q[open] summary .i{transform:rotate(45deg);color:#E0612F}
+.ie-q summary:hover{color:#E0612F}
+.ie-q p{padding:0 40px 20px 4px;font:400 15px/1.7 "Poppins",sans-serif;color:#55555c}
+/* service focus */
+.ie-focus{padding-bottom:clamp(56px,8vh,96px)}
+.ie-dark{position:relative;overflow:hidden;border-radius:24px;background:radial-gradient(70% 90% at 85% 10%,rgba(224,97,47,.35),rgba(224,97,47,0) 60%),linear-gradient(135deg,#1c2433,#0d1320);color:#fff}
+.ie-dark-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;padding:48px clamp(36px,4vw,64px) 36px}
+.ie-tag{display:inline-block;padding:7px 16px;border-radius:999px;box-shadow:inset 0 0 0 1.5px #E98A45;font:600 12.5px "Poppins",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#F6A97F}
+.ie-dark h2{margin-top:18px;font:700 clamp(34px,3vw,48px)/1.1 "Outfit",sans-serif;letter-spacing:-.03em}
+.ie-dark p{margin-top:16px;max-width:30em;font:400 16.5px/1.7 "Poppins",sans-serif;color:#d5d9e2}
+.ie-btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)}
+.ie-btn.ghost:hover{color:#fff;box-shadow:inset 0 0 0 1.5px #fff}
+.ie-dark-r{display:flex;justify-content:center}
+.ie-lap{width:min(100%,520px);transform:perspective(1200px) rotateY(-14deg) rotateX(4deg)}
+.ie-scr{padding:22px;border-radius:14px 14px 4px 4px;background:linear-gradient(180deg,#f8fafc,#e9eef5);box-shadow:0 0 0 10px #111827,0 40px 80px -30px rgba(0,0,0,.7);color:#0f172a}
+.ie-scr-h{display:flex;justify-content:space-between;font:600 15px "Poppins",sans-serif}.ie-scr-h span{font-weight:400;color:#64748b}
+.ie-scr-k{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ie-scr-k span{padding:12px 14px;border-radius:10px;background:#fff;box-shadow:0 0 0 1px #e2e8f0}
+.ie-scr-k small{display:block;font:400 12px "Poppins",sans-serif;color:#64748b}.ie-scr-k b{display:block;margin-top:4px;font:600 18px "Outfit",sans-serif}
+.ie-scr svg{display:block;width:100%;height:auto;margin-top:14px}
+.ie-scr-r{margin-top:10px;display:flex;gap:8px}.ie-scr-r span{padding:5px 12px;border-radius:999px;background:#fff;box-shadow:0 0 0 1px #e2e8f0;font:500 12px "Poppins",sans-serif;color:#334155}
+.ie-base{height:16px;margin:10px -6% 0;border-radius:0 0 18px 18px;background:linear-gradient(180deg,#9ca3af,#4b5563)}
+.ie-dark-f{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.12)}
+.ie-dark-f span{display:flex;flex-direction:column;align-items:center;gap:12px;padding:26px 16px 30px;text-align:center;font:400 15px/1.45 "Poppins",sans-serif;color:#e5e7eb}
+.ie-dark-f span+span{border-left:1px solid rgba(255,255,255,.12)}
+.ie-dark-f .i{width:34px;height:34px;color:#fff;stroke-width:1.4}
+/* reveal */
+.ie-card,.ie-st,.ie-plan,.ie-why-i,.ie-q{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .8s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+.ie .on{opacity:1;transform:none}
+
+/* ===== update: full-width hero photo, full-width coloured bands, richer hover and motion ===== */
+.ie-hero{position:relative;overflow:hidden;background:#F7E7DA}
+.ie-hero-bg{position:absolute;inset:0;z-index:0}
+.ie-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:62% 100%;transform:scale(1.08);animation:ie-kb 22s ease-in-out infinite alternate}
+@keyframes ie-kb{from{transform:scale(1.08) translate3d(0,0,0)}to{transform:scale(1.16) translate3d(-1.5%,-1%,0)}}
+.ie-hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.9) 30%,rgba(255,255,255,.55) 48%,rgba(255,255,255,0) 64%)}
+.ie-hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;z-index:1;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.35))}
+.ie-hero-in{position:relative;z-index:2;display:block!important;min-height:calc(100vh - 0px);min-height:clamp(640px,92vh,860px);padding-bottom:56px}
+.ie-hero-l{max-width:720px;padding:8px 0 0}
+.ie-quote{position:absolute;right:86px;top:calc(96px + 40px);z-index:2;font:italic 400 clamp(24px,2vw,34px)/1.3 Georgia,"Times New Roman",serif;color:#fff;text-shadow:0 2px 22px rgba(0,0,0,.45)}
+.ie-hero .ie-bc,.ie-hero .ie-eye,.ie-h1,.ie-lead,.ie-hero .ie-btns,.ie-feats,.ie-quote{opacity:0;transform:translateY(20px);animation:ie-up .9s cubic-bezier(.22,1,.36,1) forwards}
+.ie-hero .ie-eye{animation-delay:.08s}.ie-h1{animation-delay:.16s}.ie-lead{animation-delay:.26s}.ie-hero .ie-btns{animation-delay:.36s}.ie-feats{animation-delay:.46s}.ie-quote{animation-delay:.6s}
+@keyframes ie-up{to{opacity:1;transform:none}}
+.ie-feats span{padding:10px 14px 10px 10px;border-radius:12px;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:transform .35s,box-shadow .35s,background .35s}
+.ie-feats span:hover{transform:translateY(-3px);background:#fff;box-shadow:0 16px 30px -20px rgba(224,97,47,.5)}
+.ie-feats span:hover .i{animation:ie-pop .5s}
+@keyframes ie-pop{40%{transform:scale(1.2) rotate(-6deg)}100%{transform:none}}
+
+/* full-width bands instead of boxed panels */
+.ie-sec{padding:clamp(64px,9vh,104px) 0}
+.ie-panel{padding:0!important;border-radius:0!important;background:none!important;box-shadow:none!important}
+.ie-svc{background:linear-gradient(180deg,#FFF3EB 0%,#FCF8F4 100%)}
+.ie-eng{background:#FFF7F2}
+.ie-faq{background:#FAFAFA;border-top:1px solid #F0F0F0;border-bottom:1px solid #F0F0F0}
+.ie-who,.ie-jr,.ie-why{background:#fff}
+.ie-focus{padding-top:clamp(64px,9vh,104px)}
+
+/* buttons: sheen sweep */
+.ie-btn{overflow:hidden;isolation:isolate}
+.ie-btn::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;z-index:-1;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .7s}
+.ie-btn:hover::after{left:130%}
+.ie-btn:hover .i{transform:translateX(4px)}.ie-btn .i{transition:transform .3s}
+
+/* service cards: lift, orange edge, icon flip to solid */
+.ie-card{position:relative;overflow:hidden}
+.ie-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#D9532B,#E98A45);transform:scaleY(0);transform-origin:50% 0;transition:transform .45s cubic-bezier(.22,1,.36,1)}
+.ie-ic{transition:background .35s,color .35s,transform .45s cubic-bezier(.22,1,.36,1)}
+
+
+/* who we work with */
+.ie-checks li{transition:transform .3s,color .3s}
+.ie-checks li:hover{transform:translateX(6px);color:#C9461F}
+.ie-checks li:hover .i{animation:ie-pop .5s}
+
+/* journey: progress line that draws in, step hover */
+.ie-steps{position:relative}
+.ie-steps::before{content:"";position:absolute;left:21px;right:8%;top:21px;height:2px;background:linear-gradient(90deg,#E98A45,#F5C6A6);transform:scaleX(0);transform-origin:0 50%;transition:transform 1.6s cubic-bezier(.22,1,.36,1) .2s;z-index:0}
+.ie-steps.on::before{transform:none}
+.ie-st:not(:last-child)::after{display:none}
+.ie-st-h{position:relative;z-index:1}
+.ie-n{box-shadow:0 0 0 6px #fff;transition:transform .35s}
+.ie-st{padding:18px 16px 20px;margin:-18px -16px 0;border-radius:14px;transition:background .35s,box-shadow .35s,transform .35s,opacity .7s}
+.ie-st:hover{background:#FFF6F0;box-shadow:0 0 0 1px #F6DCCB;transform:translateY(-4px)!important}
+.ie-st:hover .ie-n{transform:scale(1.12)}
+.ie-st:hover .ie-st-h .i{animation:ie-pop .5s}
+.ie-st-h .i{background:#fff;border-radius:8px}
+
+/* engagement plans */
+.ie-plan{transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s,opacity .7s}
+.ie-plan:hover{transform:translateY(-8px)!important;box-shadow:0 0 0 1.5px #F0C3AE,0 34px 60px -36px rgba(224,97,47,.55)}
+.ie-plan.pop:hover{box-shadow:0 0 0 2px #E0612F,0 40px 70px -36px rgba(224,97,47,.7)}
+.ie-plan>.i{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.ie-plan:hover>.i{transform:translateY(-4px) rotate(-8deg)}
+.ie-plan .ie-btn:not(.pri):hover{background:#E0612F;color:#fff;box-shadow:none}
+.ie-pop{animation:ie-pulse 2.4s ease-in-out infinite}
+@keyframes ie-pulse{0%,100%{box-shadow:0 0 0 0 rgba(224,97,47,.35)}50%{box-shadow:0 0 0 8px rgba(224,97,47,0)}}
+
+/* why GAA */
+.ie-why-i{transition:transform .35s,opacity .7s}
+.ie-why-i .i{padding:10px;width:60px;height:60px;border-radius:50%;background:#FFF2EA;transition:background .35s,color .35s,transform .45s cubic-bezier(.22,1,.36,1)}
+.ie-why-i:hover{transform:translateY(-4px)!important}
+.ie-why-i:hover .i{background:linear-gradient(135deg,#D9532B,#E98A45);color:#fff;transform:scale(1.08)}
+
+/* FAQ */
+.ie-q{transition:background .3s}
+.ie-q summary{padding-left:14px;padding-right:14px;border-radius:10px;transition:color .3s,background .3s}
+.ie-q:hover summary,.ie-q[open] summary{background:#fff}
+.ie-q[open]{background:#fff;border-radius:10px}
+.ie-q[open] p{animation:ie-up .45s cubic-bezier(.22,1,.36,1) both;opacity:0;transform:translateY(8px)}
+.ie-q p{padding-left:14px}
+
+/* service focus (CTA) keeps its design; small hover touches */
+.ie-dark-f span{transition:background .35s}
+.ie-dark-f span:hover{background:rgba(255,255,255,.04)}
+.ie-dark-f span:hover .i{animation:ie-pop .5s;color:#F6A97F}
+.ie-lap{transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.ie-dark:hover .ie-lap{transform:perspective(1200px) rotateY(-6deg) rotateX(2deg)}
+
+@media (prefers-reduced-motion: reduce){.ie-hero-bg img,.ie-pop{animation:none!important}}
+@media(max-width:899px){
+.ie-hero::before{background:linear-gradient(180deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.88) 55%,rgba(255,255,255,.35) 100%)}
+.ie-hero-in{min-height:0;padding-bottom:220px}
+.ie-hero-bg img{object-position:70% 100%}
+.ie-quote{display:none}
+.ie-sec{padding:48px 0}
+.ie-steps::before{display:none}
+.ie-st{margin:0;padding:14px}
+}
+
+/* ===== GAA Consulting site: hero photos ===== */
+.ie-hero-bg img{object-position:100% 50%}
+.ie-hero.no-quote .ie-hero-bg img{transform-origin:100% 45%;animation:gc-kb 24s ease-in-out infinite alternate}
+@keyframes gc-kb{from{transform:scale(1)}to{transform:scale(1.06)}}
+.ie-hero::before{background:linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.82) 30%,rgba(255,255,255,.3) 48%,rgba(255,255,255,0) 58%)}
+.ie-hero.no-quote .ie-quote{display:none}
+@media(max-width:899px){.ie-hero-bg img{object-position:80% 100%}
+.ie-hero::before{background:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.94) 62%,rgba(255,255,255,.55) 80%,rgba(255,255,255,0) 92%)!important}
+.ie-hero-in{padding-bottom:260px!important}}
+@media print{.hdr,.gft,.ie-focus .ie-btns,.ie-btns{display:none!important}.ie-hero-in{padding-top:20px!important}.ie-card,.ie-st,.ie-plan,.ie-why-i,.ie-q{opacity:1!important;transform:none!important}}
+@media(max-width:1100px) and (min-width:900px){.ie-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:899px){
+.ie-hr .ie-book{display:none!important}
+.ie-in{padding:0 20px}
+.ie-hero-in{grid-template-columns:1fr;padding-top:96px!important}
+.ie-hero-l{padding-bottom:0}.ie-h1{font-size:clamp(34px,9.6vw,44px)}
+.ie-hero-r{min-height:280px;clip-path:none;border-radius:20px}
+.ie-btns{flex-direction:column}.ie-btn{justify-content:center}
+.ie-feats{flex-direction:column;gap:14px;margin-top:28px}
+.ie-2,.ie-why-in{grid-template-columns:1fr;gap:24px}
+.ie-checks{padding-left:0;border:0}
+.ie-panel{padding:26px 18px;border-radius:18px}
+.ie-cards,.ie-plans{grid-template-columns:1fr}
+.ie-steps{grid-template-columns:1fr;gap:24px}.ie-st:not(:last-child)::after{display:none}
+.ie-why-g{grid-template-columns:1fr 1fr;row-gap:24px}.ie-why-i{border:0}
+.ie-dark-top{grid-template-columns:1fr;padding:32px 20px 24px}
+.ie-lap{transform:none}
+.ie-dark-f{grid-template-columns:1fr 1fr}.ie-dark-f span+span{border-left:0}
+.ie-h2{font-size:clamp(26px,7.4vw,32px)}
+}
+@media(min-width:900px){.ie-lead{text-align:justify;text-justify:inter-word}}

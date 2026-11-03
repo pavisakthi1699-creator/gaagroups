@@ -1,0 +1,1262 @@
+[
+ {
+  "slug": "india-entry",
+  "contact": "india-entry",
+  "name": "India Entry Desk",
+  "h1": "Your India expansion.\nOne trusted partner.",
+  "lead": "From establishing your Indian entity to managing regulatory compliance, corporate governance, accounting and business operations, GAA Consulting provides coordinated support throughout your India journey.",
+  "cta": "Discuss Your India Entry",
+  "whoTitle": "Supporting global businesses\nat every stage of their India journey.",
+  "whoText": "We work with foreign companies, international entrepreneurs, overseas investors and global professional firms looking to establish or expand their presence in India.",
+  "who": [
+   "Foreign companies setting up Indian subsidiaries",
+   "International founders and entrepreneurs",
+   "Overseas investors entering the Indian market",
+   "Existing foreign-owned Indian entities",
+   "International professional firms",
+   "Global businesses expanding operations in India"
+  ],
+  "servicesTitle": "A complete India market entry and operations support.",
+  "services": [
+   {
+    "icon": "building",
+    "title": "India Incorporation & Structuring",
+    "text": "Entity structuring, incorporation, PAN, TAN, initial statutory registrations and corporate documentation."
+   },
+   {
+    "icon": "user",
+    "title": "Resident Director Services",
+    "text": "Provision of eligible resident directors, director compliance, board participation and compliance support."
+   },
+   {
+    "icon": "pin",
+    "title": "Virtual Registered Office Services",
+    "text": "Statutory registered office address, receipt of official correspondence and compliance support."
+   },
+   {
+    "icon": "layers",
+    "title": "FEMA & Foreign Investment Compliance",
+    "text": "FDI advisory, FC-GPR, FC-TRS, FLA reporting and other RBI compliance support."
+   },
+   {
+    "icon": "bank",
+    "title": "Bank Account Opening & Razorpay Integration",
+    "text": "Assistance with Indian bank account opening, KYC coordination and Razorpay merchant account onboarding and integration support."
+   },
+   {
+    "icon": "doc",
+    "title": "Financial, Taxation & Audit Support",
+    "text": "Financial reporting, GST, TDS, income-tax compliance, statutory audit coordination and tax advisory."
+   },
+   {
+    "icon": "calc",
+    "title": "Accounting, Bookkeeping & Payroll",
+    "text": "Bookkeeping, payroll processing, accounts payable and receivable, statutory compliance and MIS reporting."
+   },
+   {
+    "icon": "people",
+    "title": "Corporate Governance & Annual Compliance",
+    "text": "Board and shareholder meetings, MCA filings, statutory registers and ongoing secretarial advisory."
+   },
+   {
+    "icon": "bars",
+    "title": "Ongoing Corporate & Regulatory Advisory",
+    "text": "Support for corporate restructuring, capital changes, shareholder transactions and other regulatory matters."
+   }
+  ],
+  "journeyEyebrow": "Your India journey",
+  "journeyTitle": "From planning to growth. We’re with you at every step.",
+  "steps": [
+   {
+    "icon": "bulb",
+    "title": "Plan",
+    "text": "Understand your business goals, structure and regulatory requirements."
+   },
+   {
+    "icon": "doc",
+    "title": "Incorporate",
+    "text": "Set up your Indian entity and complete initial registrations."
+   },
+   {
+    "icon": "gear",
+    "title": "Operationalise",
+    "text": "Assist with banking, Razorpay integration, accounting and payroll."
+   },
+   {
+    "icon": "shield",
+    "title": "Comply",
+    "text": "Manage ongoing statutory and regulatory compliance."
+   },
+   {
+    "icon": "bars",
+    "title": "Grow",
+    "text": "Provide continued support as your business expands in India."
+   }
+  ],
+  "plans": [
+   {
+    "icon": "plane",
+    "title": "India Incorporation",
+    "subtitle": "Essential setup support",
+    "points": [
+     "Incorporation and structuring",
+     "PAN, TAN and initial registrations",
+     "Basic statutory setup"
+    ],
+    "popular": false
+   },
+   {
+    "icon": "building",
+    "title": "India Market Entry",
+    "subtitle": "Complete setup solution",
+    "points": [
+     "Incorporation and statutory registrations",
+     "FEMA and regulatory compliance",
+     "Bank account and Razorpay integration",
+     "Resident director and registered office",
+     "Initial finance and compliance setup"
+    ],
+    "popular": true
+   },
+   {
+    "icon": "bars",
+    "title": "India Operations",
+    "subtitle": "Ongoing support",
+    "points": [
+     "Accounting, bookkeeping and payroll",
+     "Financial, tax and audit support",
+     "Corporate governance and annual compliance",
+     "Regulatory and advisory support"
+    ],
+    "popular": false
+   }
+  ],
+  "whyTitle": "A partner you can\nrely on in India.",
+  "why": [
+   {
+    "icon": "user",
+    "text": "Corporate and regulatory expertise under one roof"
+   },
+   {
+    "icon": "people",
+    "text": "Senior-led supervision of key matters"
+   },
+   {
+    "icon": "gear",
+    "text": "Practical experience with Indian statutory and regulatory processes"
+   },
+   {
+    "icon": "infinity",
+    "text": "Continuity from setup to ongoing operations"
+   }
+  ],
+  "faqTitle": "Common questions\non India entry.",
+  "faq": [
+   {
+    "q": "Can a foreign company establish a wholly owned subsidiary in India?",
+    "a": "Yes. In most sectors a foreign company can hold 100% of an Indian private limited company under the automatic route, subject to India's FDI policy, sectoral caps and FEMA reporting. We confirm the route that applies to your sector before incorporation."
+   },
+   {
+    "q": "Does GAA provide resident director services?",
+    "a": "Yes. Every Indian company needs at least one director who is resident in India. We can provide an eligible resident director and support the related board and compliance responsibilities."
+   },
+   {
+    "q": "Can you assist with bank account opening and Razorpay integration?",
+    "a": "Yes. We coordinate account opening and KYC with Indian banks and support Razorpay merchant onboarding and integration so you can start collecting payments."
+   },
+   {
+    "q": "What are the ongoing compliance requirements after incorporation?",
+    "a": "Typically board and shareholder meetings, annual MCA filings, statutory registers, GST and TDS returns, income-tax filings, statutory audit and FEMA reporting such as the annual FLA return. We set up a compliance calendar for your entity."
+   },
+   {
+    "q": "Can we engage GAA for only specific services?",
+    "a": "Yes. You can engage us for a single service, such as incorporation or a resident director, or for a complete market entry and ongoing operations package."
+   }
+  ],
+  "focus": {
+   "title": "Bank Account Opening &\nRazorpay Integration",
+   "text": "End-to-end support for setting up your Indian corporate bank account and integrating Razorpay for seamless collections and payments.",
+   "features": [
+    {
+     "icon": "bank",
+     "text": "Corporate bank\naccount opening support"
+    },
+    {
+     "icon": "id",
+     "text": "KYC documentation\nand bank coordination"
+    },
+    {
+     "icon": "plane",
+     "text": "Razorpay merchant\naccount onboarding"
+    },
+    {
+     "icon": "card",
+     "text": "Payment gateway\nintegration & collections setup"
+    }
+   ],
+   "screen": {
+    "title": "Payments",
+    "k1": "Collected",
+    "v1": "₹ 4,82,600",
+    "k2": "Settled",
+    "v2": "₹ 4,51,200",
+    "chips": [
+     "Card",
+     "UPI",
+     "Net banking"
+    ]
+   }
+  },
+  "hl": "India"
+ },
+ {
+  "slug": "corporate-advisory",
+  "contact": "corporate",
+  "name": "Corporate Advisory",
+  "h1": "Sound corporate decisions.\nStrong governance.",
+  "lead": "From company law and board matters to governance frameworks, agreements and regulatory filings, GAA Consulting advises promoters, boards and management on the corporate decisions that shape your business.",
+  "cta": "Discuss Your Requirement",
+  "whoTitle": "Advising promoters and boards\non everyday and critical corporate matters.",
+  "whoText": "We work with promoters, boards, management teams and company secretaries of private and public companies, LLPs and business groups that need dependable company law and governance support.",
+  "who": [
+   "Private and public limited companies",
+   "Promoters and founders",
+   "Boards and independent directors",
+   "Family-owned businesses and groups",
+   "LLPs and partnership firms",
+   "Foreign-owned Indian companies"
+  ],
+  "servicesTitle": "Complete corporate law and governance support.",
+  "services": [
+   {
+    "icon": "building",
+    "title": "Company Law Advisory",
+    "text": "Advice on the Companies Act, 2013, the LLP Act and related rules for day-to-day and strategic corporate matters."
+   },
+   {
+    "icon": "people",
+    "title": "Board & Shareholder Matters",
+    "text": "Board and general meetings, resolutions, notices, minutes and the related approvals and filings."
+   },
+   {
+    "icon": "shield",
+    "title": "Corporate Governance Frameworks",
+    "text": "Board processes, committee structures, policies and governance practices suited to your company’s stage."
+   },
+   {
+    "icon": "doc",
+    "title": "Secretarial Audit",
+    "text": "Secretarial audits and compliance reviews, with clear reporting and support to fix any gaps."
+   },
+   {
+    "icon": "layers",
+    "title": "Agreements & Documentation",
+    "text": "Shareholders’, joint venture and commercial agreements, and corporate documentation."
+   },
+   {
+    "icon": "gear",
+    "title": "Changes in Capital & Structure",
+    "text": "Allotments, share transfers, increases in authorised capital and changes to the memorandum and articles."
+   },
+   {
+    "icon": "user",
+    "title": "Director & KMP Matters",
+    "text": "Appointment and resignation of directors and key managerial personnel, DIN and KYC, and related filings."
+   },
+   {
+    "icon": "pin",
+    "title": "Registered Office & Name Changes",
+    "text": "Shifting of registered office, change of name or objects, and the approvals involved."
+   },
+   {
+    "icon": "bars",
+    "title": "Regulatory Representation",
+    "text": "Representation before the Registrar of Companies and other authorities on corporate matters, including compounding and adjudication."
+   }
+  ],
+  "journeyEyebrow": "How we work",
+  "journeyTitle": "From the first question to a documented decision.",
+  "steps": [
+   {
+    "icon": "bulb",
+    "title": "Understand",
+    "text": "Understand the matter, your objectives and the timelines involved."
+   },
+   {
+    "icon": "doc",
+    "title": "Review",
+    "text": "Review records, documents and the applicable law and rules."
+   },
+   {
+    "icon": "layers",
+    "title": "Advise",
+    "text": "Give clear, practical advice and the options available."
+   },
+   {
+    "icon": "shield",
+    "title": "Document",
+    "text": "Prepare resolutions, agreements and filings to put the decision in place."
+   },
+   {
+    "icon": "bars",
+    "title": "Support",
+    "text": "Keep governance and compliance on track as your business grows."
+   }
+  ],
+  "plans": [
+   {
+    "icon": "plane",
+    "title": "Advisory on Demand",
+    "subtitle": "Specific matters",
+    "points": [
+     "Opinion on corporate law questions",
+     "Review of documents and agreements",
+     "One-off board or shareholder matters"
+    ],
+    "popular": false
+   },
+   {
+    "icon": "building",
+    "title": "Corporate Secretarial Retainer",
+    "subtitle": "Ongoing company secretarial support",
+    "points": [
+     "Board and general meeting support",
+     "Statutory registers and minutes",
+     "Annual ROC filings",
+     "Event-based filings and approvals",
+     "Governance and compliance calendar"
+    ],
+    "popular": true
+   },
+   {
+    "icon": "bars",
+    "title": "Governance Review",
+    "subtitle": "Compliance health check",
+    "points": [
+     "Secretarial and compliance review",
+     "Gap analysis and recommendations",
+     "Policy and process updates",
+     "Remediation support"
+    ],
+    "popular": false
+   }
+  ],
+  "whyTitle": "A partner you can\nrely on for governance.",
+  "why": [
+   {
+    "icon": "user",
+    "text": "Company secretaries and legal professionals under one roof"
+   },
+   {
+    "icon": "people",
+    "text": "Senior-led supervision of key matters"
+   },
+   {
+    "icon": "gear",
+    "text": "Practical, documented and filing-ready advice"
+   },
+   {
+    "icon": "infinity",
+    "text": "Continuity from advice to ongoing compliance"
+   }
+  ],
+  "faqTitle": "Common questions\non corporate advisory.",
+  "faq": [
+   {
+    "q": "Do you advise private companies as well as public companies?",
+    "a": "Yes. We advise private and public companies, LLPs and their promoters and boards on company law and governance matters."
+   },
+   {
+    "q": "What does a secretarial audit cover?",
+    "a": "A secretarial audit reviews a company’s compliance with the Companies Act, 2013 and other applicable laws and rules. It is mandatory for certain classes of companies and is a useful health check for others."
+   },
+   {
+    "q": "Can you take care of our annual ROC filings?",
+    "a": "Yes. We prepare and file the annual return and financial statements with the Registrar of Companies and track event-based filings during the year."
+   },
+   {
+    "q": "Can you help with changes to our share capital or shareholding?",
+    "a": "Yes. We handle allotments, transfers, increases in authorised capital and the related board and shareholder approvals and filings."
+   },
+   {
+    "q": "Can we engage you for a single matter?",
+    "a": "Yes. You can engage us for a single opinion or transaction, or on an ongoing retainer."
+   }
+  ],
+  "focus": {
+   "title": "Secretarial Audit &\nGovernance Review",
+   "text": "A structured review of your company’s statutory records, filings and board processes, with clear findings and support to close any gaps.",
+   "features": [
+    {
+     "icon": "doc",
+     "text": "Statutory records\nand registers review"
+    },
+    {
+     "icon": "layers",
+     "text": "Filings and\napprovals check"
+    },
+    {
+     "icon": "people",
+     "text": "Board process\nassessment"
+    },
+    {
+     "icon": "shield",
+     "text": "Findings, remediation\nand follow-up"
+    }
+   ],
+   "screen": {
+    "title": "Compliance tracker",
+    "k1": "Filings due",
+    "v1": "4",
+    "k2": "Completed",
+    "v2": "26",
+    "chips": [
+     "AOC-4",
+     "MGT-7",
+     "DIR-3 KYC"
+    ]
+   }
+  },
+  "hl": "governance."
+ },
+ {
+  "slug": "transactional-advisory",
+  "contact": "transactions",
+  "name": "Transactional Advisory",
+  "h1": "Complex transactions.\nClearly structured.",
+  "lead": "From structuring and due diligence to documentation, approvals and closing, GAA Consulting supports businesses and investors through mergers, acquisitions, investments and restructuring.",
+  "cta": "Discuss Your Transaction",
+  "whoTitle": "Supporting buyers, sellers and investors\nthrough every stage of a transaction.",
+  "whoText": "We work with promoters, acquirers, investors and boards on transactions of different sizes, coordinating the corporate, regulatory and documentation work each deal needs.",
+  "who": [
+   "Acquirers and strategic buyers",
+   "Promoters and selling shareholders",
+   "Private equity and venture investors",
+   "Companies planning internal restructuring",
+   "Foreign investors acquiring Indian companies",
+   "Family businesses reorganising their holdings"
+  ],
+  "servicesTitle": "End-to-end support for transactions and restructuring.",
+  "services": [
+   {
+    "icon": "building",
+    "title": "Transaction Structuring",
+    "text": "Choosing the right structure for an acquisition, investment or reorganisation, considering corporate, regulatory and practical aspects."
+   },
+   {
+    "icon": "doc",
+    "title": "Legal & Secretarial Due Diligence",
+    "text": "Review of corporate records, filings, approvals and material contracts, with a clear report of findings and risks."
+   },
+   {
+    "icon": "layers",
+    "title": "Mergers & Amalgamations",
+    "text": "Schemes of merger, amalgamation and demerger, with the approvals and filings required under the Companies Act, 2013."
+   },
+   {
+    "icon": "people",
+    "title": "Acquisitions & Share Transfers",
+    "text": "Share purchase transactions and transfers of shares, with the related approvals, filings and register updates."
+   },
+   {
+    "icon": "gear",
+    "title": "Business Transfers & Slump Sales",
+    "text": "Business transfer and slump sale transactions, with the corporate approvals and documentation involved."
+   },
+   {
+    "icon": "bars",
+    "title": "Capital Restructuring",
+    "text": "Reduction, consolidation or reorganisation of share capital and buy-backs, with the required approvals."
+   },
+   {
+    "icon": "plane",
+    "title": "FEMA & Cross-Border Aspects",
+    "text": "Pricing, reporting and compliance for transactions involving non-residents under FEMA."
+   },
+   {
+    "icon": "id",
+    "title": "Transaction Documentation",
+    "text": "Term sheets, share purchase and shareholders’ agreements, resolutions and closing documents."
+   },
+   {
+    "icon": "infinity",
+    "title": "Post-Transaction Integration",
+    "text": "Post-closing filings, register updates, board changes and alignment of compliance processes."
+   }
+  ],
+  "journeyEyebrow": "Transaction journey",
+  "journeyTitle": "From structuring to closing. We’re with you at every step.",
+  "steps": [
+   {
+    "icon": "bulb",
+    "title": "Structure",
+    "text": "Agree the transaction structure and plan the steps and approvals."
+   },
+   {
+    "icon": "doc",
+    "title": "Diligence",
+    "text": "Review records, filings and contracts and report findings and risks."
+   },
+   {
+    "icon": "layers",
+    "title": "Document",
+    "text": "Prepare and negotiate the transaction documents and resolutions."
+   },
+   {
+    "icon": "shield",
+    "title": "Approve",
+    "text": "Obtain board, shareholder and regulatory approvals."
+   },
+   {
+    "icon": "bars",
+    "title": "Close & integrate",
+    "text": "Complete closing, post-closing filings and integration."
+   }
+  ],
+  "plans": [
+   {
+    "icon": "plane",
+    "title": "Due Diligence",
+    "subtitle": "Focused review",
+    "points": [
+     "Corporate and secretarial review",
+     "Approvals and filings check",
+     "Report of findings and risks"
+    ],
+    "popular": false
+   },
+   {
+    "icon": "building",
+    "title": "End-to-End Transaction Support",
+    "subtitle": "Complete transaction solution",
+    "points": [
+     "Structuring and transaction planning",
+     "Legal and secretarial due diligence",
+     "Documentation and approvals",
+     "FEMA and regulatory compliance",
+     "Closing and post-closing filings"
+    ],
+    "popular": true
+   },
+   {
+    "icon": "bars",
+    "title": "Restructuring Support",
+    "subtitle": "Internal reorganisation",
+    "points": [
+     "Mergers, demergers and amalgamations",
+     "Capital reduction and buy-backs",
+     "Business transfers",
+     "Approvals and filings"
+    ],
+    "popular": false
+   }
+  ],
+  "whyTitle": "A partner you can\nrely on for every deal.",
+  "why": [
+   {
+    "icon": "user",
+    "text": "Corporate, regulatory and secretarial expertise under one roof"
+   },
+   {
+    "icon": "people",
+    "text": "Senior-led supervision of every transaction"
+   },
+   {
+    "icon": "gear",
+    "text": "Thorough diligence and careful documentation"
+   },
+   {
+    "icon": "infinity",
+    "text": "Support from structuring through post-closing"
+   }
+  ],
+  "faqTitle": "Common questions\non transactions.",
+  "faq": [
+   {
+    "q": "What does legal and secretarial due diligence cover?",
+    "a": "It reviews a company’s incorporation documents, statutory registers, filings, approvals, shareholding history and material contracts to identify gaps and risks before a transaction."
+   },
+   {
+    "q": "Do you handle mergers and demergers under the Companies Act?",
+    "a": "Yes. We support schemes of merger, amalgamation and demerger, including the documentation, approvals and filings involved, working with other advisers where required."
+   },
+   {
+    "q": "Can you help with transactions involving foreign investors?",
+    "a": "Yes. We advise on FEMA aspects such as pricing guidelines and reporting for share transfers and investments involving non-residents."
+   },
+   {
+    "q": "Do you prepare the transaction documents?",
+    "a": "Yes. We prepare and review term sheets, share purchase and shareholders’ agreements and the resolutions needed to complete the transaction."
+   },
+   {
+    "q": "Can we engage you only for due diligence?",
+    "a": "Yes. You can engage us for due diligence alone, a specific part of the transaction, or end-to-end support."
+   }
+  ],
+  "focus": {
+   "title": "Legal & Secretarial\nDue Diligence",
+   "text": "A clear picture of the company you are investing in or acquiring, from its statutory records and filings to approvals and key contracts.",
+   "features": [
+    {
+     "icon": "doc",
+     "text": "Statutory records\nand filings review"
+    },
+    {
+     "icon": "shield",
+     "text": "Approvals and\ncompliance check"
+    },
+    {
+     "icon": "layers",
+     "text": "Shareholding and\ncapital history"
+    },
+    {
+     "icon": "id",
+     "text": "Findings report\nand risk summary"
+    }
+   ],
+   "screen": {
+    "title": "Deal checklist",
+    "k1": "Items reviewed",
+    "v1": "142",
+    "k2": "Open points",
+    "v2": "7",
+    "chips": [
+     "Diligence",
+     "Documents",
+     "Closing"
+    ]
+   }
+  },
+  "hl": "structured."
+ },
+ {
+  "slug": "fundraising-advisory",
+  "contact": "fundraising",
+  "name": "Fundraising Advisory",
+  "h1": "Raise with confidence.\nClose with clarity.",
+  "lead": "From preparing your company for investment to term sheets, shareholders’ agreements, share allotments and FEMA reporting, GAA Consulting supports founders and companies through every stage of a fundraise.",
+  "cta": "Discuss Your Fundraise",
+  "whoTitle": "Supporting founders and companies\nat every stage of their funding journey.",
+  "whoText": "We work with startups, growing companies and their founders raising capital from angels, venture funds, strategic investors and promoters, as well as investors making those investments.",
+  "who": [
+   "Startups raising seed and early-stage rounds",
+   "Growth-stage companies raising venture or private equity",
+   "Founders and promoters",
+   "Companies receiving foreign investment",
+   "Angel and venture investors",
+   "Companies issuing convertible instruments"
+  ],
+  "servicesTitle": "Complete support from readiness to closing.",
+  "services": [
+   {
+    "icon": "shield",
+    "title": "Investment Readiness Review",
+    "text": "A review of your corporate records, cap table and compliance so the company is ready for investor due diligence."
+   },
+   {
+    "icon": "bars",
+    "title": "Cap Table & Structuring",
+    "text": "Shareholding structure, choice of instrument and cap table planning for the round."
+   },
+   {
+    "icon": "doc",
+    "title": "Term Sheet Review",
+    "text": "Review of the key commercial and legal terms before you sign."
+   },
+   {
+    "icon": "layers",
+    "title": "Shareholders’ & Subscription Agreements",
+    "text": "Drafting and negotiation support for share subscription and shareholders’ agreements."
+   },
+   {
+    "icon": "people",
+    "title": "Share Allotment & Private Placement",
+    "text": "Board and shareholder approvals, the private placement process, allotment and ROC filings under the Companies Act, 2013."
+   },
+   {
+    "icon": "gear",
+    "title": "Convertible Instruments",
+    "text": "Compulsorily convertible preference shares and other convertible instruments, with the related approvals."
+   },
+   {
+    "icon": "plane",
+    "title": "FEMA Compliance for Foreign Investment",
+    "text": "Pricing and reporting requirements for investment received from non-residents."
+   },
+   {
+    "icon": "user",
+    "title": "ESOP Planning",
+    "text": "ESOP schemes, pool sizing and the approvals needed to put them in place."
+   },
+   {
+    "icon": "infinity",
+    "title": "Post-Investment Compliance",
+    "text": "Updating registers, board composition, investor rights and ongoing reporting after the round closes."
+   }
+  ],
+  "journeyEyebrow": "Funding journey",
+  "journeyTitle": "From preparation to closing. We’re with you at every step.",
+  "steps": [
+   {
+    "icon": "bulb",
+    "title": "Prepare",
+    "text": "Review records, compliance and cap table before you approach investors."
+   },
+   {
+    "icon": "doc",
+    "title": "Structure",
+    "text": "Plan the round, instrument and shareholding."
+   },
+   {
+    "icon": "layers",
+    "title": "Negotiate",
+    "text": "Review the term sheet and agree the investment documents."
+   },
+   {
+    "icon": "shield",
+    "title": "Close",
+    "text": "Complete approvals, allotment and filings for the round."
+   },
+   {
+    "icon": "bars",
+    "title": "Comply",
+    "text": "Keep reporting, registers and investor obligations up to date."
+   }
+  ],
+  "plans": [
+   {
+    "icon": "plane",
+    "title": "Investment Readiness",
+    "subtitle": "Prepare for investors",
+    "points": [
+     "Corporate and compliance review",
+     "Cap table clean-up",
+     "Data room support"
+    ],
+    "popular": false
+   },
+   {
+    "icon": "building",
+    "title": "Complete Fundraise Support",
+    "subtitle": "From term sheet to closing",
+    "points": [
+     "Term sheet and agreement review",
+     "Subscription and shareholders' agreements",
+     "Allotment and private placement filings",
+     "FEMA reporting for foreign investment",
+     "Post-closing updates"
+    ],
+    "popular": true
+   },
+   {
+    "icon": "bars",
+    "title": "Post-Investment Compliance",
+    "subtitle": "Ongoing support",
+    "points": [
+     "Board and investor reporting support",
+     "Statutory registers and filings",
+     "ESOP administration support",
+     "Annual compliance"
+    ],
+    "popular": false
+   }
+  ],
+  "whyTitle": "A partner you can\nrely on for every round.",
+  "why": [
+   {
+    "icon": "user",
+    "text": "Corporate, secretarial and FEMA expertise under one roof"
+   },
+   {
+    "icon": "people",
+    "text": "Senior-led support through negotiation and closing"
+   },
+   {
+    "icon": "gear",
+    "text": "Investor-ready records and documentation"
+   },
+   {
+    "icon": "infinity",
+    "text": "Continuity from one round to the next"
+   }
+  ],
+  "faqTitle": "Common questions\non fundraising.",
+  "faq": [
+   {
+    "q": "When should we start preparing for a fundraise?",
+    "a": "Ideally before you approach investors. A readiness review of your records, filings and cap table helps due diligence go smoothly and avoids delays at closing."
+   },
+   {
+    "q": "Do you help with term sheets and shareholders’ agreements?",
+    "a": "Yes. We review term sheets and draft or review share subscription and shareholders’ agreements, working with you through negotiation."
+   },
+   {
+    "q": "What filings are needed after shares are allotted?",
+    "a": "Allotments need board and, where applicable, shareholder approvals, the return of allotment and related filings with the Registrar of Companies, and updates to statutory registers. Investment from non-residents also needs FEMA reporting."
+   },
+   {
+    "q": "Can you help set up an ESOP scheme?",
+    "a": "Yes. We help design the scheme, prepare the documents and obtain the approvals needed to put it in place."
+   },
+   {
+    "q": "Do you work with investors as well as companies?",
+    "a": "Yes. We can support investors with due diligence and documentation for their investments."
+   }
+  ],
+  "focus": {
+   "title": "Share Allotment &\nFEMA Reporting",
+   "text": "Accurate allotment, private placement and foreign investment reporting, so your round closes cleanly and stays compliant.",
+   "features": [
+    {
+     "icon": "people",
+     "text": "Board and shareholder\napprovals"
+    },
+    {
+     "icon": "doc",
+     "text": "Private placement\nand allotment filings"
+    },
+    {
+     "icon": "plane",
+     "text": "Foreign investment\nreporting under FEMA"
+    },
+    {
+     "icon": "layers",
+     "text": "Register and\ncap table updates"
+    }
+   ],
+   "screen": {
+    "title": "Funding round",
+    "k1": "Documents ready",
+    "v1": "18/20",
+    "k2": "Approvals",
+    "v2": "4/5",
+    "chips": [
+     "Term sheet",
+     "SHA",
+     "Allotment"
+    ]
+   }
+  },
+  "hl": "confidence."
+ },
+ {
+  "slug": "nbfc-compliance-office",
+  "contact": "nbfc",
+  "name": "NBFC Compliance Office",
+  "h1": "RBI-ready NBFCs.\nCompliance on time, every time.",
+  "lead": "From NBFC registration and RBI applications to ongoing returns, governance and change-in-control approvals, GAA Consulting helps NBFCs and their promoters stay compliant with RBI and company law requirements.",
+  "cta": "Discuss Your NBFC Requirement",
+  "whoTitle": "Supporting NBFCs and promoters\nacross the regulatory lifecycle.",
+  "whoText": "We work with promoters setting up NBFCs, existing NBFCs of different sizes and categories, and investors acquiring or investing in NBFCs.",
+  "who": [
+   "Promoters planning to set up an NBFC",
+   "Investment and credit companies",
+   "Lending and microfinance businesses",
+   "NBFCs undergoing a change in control or management",
+   "Investors acquiring NBFCs",
+   "Fintech companies partnering with NBFCs"
+  ],
+  "servicesTitle": "Complete NBFC registration and compliance support.",
+  "services": [
+   {
+    "icon": "building",
+    "title": "NBFC Registration",
+    "text": "Preparation and filing of the application for a Certificate of Registration with the RBI, and support through the review."
+   },
+   {
+    "icon": "people",
+    "title": "Change in Control & Management",
+    "text": "Applications to the RBI for prior approval of changes in shareholding, control or management."
+   },
+   {
+    "icon": "doc",
+    "title": "RBI Returns & Reporting",
+    "text": "Periodic returns and statements required by the RBI, prepared and filed on time."
+   },
+   {
+    "icon": "shield",
+    "title": "Board & Governance Framework",
+    "text": "Board-approved policies, committees and governance practices required for NBFCs."
+   },
+   {
+    "icon": "id",
+    "title": "Fair Practices & KYC Policies",
+    "text": "Fair Practices Code, KYC and anti-money laundering policies and the related processes."
+   },
+   {
+    "icon": "layers",
+    "title": "Corporate Secretarial Compliance",
+    "text": "Board and general meetings, statutory registers and ROC filings for the NBFC."
+   },
+   {
+    "icon": "bars",
+    "title": "Scale-Based Regulation Advisory",
+    "text": "Advice on the requirements that apply to your NBFC under the RBI’s scale-based regulatory framework."
+   },
+   {
+    "icon": "plane",
+    "title": "FEMA for Foreign-Owned NBFCs",
+    "text": "Foreign investment, reporting and compliance for NBFCs with non-resident shareholders."
+   },
+   {
+    "icon": "gear",
+    "title": "Inspection & Regulatory Support",
+    "text": "Support in responding to RBI queries, inspections and compliance observations."
+   }
+  ],
+  "journeyEyebrow": "NBFC journey",
+  "journeyTitle": "From registration to growth. We’re with you at every step.",
+  "steps": [
+   {
+    "icon": "bulb",
+    "title": "Assess",
+    "text": "Review eligibility, structure and the category that fits your business."
+   },
+   {
+    "icon": "doc",
+    "title": "Apply",
+    "text": "Prepare and file the application and respond to RBI queries."
+   },
+   {
+    "icon": "gear",
+    "title": "Set up",
+    "text": "Put board policies, committees and processes in place."
+   },
+   {
+    "icon": "shield",
+    "title": "Comply",
+    "text": "File RBI returns and meet ongoing compliance on time."
+   },
+   {
+    "icon": "bars",
+    "title": "Grow",
+    "text": "Support changes in capital, control and scale as you grow."
+   }
+  ],
+  "plans": [
+   {
+    "icon": "plane",
+    "title": "NBFC Registration",
+    "subtitle": "Get registered",
+    "points": [
+     "Eligibility and structure review",
+     "Application preparation and filing",
+     "Support through RBI review"
+    ],
+    "popular": false
+   },
+   {
+    "icon": "building",
+    "title": "NBFC Compliance Office",
+    "subtitle": "Complete ongoing compliance",
+    "points": [
+     "RBI returns and reporting calendar",
+     "Board and committee support",
+     "Policies and governance framework",
+     "Corporate secretarial compliance",
+     "Advice on new regulatory requirements"
+    ],
+    "popular": true
+   },
+   {
+    "icon": "bars",
+    "title": "Change in Control",
+    "subtitle": "Transaction support",
+    "points": [
+     "Prior approval application to the RBI",
+     "Documentation and due diligence",
+     "Corporate approvals and filings",
+     "Post-approval compliance"
+    ],
+    "popular": false
+   }
+  ],
+  "whyTitle": "A partner you can\nrely on for RBI compliance.",
+  "why": [
+   {
+    "icon": "user",
+    "text": "RBI and company law expertise under one roof"
+   },
+   {
+    "icon": "people",
+    "text": "Senior-led supervision of regulatory matters"
+   },
+   {
+    "icon": "gear",
+    "text": "A structured compliance calendar for every NBFC"
+   },
+   {
+    "icon": "infinity",
+    "text": "Continuity from registration to ongoing compliance"
+   }
+  ],
+  "faqTitle": "Common questions\non NBFC compliance.",
+  "faq": [
+   {
+    "q": "What net owned fund is needed to register an NBFC?",
+    "a": "The RBI prescribes a minimum net owned fund for each category of NBFC, and these requirements have been revised under the scale-based regulatory framework. We confirm the current requirement for your proposed category before you apply."
+   },
+   {
+    "q": "How long does NBFC registration take?",
+    "a": "It depends on the completeness of the application and the RBI’s review. We prepare a complete application and help you respond to any queries to avoid delays."
+   },
+   {
+    "q": "Does a change in shareholding need RBI approval?",
+    "a": "Prior RBI approval is generally needed for a change in control, for acquisitions of shareholding above the thresholds the RBI specifies, and for certain changes in management. We assess whether approval is needed and handle the application."
+   },
+   {
+    "q": "Which returns does an NBFC need to file with the RBI?",
+    "a": "This depends on the NBFC’s category, size and activities. We map the returns that apply to you and maintain a filing calendar."
+   },
+   {
+    "q": "Can you act as our ongoing compliance team?",
+    "a": "Yes. Our NBFC Compliance Office covers RBI reporting, board and governance support and corporate secretarial compliance on a retainer basis."
+   }
+  ],
+  "focus": {
+   "title": "NBFC Registration &\nRBI Approvals",
+   "text": "End-to-end support for obtaining your Certificate of Registration and RBI approvals for changes in control or management.",
+   "features": [
+    {
+     "icon": "shield",
+     "text": "Eligibility and\nstructure review"
+    },
+    {
+     "icon": "doc",
+     "text": "Application\npreparation and filing"
+    },
+    {
+     "icon": "id",
+     "text": "RBI queries\nand follow-up"
+    },
+    {
+     "icon": "people",
+     "text": "Change in control\napprovals"
+    }
+   ],
+   "screen": {
+    "title": "RBI returns",
+    "k1": "Due this month",
+    "v1": "3",
+    "k2": "Filed this year",
+    "v2": "12",
+    "chips": [
+     "Returns",
+     "Board",
+     "Policies"
+    ]
+   }
+  },
+  "hl": "RBI-ready"
+ },
+ {
+  "slug": "startup-compliance-office",
+  "contact": "startup",
+  "name": "Startup Compliance Office",
+  "h1": "Build your startup.\nWe’ll keep it compliant.",
+  "lead": "From incorporation and founder agreements to ESOPs, fundraising filings and annual compliance, GAA Consulting gives founders a dependable compliance office so they can focus on building the business.",
+  "cta": "Discuss Your Startup",
+  "whoTitle": "Supporting founders\nfrom day one to scale.",
+  "whoText": "We work with first-time and repeat founders, early-stage and venture-backed startups, and founders based outside India building Indian companies.",
+  "who": [
+   "First-time founders",
+   "Early-stage startups",
+   "Venture-backed companies",
+   "Startups planning to raise funding",
+   "Founders based outside India",
+   "Companies seeking Startup India recognition"
+  ],
+  "servicesTitle": "Complete compliance support for startups.",
+  "services": [
+   {
+    "icon": "building",
+    "title": "Company Incorporation",
+    "text": "Choosing the right entity, incorporation and initial registrations such as PAN and TAN."
+   },
+   {
+    "icon": "people",
+    "title": "Founder & Shareholder Agreements",
+    "text": "Founders’ agreements, shareholders’ agreements and vesting arrangements."
+   },
+   {
+    "icon": "bulb",
+    "title": "Startup India Recognition",
+    "text": "Application for DPIIT recognition under the Startup India initiative, and related support."
+   },
+   {
+    "icon": "user",
+    "title": "ESOP Setup & Administration",
+    "text": "ESOP schemes, approvals, grants and ongoing administration."
+   },
+   {
+    "icon": "bars",
+    "title": "Fundraising Compliance",
+    "text": "Allotments, private placement and FEMA filings when you raise capital."
+   },
+   {
+    "icon": "doc",
+    "title": "Annual ROC Compliance",
+    "text": "Board meetings, the annual general meeting, and filing of financial statements and the annual return."
+   },
+   {
+    "icon": "layers",
+    "title": "Statutory Registers & Records",
+    "text": "Minutes, registers and statutory records maintained as company law requires."
+   },
+   {
+    "icon": "id",
+    "title": "Director & Event-Based Filings",
+    "text": "Director appointments, DIN KYC, changes in capital, office or objects and other event-based filings."
+   },
+   {
+    "icon": "gear",
+    "title": "Compliance Calendar & Alerts",
+    "text": "A clear compliance calendar so deadlines are tracked and met throughout the year."
+   }
+  ],
+  "journeyEyebrow": "Your startup journey",
+  "journeyTitle": "From incorporation to scale. We’re with you at every step.",
+  "steps": [
+   {
+    "icon": "bulb",
+    "title": "Start",
+    "text": "Choose the right entity and incorporate your company."
+   },
+   {
+    "icon": "doc",
+    "title": "Structure",
+    "text": "Put founder agreements, shareholding and records in place."
+   },
+   {
+    "icon": "gear",
+    "title": "Fund",
+    "text": "Complete allotment, FEMA and ESOP filings when you raise."
+   },
+   {
+    "icon": "shield",
+    "title": "Comply",
+    "text": "Meet annual and event-based compliance on time."
+   },
+   {
+    "icon": "bars",
+    "title": "Scale",
+    "text": "Keep governance and compliance in step as you grow."
+   }
+  ],
+  "plans": [
+   {
+    "icon": "plane",
+    "title": "Startup Launch",
+    "subtitle": "Essential setup",
+    "points": [
+     "Incorporation and initial registrations",
+     "Founders' agreement",
+     "Basic statutory setup"
+    ],
+    "popular": false
+   },
+   {
+    "icon": "building",
+    "title": "Startup Compliance Office",
+    "subtitle": "Complete compliance support",
+    "points": [
+     "Annual ROC compliance",
+     "Board meeting and AGM support",
+     "Statutory registers and minutes",
+     "Event-based filings",
+     "Compliance calendar and reminders"
+    ],
+    "popular": true
+   },
+   {
+    "icon": "bars",
+    "title": "Funding & ESOP Support",
+    "subtitle": "Growth stage",
+    "points": [
+     "Share allotment and private placement filings",
+     "FEMA reporting for foreign investment",
+     "ESOP setup and administration",
+     "Investor reporting support"
+    ],
+    "popular": false
+   }
+  ],
+  "whyTitle": "A partner you can\nrely on as you grow.",
+  "why": [
+   {
+    "icon": "user",
+    "text": "Company secretaries focused on startup needs"
+   },
+   {
+    "icon": "people",
+    "text": "Senior-led supervision of key matters"
+   },
+   {
+    "icon": "gear",
+    "text": "Simple, deadline-driven compliance"
+   },
+   {
+    "icon": "infinity",
+    "text": "Continuity from incorporation to growth"
+   }
+  ],
+  "faqTitle": "Common questions\non startup compliance.",
+  "faq": [
+   {
+    "q": "Which entity should we choose for our startup?",
+    "a": "Most startups that plan to raise external funding incorporate as a private limited company. We help you weigh the options, including an LLP, based on your plans."
+   },
+   {
+    "q": "What are the annual compliance requirements for a private limited company?",
+    "a": "Typically board meetings, an annual general meeting, filing financial statements and the annual return with the Registrar of Companies and director KYC, along with event-based filings during the year."
+   },
+   {
+    "q": "Can you help us get Startup India recognition?",
+    "a": "Yes. We assess eligibility and prepare the application for DPIIT recognition under the Startup India initiative."
+   },
+   {
+    "q": "Can founders based outside India start a company here?",
+    "a": "Yes, subject to FEMA and FDI rules. Every Indian company needs at least one director who is resident in India, and we can help with this."
+   },
+   {
+    "q": "Do you support startups after they raise funding?",
+    "a": "Yes. We handle allotment and FEMA filings for the round and continue with ongoing compliance, ESOPs and investor reporting."
+   }
+  ],
+  "focus": {
+   "title": "Annual Compliance &\nCompliance Calendar",
+   "text": "A done-for-you annual compliance service, so your board meetings, AGM and ROC filings happen on time, every year.",
+   "features": [
+    {
+     "icon": "people",
+     "text": "Board meetings\nand AGM"
+    },
+    {
+     "icon": "doc",
+     "text": "Financial statement and\nannual return filings"
+    },
+    {
+     "icon": "id",
+     "text": "Director KYC\nand records"
+    },
+    {
+     "icon": "gear",
+     "text": "Compliance calendar\nand reminders"
+    }
+   ],
+   "screen": {
+    "title": "Compliance calendar",
+    "k1": "Upcoming",
+    "v1": "5",
+    "k2": "Done this year",
+    "v2": "21",
+    "chips": [
+     "AGM",
+     "AOC-4",
+     "MGT-7"
+    ]
+   }
+  },
+  "hl": "compliant."
+ }
+]

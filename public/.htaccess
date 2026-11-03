@@ -1,0 +1,63 @@
+# GAA Group website on Apache (cPanel, Hostinger and similar). Upload the contents of dist/ to public_html.
+Options -Indexes -MultiViews
+DirectorySlash Off
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # optional: force HTTPS (uncomment once the SSL certificate is active)
+  # RewriteCond %{HTTPS} off
+  # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # sitemap with blog articles
+  RewriteRule ^sitemap\.xml$ api/sitemap.php [L]
+
+  # blog articles: /insights/<slug>
+  RewriteRule ^insights/_post/?$ - [R=404,L]
+  RewriteRule ^insights/([a-z0-9-]+)/?$ api/page.php?slug=$1 [L,QSA]
+
+  # admin panel (all its screens use one page)
+  RewriteRule ^admin(/.*)?$ admin/index.html [L]
+
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?]
+  RewriteRule ^ / [R=301,L]
+  # old addresses (only for addresses typed or linked from outside, not our own internal rewrites)
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteCond %{THE_REQUEST} \s/+(.+?)(?:/index)?\.html[\s?]
+  RewriteRule ^ /%1 [R=301,L,NE]
+  RewriteRule ^team/?$ /our-team [R=301,L]
+  RewriteRule ^about-us/?$ /about [R=301,L]
+  RewriteRule ^contact-us/?$ /contact [R=301,L]
+  RewriteRule ^home/?$ / [R=301,L]
+  RewriteRule ^services/(india-entry|corporate-advisory|transactional-advisory|fundraising-advisory|nbfc-compliance-office|startup-compliance-office)/?$ /gaa-consulting/$1 [R=301,L]
+
+  # remove trailing slashes
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # clean addresses: /about -> /about/index.html
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.+)$ $1/index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  <FilesMatch "\.(js|css|woff2|webp|png|jpg|jpeg|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml application/xml
+</IfModule>

@@ -1,0 +1,25 @@
+/* Fonts embedded so the page looks identical everywhere (no Google Fonts request) */
+@font-face{font-family:"Outfit";font-style:normal;font-weight:100 900;font-display:block;src:url(/fonts/d8a316f7cb.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:300;font-display:block;src:url(/fonts/a9e9bafe64.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:300;font-display:block;src:url(/fonts/a3e7876a3b.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/ac6d71b4d5.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:400;font-display:block;src:url(/fonts/d70e2c70b2.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:block;src:url(/fonts/0da2d17e73.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:500;font-display:block;src:url(/fonts/a99a6d5843.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:block;src:url(/fonts/179f97ec02.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:600;font-display:block;src:url(/fonts/85397079f9.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:block;src:url(/fonts/cb726212d5.woff2) format('woff2')}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:700;font-display:block;src:url(/fonts/50900cbabf.woff2) format('woff2')}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/84c5d793e5.woff2) format('woff2')}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:500;font-display:block;src:url(/fonts/76c8ec6731.woff2) format('woff2')}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:600;font-display:block;src:url(/fonts/d012efbbfe.woff2) format('woff2')}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:700;font-display:block;src:url(/fonts/fc99a59b89.woff2) format('woff2')}
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:800;font-display:block;src:url(/fonts/9b74d53a7d.woff2) format('woff2')}
+@font-face{font-family:"Geist";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/04bff5c1ef.woff2) format('woff2')}
+@font-face{font-family:"Geist";font-style:normal;font-weight:500;font-display:block;src:url(/fonts/712c3ca45f.woff2) format('woff2')}
+@font-face{font-family:"Geist";font-style:normal;font-weight:600;font-display:block;src:url(/fonts/915e9f688a.woff2) format('woff2')}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/f237a286eb.woff2) format('woff2')}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:block;src:url(/fonts/3d62abc69e.woff2) format('woff2')}
+
+/* logo: no hover effect */
+.brand img,.brand:hover img,.fx-logo img,.fx-logo:hover img{transform:none!important;transition:none!important}

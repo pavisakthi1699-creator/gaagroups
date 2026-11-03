@@ -1,0 +1,35 @@
+/* Filings First brand lockup in the header and footer */
+.ff-brand{display:inline-flex!important;align-items:center;gap:12px}
+.ff-brand img{height:46px!important;width:46px!important;border-radius:10px;object-fit:contain;background:#fff;box-shadow:inset 0 0 0 1px #eee6df;transform:none!important}
+.ff-brand span{display:flex;flex-direction:column;line-height:1}
+.ff-brand b{font:700 21px "Outfit",sans-serif;letter-spacing:-.02em;color:#121212}
+.ff-brand small{margin-top:5px;font:500 10.5px "Poppins",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#E0612F}
+.brand.ff-brand:hover img{transform:rotate(-6deg) scale(1.04)!important}
+.ff-flogo{flex-direction:row!important;gap:14px!important}
+.ff-flogo img{height:54px!important;width:54px!important;box-shadow:none}
+.ff-flogo b{color:#fff;font-size:24px}
+.ff-flogo small{color:#F08A5D}
+@media(max-width:899px){.ff-brand img{height:40px!important;width:40px!important}.ff-brand b{font-size:18px}.ff-brand small{font-size:9.5px}}
+
+/* GAA Group logo in the header */
+.gb-brand img{height:42px!important;width:auto!important;object-fit:contain;transform:none!important}
+.brand.gb-brand:hover img{transform:scale(1.04)!important}
+@media(max-width:899px){.gb-brand img{height:34px!important}}
+
+/* Our Companies mega menu */
+.grp-mega .grp-panel.mega{width:min(860px,calc(100vw - 120px));display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:14px}
+.mega .mg-col{display:flex;flex-direction:column;gap:2px;padding:8px;border-radius:14px;transition:background .25s}
+.mega .mg-col.cur{background:#FBF7F3}
+.mega .mg-co{display:flex!important;align-items:center;gap:12px;padding:10px!important;margin-bottom:6px;border-radius:12px;border-bottom:1px solid #F1EAE4}
+.mega .mg-lg{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:#fff;box-shadow:inset 0 0 0 1px #ece6df;overflow:hidden;flex:none}
+.mega .mg-lg img{width:80%!important;height:80%!important;object-fit:contain;box-shadow:none!important;padding:0!important;border-radius:0!important}
+.mega .mg-co b{display:block;font:600 15px "Outfit",sans-serif}
+.mega .mg-co small{display:block;font:500 10.5px "Poppins",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#E0612F}
+.mega .mg-s{display:flex!important;justify-content:space-between;align-items:center;padding:8px 10px!important;border-radius:9px;font:500 13.5px "Poppins",sans-serif;color:#2a2a2e}
+.mega .mg-s i{font-style:normal;color:#E0612F;opacity:0;transform:translateX(-4px);transition:opacity .25s,transform .3s}
+.mega .mg-s:hover,.mega .mg-s.cur{color:#E0612F;background:#FFF4EE}
+.mega .mg-s:hover i,.mega .mg-s.cur i{opacity:1;transform:none}
+.grp-mega.on>button{color:#E0612F}
+.nav{gap:clamp(18px,1.9vw,34px)!important}
+.ie-book{white-space:nowrap}
+@media(max-width:1260px) and (min-width:900px){.nav{font-size:13px!important;gap:16px!important}.ie-book{padding:11px 16px!important}}

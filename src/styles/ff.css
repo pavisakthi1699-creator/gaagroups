@@ -1,0 +1,120 @@
+/* ================= Filings First: shared building blocks ================= */
+:root{--ff-o:#E0612F;--ff-og:linear-gradient(90deg,#D9532B 0%,#E0612F 45%,#E98A45 100%);--ff-og2:linear-gradient(90deg,#C9461F 0%,#D9532B 50%,#E0612F 100%);
+  --ff-cream:#FBF8F4;--ff-peach:#FFF4EE;--ff-peach2:#FCE9DF;--ff-ink:#121212;--ff-mu:#5f5f66;--ff-ln:#ECE4DD;--ff-ez:cubic-bezier(.22,1,.36,1)}
+body{font-family:"Poppins",sans-serif}
+.ff-in{width:100%;max-width:1520px;margin:0 auto;padding:0 86px}
+.ff-sec{position:relative;padding:clamp(72px,11vh,120px) 0}
+.ff-eye{display:inline-flex;align-items:center;gap:10px;font:600 12px "Poppins",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ff-o)}
+.ff-eye::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--ff-og)}
+.ff-eye.c{justify-content:center}
+.ff-h1{font:700 clamp(44px,4.4vw,72px)/1.04 "Outfit",sans-serif;letter-spacing:-.045em;color:#0f0f0f}
+.ff-h1 span{display:block}
+.ff-h2{margin-top:16px;font:700 clamp(30px,2.7vw,46px)/1.1 "Outfit",sans-serif;letter-spacing:-.035em;color:#0f0f0f}
+.ff-h2 span{display:block}
+.ff-p{margin-top:16px;max-width:620px;font:400 15.5px/1.75 "Poppins",sans-serif;color:var(--ff-mu)}
+.ff-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:48px;margin-bottom:clamp(36px,5vh,56px)}
+.ff-hd .ff-p{max-width:520px;margin-top:0}
+.ff-hd.c{flex-direction:column;align-items:center;text-align:center}
+.ff-hd.c .ff-p{margin-top:16px;max-width:640px}
+
+/* buttons: gradient primary with a sweep, outline secondary */
+.ff-btns{display:flex;flex-wrap:wrap;gap:14px}
+.ff-btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 28px;border:0;border-radius:8px;font:600 15px "Poppins",sans-serif;cursor:pointer;color:#141414;background:#fff;box-shadow:inset 0 0 0 1.5px #D9D9D9;transition:transform .35s var(--ff-ez),box-shadow .3s,color .3s;white-space:nowrap}
+.ff-btn .i{width:18px;height:18px;stroke-width:2.1;transition:transform .45s var(--ff-ez)}
+.ff-btn::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--ff-peach2);transform:scaleX(0);transform-origin:0 50%;transition:transform .5s var(--ff-ez)}
+.ff-btn:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1.5px var(--ff-o)}
+.ff-btn:hover::before{transform:none}
+.ff-btn:hover .i{transform:translateX(5px)}
+.ff-btn.pri{color:#fff;background:var(--ff-og);box-shadow:0 14px 30px -18px rgba(224,97,47,.9)}
+.ff-btn.pri::before{background:var(--ff-og2)}
+.ff-btn.pri:hover{box-shadow:0 18px 34px -18px rgba(224,97,47,1)}
+.ff-btn.dk{color:#fff;background:#141414;box-shadow:none}
+.ff-btn.dk::before{background:#2a2a2a}
+.ff-btn.wh{color:#141414;background:#fff;box-shadow:none}
+.ff-btn.wh::before{background:#FFE9DE}
+.ff-btn.gh{color:#fff;background:transparent;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.ff-btn.gh::before{background:rgba(255,255,255,.12)}
+.ff-btn.gh:hover{box-shadow:inset 0 0 0 1.5px #fff}
+
+/* text link with sliding arrow */
+.ff-lk{display:inline-flex;align-items:center;gap:8px;font:600 14.5px "Poppins",sans-serif;color:var(--ff-o)}
+.ff-lk .i{width:16px;height:16px;stroke-width:2.2;transition:transform .4s var(--ff-ez)}
+.ff-lk:hover .i{transform:translateX(5px)}
+
+/* service rows (the GAA Group solutions style): peach on hover, orange title, arrow slides */
+.ff-rows{display:flex;flex-direction:column;gap:8px}
+.ff-row{position:relative;display:flex;align-items:center;gap:22px;padding:20px 24px;border-radius:12px;background:transparent;transition:background .35s var(--ff-ez),transform .35s var(--ff-ez)}
+.ff-row b{display:block;font:600 clamp(20px,1.6vw,26px)/1.2 "Outfit",sans-serif;letter-spacing:-.02em;color:#141414;transition:color .3s}
+.ff-row p{margin-top:6px;font:400 15px/1.6 "Poppins",sans-serif;color:#5f5f66}
+.ff-row>.i{margin-left:auto;width:28px;height:28px;color:var(--ff-o);stroke-width:1.8;transition:transform .45s var(--ff-ez)}
+.ff-row:hover,.ff-row.cur{background:var(--ff-peach2)}
+.ff-row:hover b,.ff-row.cur b{color:var(--ff-o)}
+.ff-row:hover>.i{transform:translateX(6px)}
+.ff-row .ff-n{flex:none;font:600 13px "Poppins",sans-serif;letter-spacing:.1em;color:#b8aea5;transition:color .3s}
+.ff-row:hover .ff-n{color:var(--ff-o)}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ff-ez),transform .9s var(--ff-ez)}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* icon tile */
+.ff-ic{display:grid;place-items:center;flex:none;width:52px;height:52px;border-radius:14px;background:var(--ff-peach);color:var(--ff-o);transition:background .35s,color .35s,transform .45s var(--ff-ez)}
+.ff-ic .i{width:24px;height:24px}
+
+/* closing call to action band (shared) */
+.ff-cta{padding:0 0 clamp(72px,11vh,120px)}
+.ff-cta-box{position:relative;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center;padding:clamp(44px,6vh,72px) clamp(40px,4.4vw,80px);border-radius:24px;background:var(--ff-og);color:#fff}
+.ff-cta-box::before{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.22),transparent);z-index:-1}
+.ff-cta-box::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(90deg,transparent 30%,#000)}
+.ff-cta-box .ff-eye{color:#fff}
+.ff-cta-box .ff-eye::before{background:#fff}
+.ff-cta-box h2{margin-top:14px;font:700 clamp(30px,2.8vw,48px)/1.08 "Outfit",sans-serif;letter-spacing:-.035em}
+.ff-cta-box h2 span{display:block}
+.ff-cta-box p{margin-top:14px;max-width:560px;font:400 15.5px/1.7 "Poppins",sans-serif;color:rgba(255,255,255,.9)}
+.ff-cta-r{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.ff-cta-r .ff-btn{min-width:260px}
+.ff-cta-r small{font:400 13px "Poppins",sans-serif;color:rgba(255,255,255,.85)}
+
+@media(max-width:1180px) and (min-width:900px){.ff-in{padding:0 48px}}
+@media(max-width:899px){
+  .ff-in{padding:0 20px}
+  .ff-sec{padding:64px 0}
+  .ff-h1{font-size:clamp(36px,10vw,48px)}
+  .ff-h2{font-size:clamp(28px,7.6vw,36px)}
+  .ff-p{font-size:14.5px}
+  .ff-hd{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:32px}
+  .ff-hd .ff-p{max-width:none}
+  .ff-btns{flex-direction:column;align-items:stretch}
+  .ff-btn{width:100%}
+  .ff-row{padding:16px;gap:14px}
+  .ff-row b{font-size:19px}
+  .ff-row p{font-size:14px}
+  .ff-row .ff-n{display:none}
+  .ff-cta-box{grid-template-columns:minmax(0,1fr);gap:28px;padding:40px 24px;border-radius:18px}
+  .ff-cta-r{align-items:stretch}
+  .ff-cta-r .ff-btn{min-width:0}
+}
+
+/* due date list (Home of Filings First, Insights) */
+.ds{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ds li{display:flex;align-items:center;gap:20px;padding:16px 20px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px #EFE6DE;transition:transform .4s var(--ff-ez),box-shadow .3s;animation:sv-row .6s calc(var(--k) * .08s) var(--ff-ez) both}
+.ds li:hover{transform:translateX(6px);box-shadow:inset 0 0 0 1.5px #F2C3AB}
+.ds-d{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none;width:64px;height:64px;border-radius:14px;background:var(--ff-peach)}
+.ds-d b{font:700 24px/1 "Outfit",sans-serif;color:var(--ff-o)}
+.ds-d small{margin-top:3px;font:600 11px "Poppins",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#a0705a}
+.ds-t{display:flex;flex-direction:column;min-width:0}
+.ds-t em{font:600 11px "Poppins",sans-serif;font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:#8a8a91}
+.ds-t b{margin-top:3px;font:600 18px "Outfit",sans-serif;letter-spacing:-.01em}
+.ds-t small{margin-top:2px;font:400 13.5px "Poppins",sans-serif;color:#66666d}
+.ds-l{margin-left:auto;flex:none;padding:6px 12px;border-radius:999px;background:#F5F1EE;font:600 12px "Poppins",sans-serif;color:#55555c;white-space:nowrap}
+.ds-l.hot{background:var(--ff-og);color:#fff}
+.ds-sk .ds-d{background:#F6F1EC}
+.ds-sk .ds-t{flex:1;height:40px;border-radius:8px;background:linear-gradient(90deg,#F6F1EC,#FBF8F4,#F6F1EC);background-size:200% 100%;animation:ds-sh 1.4s linear infinite}
+@keyframes ds-sh{to{background-position:-200% 0}}
+@media(max-width:899px){
+.ds li{gap:14px;padding:14px}
+.ds-d{width:54px;height:54px}
+.ds-t b{font-size:16px}
+.ds-t small{display:none}
+}
