@@ -155,11 +155,6 @@ export default function Contact() {
             <span className="cw-eye cr" style={{ "--k": 0 }}>Contact us</span>
             <h1 className="cw-h1 cr" style={{ "--k": 1 }}>Let&rsquo;s plan your<br /><Typed /></h1>
             <p className="cw-p cr" style={{ "--k": 2 }}>Three quick steps and your enquiry reaches the right specialist at GAA Consulting, Filings First or Hirings First, with everything they need to respond properly.</p>
-            <ol className="cw-tl cr" style={{ "--k": 3, "--p": (step - 1) / 2 }}>
-              {STEPS.map(([t, d], i) => (
-                <li key={t} className={i < step ? "on" : ""}><span className="cw-n">{String(i + 1).padStart(2, "0")}</span><b>{t}</b><p>{d}</p></li>
-              ))}
-            </ol>
             <div className="cw-q cr" style={{ "--k": 4 }}>
               <a href={`mailto:${SITE.email}`}><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="m4 7 8 6 8-6" /></svg><span><small>Email</small>{SITE.email}</span></a>
               <a href={`tel:${SITE.phoneHref}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" /></svg><span><small>Phone</small>{SITE.phone}</span></a>
@@ -170,7 +165,14 @@ export default function Contact() {
           <div className="cw-r cr" style={{ "--k": 2 }}>
             <form className={`cw-card${done ? " done" : ""}`} id="cuForm" noValidate ref={form} onSubmit={submit} onInput={(e) => clear(e.target.name)} onChange={(e) => clear(e.target.name)}>
               <div className="cw-body">
-                <div className="cw-prog"><span>Step {step} of 3</span><i><b style={{ width: `${(step / 3) * 100}%` }} /></i></div>
+                <ol className="cw-steps" style={{ "--p": (step - 1) / 2 }}>
+                  {STEPS.map(([t, d], i) => (
+                    <li key={t} className={`${i < step ? "on" : ""}${i === step - 1 ? " cur" : ""}`}>
+                      <span className="cw-n">{i < step - 1 ? <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" /></svg> : String(i + 1).padStart(2, "0")}</span>
+                      <span className="cw-sx"><b>{t}</b><small>{d}</small></span>
+                    </li>
+                  ))}
+                </ol>
 
                 <div className={`cw-st${step === 1 ? " on" : ""}${back ? " back" : ""}`} aria-hidden={step !== 1}>
                   <h2>Which company can help?</h2>

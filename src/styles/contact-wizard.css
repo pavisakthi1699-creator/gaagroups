@@ -149,3 +149,37 @@
 .cw-opt,.cw-list button,.cw-extra button,.cw-fd input,.cw-fd textarea{background-color:rgba(255,255,255,.62)}
 .cw-cv{background:rgba(252,248,245,.7)}
 .cw-prog i{background:rgba(243,236,230,.8)}
+
+/* ===== step headings now sit at the top of the form; left column is text + contacts only ===== */
+.cw-in{align-items:stretch}
+.cw-l{display:flex;flex-direction:column;padding:8px 0}
+.cw-l .cw-q{margin-top:auto;padding-top:34px}
+.cw-r{display:flex}
+.cw-r .cw-card{flex:1}
+.cw-steps{position:relative;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding-bottom:20px;border-bottom:1px solid rgba(20,20,20,.08)}
+.cw-steps::before,.cw-steps::after{content:"";position:absolute;top:19px;left:20px;height:2px;border-radius:2px}
+.cw-steps::before{right:calc(33.333% - 20px);background:rgba(20,20,20,.1)}
+.cw-steps::after{width:calc((66.666% - 20px - 14px * .66) * var(--p,0));background:linear-gradient(90deg,#D9532B,#E98A45);transition:width .6s var(--ez)}
+.cw-steps li{position:relative;z-index:1;display:flex;flex-direction:column;gap:10px}
+.cw-steps .cw-n{position:static;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#fff;box-shadow:inset 0 0 0 1.5px #E7C9B6,0 0 0 5px rgba(255,255,255,.75);font:600 12.5px Poppins,sans-serif;color:#C9461F;transition:all .45s var(--ez)}
+.cw-steps .cw-n svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cw-steps li.on .cw-n{background:linear-gradient(135deg,#D9532B,#E98A45);color:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.75)}
+.cw-steps li.cur .cw-n{transform:scale(1.08);box-shadow:0 0 0 5px rgba(255,255,255,.75),0 10px 20px -8px #E0612F}
+.cw-sx b{display:block;font:600 14.5px "Outfit",sans-serif;color:#8a8a92;transition:color .35s}
+.cw-sx small{display:block;margin-top:2px;font-size:11.5px;line-height:1.45;color:#9a9aa2}
+.cw-steps li.on b{color:#141414}
+.cw-steps li.cur small{color:#5f5f66}
+.cw-st{margin-top:22px}
+@media(max-width:899px){
+  .cw-in{display:flex;flex-direction:column}
+  .cw-r{order:-1}
+  .cw-l{padding:0}
+  .cw-l .cw-q{padding-top:22px}
+  .cw-in{padding-top:92px}
+  .cw-steps{gap:8px}
+  .cw-steps::before{left:18px;right:calc(33.333% - 18px)}
+  .cw-steps .cw-n{width:36px;height:36px}
+  .cw-steps::before,.cw-steps::after{top:17px}
+  .cw-sx small{display:none}
+  .cw-sx b{font-size:13px}
+}
