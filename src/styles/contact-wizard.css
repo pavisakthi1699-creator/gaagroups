@@ -183,3 +183,23 @@
   .cw-sx small{display:none}
   .cw-sx b{font-size:13px}
 }
+
+/* ===== steps on the page background, form (action) in the card; contacts sit under the intro ===== */
+.cw-l .cw-q{margin-top:30px;padding-top:0}
+.cw-r{flex-direction:column;gap:22px}
+.cw-steps{padding:0 4px 0;border:0}
+.cw-steps::before{background:rgba(255,255,255,.14)}
+.cw-steps .cw-n{background:#0a0a0a;box-shadow:inset 0 0 0 1.5px rgba(246,169,127,.55),0 0 0 6px #0a0a0a;color:#F6A97F}
+.cw-steps li.on .cw-n{box-shadow:0 0 0 6px #0a0a0a}
+.cw-steps li.cur .cw-n{box-shadow:0 0 0 6px #0a0a0a,0 0 22px 2px rgba(224,97,47,.5)}
+.cw-sx b{color:#8d8d94}
+.cw-sx small{color:#77777e}
+.cw-steps li.on b{color:#fff}
+.cw-steps li.cur small{color:#b9b9bf}
+.cw-card{min-height:500px}
+.cw-body{min-height:428px}
+.cw-st{margin-top:0}
+@media(max-width:899px){.cw-r{gap:16px}.cw-card{min-height:0}.cw-body{min-height:0}}
+.cw-card{min-height:470px}
+.cw-body{min-height:398px}
+@media(max-width:899px){.cw-in{padding-top:104px}}

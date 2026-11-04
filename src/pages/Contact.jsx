@@ -163,16 +163,16 @@ export default function Contact() {
           </div>
 
           <div className="cw-r cr" style={{ "--k": 2 }}>
+            <ol className="cw-steps" style={{ "--p": (step - 1) / 2 }}>
+              {STEPS.map(([t, d], i) => (
+                <li key={t} className={`${i < step ? "on" : ""}${i === step - 1 ? " cur" : ""}`}>
+                  <span className="cw-n">{i < step - 1 ? <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" /></svg> : String(i + 1).padStart(2, "0")}</span>
+                  <span className="cw-sx"><b>{t}</b><small>{d}</small></span>
+                </li>
+              ))}
+            </ol>
             <form className={`cw-card${done ? " done" : ""}`} id="cuForm" noValidate ref={form} onSubmit={submit} onInput={(e) => clear(e.target.name)} onChange={(e) => clear(e.target.name)}>
               <div className="cw-body">
-                <ol className="cw-steps" style={{ "--p": (step - 1) / 2 }}>
-                  {STEPS.map(([t, d], i) => (
-                    <li key={t} className={`${i < step ? "on" : ""}${i === step - 1 ? " cur" : ""}`}>
-                      <span className="cw-n">{i < step - 1 ? <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" /></svg> : String(i + 1).padStart(2, "0")}</span>
-                      <span className="cw-sx"><b>{t}</b><small>{d}</small></span>
-                    </li>
-                  ))}
-                </ol>
 
                 <div className={`cw-st${step === 1 ? " on" : ""}${back ? " back" : ""}`} aria-hidden={step !== 1}>
                   <h2>Which company can help?</h2>
