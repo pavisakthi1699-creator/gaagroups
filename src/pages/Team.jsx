@@ -108,6 +108,40 @@ export default function Team() {
     if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY, behavior: "smooth" });
   };
 
+  /* Partners: one card at a time on mobile, swipe or use the arrows; moves on by itself until touched */
+  const ppRef = useRef(null);
+  const ppPaused = useRef(false);
+  const [ppCur, setPpCur] = useState(0);
+  const ppGo = (i, user = true) => {
+    if (user) ppPaused.current = true;
+    const el = ppRef.current;
+    setPpCur(i);
+    if (el && el.children[i]) el.scrollTo({ left: el.children[i].offsetLeft - el.offsetLeft, behavior: "smooth" });
+  };
+  useEffect(() => {
+    const el = ppRef.current;
+    if (!el) return undefined;
+    const isMob = () => window.matchMedia && window.matchMedia("(max-width: 899px)").matches;
+    const onScroll = () => {
+      const w = el.children[0] ? el.children[0].getBoundingClientRect().width + 14 : 1;
+      setPpCur(Math.max(0, Math.min(PARTNER_CARDS.length - 1, Math.round(el.scrollLeft / w))));
+    };
+    const stop = () => { ppPaused.current = true; };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    el.addEventListener("touchstart", stop, { passive: true });
+    const t = setInterval(() => {
+      if (ppPaused.current || document.hidden || !isMob()) return;
+      const r = el.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) return;
+      setPpCur((c) => {
+        const n = (c + 1) % PARTNER_CARDS.length;
+        if (el.children[n]) el.scrollTo({ left: el.children[n].offsetLeft - el.offsetLeft, behavior: "smooth" });
+        return n;
+      });
+    }, 3600);
+    return () => { clearInterval(t); el.removeEventListener("scroll", onScroll); el.removeEventListener("touchstart", stop); };
+  }, []);
+
   return (
     <main className="gtm" id="top">
       <section className="hm" ref={sec}>
@@ -140,7 +174,7 @@ export default function Team() {
           </div>
         </div>
         <div className="pp-in">
-          <div className="pp-cards" id="pp-cards">
+          <div className="pp-cards" id="pp-cards" ref={ppRef}>
             {PARTNER_CARDS.map((p) => (
               <article className="pp-c" key={p.name}>
                 <div className="pp-ph"><img src={p.photo} alt={p.name} width="360" height="340" loading="lazy" /></div>
@@ -153,6 +187,13 @@ export default function Team() {
                   : <span className="pp-in-i" aria-hidden="true">in</span>}
               </article>
             ))}
+          </div>
+          <div className="pp-nav">
+            <div className="pp-dots">{PARTNER_CARDS.map((p, i) => <button key={p.name} type="button" aria-label={`Show ${p.name}`} className={i === ppCur ? "on" : ""} onClick={() => ppGo(i)} />)}</div>
+            <div className="pp-arr">
+              <button type="button" aria-label="Previous partner" onClick={() => ppGo((ppCur - 1 + PARTNER_CARDS.length) % PARTNER_CARDS.length)}><svg viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6" /></svg></button>
+              <button type="button" aria-label="Next partner" onClick={() => ppGo((ppCur + 1) % PARTNER_CARDS.length)}><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
           </div>
           <div className="pp-common">
             <h2>Different Expertise.<br />A <em>Common Purpose.</em></h2>

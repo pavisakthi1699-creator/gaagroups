@@ -62,3 +62,16 @@
   .gtm .pp-vals span:nth-child(3){border-left:0}
   .gtm .pp-vals span{font-size:13.5px}
 }
+.gtm .pp-nav{display:none}
+@media(max-width:899px){
+  .gtm .pp-c{flex:0 0 100%}
+  .gtm .pp-ph{aspect-ratio:1/1}
+  .gtm .pp-nav{display:flex;align-items:center;justify-content:space-between;margin-top:6px}
+  .gtm .pp-dots{display:flex;gap:6px}
+  .gtm .pp-dots button{width:8px;height:8px;border-radius:8px;background:#E2D8CF;transition:all .35s var(--ez)}
+  .gtm .pp-dots button.on{width:24px;background:linear-gradient(90deg,#D9532B,#E98A45)}
+  .gtm .pp-arr{display:flex;gap:8px}
+  .gtm .pp-arr button{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1.5px #DACDC2;color:#141414}
+  .gtm .pp-arr svg{width:18px;height:18px}
+  .gtm .pp-arr button:active{background:linear-gradient(135deg,#D9532B,#E98A45);color:#fff;box-shadow:none}
+}
