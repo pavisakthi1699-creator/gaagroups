@@ -33,6 +33,9 @@ return [
   'smtp_user'   => '',
   'smtp_pass'   => '',
 
+  // true only when the site runs on Vercel and calls this PHP server through Vercel rewrites
+  'trust_proxy' => false,
+
   // Folder for uploaded CVs. Best outside public_html, e.g. '/home/USER/gaa-storage'. Must be writable.
   'storage_dir' => __DIR__ . '/storage',
   // Folder and public address for blog images

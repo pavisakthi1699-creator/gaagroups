@@ -63,7 +63,15 @@ function method(string ...$allowed): string {
   return $m;
 }
 
-function client_ip(): string { return substr($_SERVER['REMOTE_ADDR'] ?? '0.0.0.0', 0, 45); }
+/* visitor IP. Behind Vercel (or another proxy) set 'trust_proxy' => true in config.php so the real visitor IP is used */
+function client_ip(): string {
+  if (cfg('trust_proxy', false)) {
+    $f = $_SERVER['HTTP_X_VERCEL_FORWARDED_FOR'] ?? $_SERVER['HTTP_X_REAL_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? '';
+    $ip = trim(explode(',', (string) $f)[0]);
+    if (filter_var($ip, FILTER_VALIDATE_IP)) return substr($ip, 0, 45);
+  }
+  return substr($_SERVER['REMOTE_ADDR'] ?? '0.0.0.0', 0, 45);
+}
 
 function clean(?string $s, int $max): string {
   $s = (string) $s;
