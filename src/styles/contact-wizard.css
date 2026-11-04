@@ -143,3 +143,9 @@
   .gcu .cw + .nx .nx-in{padding-top:40px!important}
 }
 @media (prefers-reduced-motion: reduce){.cw-glow,.cw-typed,.cw-st.on,.cw-list button{animation:none!important}}
+
+/* frosted, slightly see-through form card (raise the .88 for more solid, lower it for more see-through) */
+.cw-card{background:linear-gradient(160deg,rgba(255,255,255,.93),rgba(255,244,236,.88));-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);box-shadow:0 60px 120px -60px rgba(224,97,47,.55),inset 0 0 0 1px rgba(255,255,255,.6)}
+.cw-opt,.cw-list button,.cw-extra button,.cw-fd input,.cw-fd textarea{background-color:rgba(255,255,255,.7)}
+.cw-cv{background:rgba(252,248,245,.7)}
+.cw-prog i{background:rgba(243,236,230,.8)}
