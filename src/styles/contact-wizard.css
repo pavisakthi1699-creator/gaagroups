@@ -203,3 +203,19 @@
 .cw-card{min-height:470px}
 .cw-body{min-height:398px}
 @media(max-width:899px){.cw-in{padding-top:104px}}
+
+/* ===== both columns share the same top and bottom edge ===== */
+@media(min-width:900px){
+  .cw-in{align-items:stretch}
+  .cw-l{justify-content:space-between;padding:0}
+  .cw-l .cw-q{margin-top:28px}
+  .cw-r{justify-content:space-between}
+  .cw-card{min-height:0;flex:1 1 auto;display:flex;flex-direction:column}
+  .cw-body{min-height:0;flex:1 1 auto}
+  .cw-h1{font-size:clamp(44px,4.2vw,64px)}
+  .cw-p{margin-top:22px;font-size:16.5px}
+}
+@media(min-width:900px){
+  .cw-l{justify-content:flex-start}
+  .cw-l .cw-q{margin-top:auto;padding-top:28px}
+}
