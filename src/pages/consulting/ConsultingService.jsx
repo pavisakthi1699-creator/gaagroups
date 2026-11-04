@@ -174,6 +174,11 @@ export default function ServicePage({ slug }) {
                 {d.focus.note && <small className="ie-fnote">{d.focus.note}</small>}
               </div>
             </div>
+            {d.focus.image ? (
+            <div className="ie-dark-r ie-dark-img" aria-hidden="true">
+              <img src={d.focus.image} alt="" width="900" height="614" loading="lazy" />
+            </div>
+            ) : (
             <div className="ie-dark-r" aria-hidden="true">
               <div className="ie-lap">
                 <div className="ie-scr">
@@ -191,6 +196,7 @@ export default function ServicePage({ slug }) {
                 <div className="ie-base" />
               </div>
             </div>
+            )}
           </div>
           <div className="ie-dark-f">
             {d.focus.features.map((f) => <span key={f.text}><Icon name={f.icon} /><em className="ie-ft"><Lines text={f.text} /></em></span>)}

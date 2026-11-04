@@ -3,6 +3,7 @@ import { RouterProvider, useRouter, scrollToHash } from "./router";
 import { findRoute, NOT_FOUND } from "./site";
 import { applyHead } from "./lib/head";
 import { track } from "./lib/analytics";
+import mountScrollLines from "./lib/scrollLines";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GroupHome from "./pages/group/GroupHome";
@@ -78,6 +79,15 @@ function Site() {
     };
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
+  }, [path]);
+
+  /* numbered step lists: the orange dot follows the scroll from 01 to the last step */
+  useEffect(() => {
+    if (page.kind === "admin") return undefined;
+    let off = () => {};
+    const t = setTimeout(() => { off = mountScrollLines(document.getElementById("main") || document); }, 350);
+    return () => { clearTimeout(t); off(); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [path]);
 
   if (page.kind === "admin") return <AdminApp path={path} />;

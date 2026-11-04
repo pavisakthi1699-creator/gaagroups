@@ -208,3 +208,30 @@
   .ie-focus .ie-fnote{max-width:none;white-space:nowrap}
 }
 .ie-ft{font-style:normal}
+
+/* ===== Scroll-linked step lines (src/lib/scrollLines.js) ===== */
+.sl{position:relative}
+.gga .sl .lc-rail,.ggc .ct-path .ct-track,.hf-tl.sl .hf-tl-line{display:none!important}
+.ie-steps.sl::before,.gcu .nx-steps.sl::before,.hm2 .hp-g.sl::before,.hfh .hp-g.sl::before,.gch .gc-proc.sl::before,.gch .gc-proc.sl::after{display:none!important}
+.sl-path{position:absolute;inset:0;z-index:0;pointer-events:none}
+.sl-seg{position:absolute;height:2px;margin-top:-1px;transform-origin:0 50%;background:#F1E2D8;border-radius:2px}
+.sl-seg i{position:absolute;inset:0;border-radius:2px;background:linear-gradient(90deg,#D9532B,#E98A45);transform-origin:0 50%;transform:scaleX(0);transition:transform .25s linear}
+.sl-dot{position:absolute;left:-7px;top:-7px;width:14px;height:14px;border-radius:50%;background:#E0612F;box-shadow:0 0 0 6px rgba(224,97,47,.18),0 0 18px 2px rgba(224,97,47,.35);transition:transform .25s linear;z-index:1}
+.sl > li,.sl > .lc-r,.sl-m{position:relative}
+.sl-m{z-index:2}
+.sl-m{transition:background .35s,color .35s,box-shadow .35s,transform .35s}
+.sl .sl-hit:not(.lc-dot){background:linear-gradient(135deg,#D9532B,#E98A45)!important;color:#fff!important}
+.gga .sl .lc-dot.sl-hit{box-shadow:0 0 0 2px #E0612F,0 0 0 7px #fff!important}
+.ie-st-h .ie-n.sl-hit{transform:scale(1.08)}
+@media (prefers-reduced-motion: reduce){.sl-seg i,.sl-dot{transition:none}}
+.ie-steps.sl .ie-n:not(.sl-hit){background:#fff;color:#E0612F;box-shadow:inset 0 0 0 1.5px #E0612F,0 0 0 6px #fff}
+.ie-dark-img{display:flex;align-items:center;justify-content:flex-end}
+.ie-dark-img img{display:block;width:auto;height:100%;max-height:232px;max-width:100%;object-fit:contain;filter:drop-shadow(0 24px 30px rgba(0,0,0,.45))}
+@media(min-width:900px){.ie-focus .ie-dark-img{align-self:stretch;padding:0;align-items:center}}
+@media(max-width:899px){.ie-dark-img{display:flex!important;justify-content:center;margin-top:10px}.ie-dark-img img{height:auto;width:100%;max-height:none}}
+@media(max-width:899px){
+  .ie-steps.sl .ie-st{padding:4px 0 4px 60px!important}
+  .ie-steps.sl .ie-st-h{position:absolute;left:0;top:0}
+  .ie-steps.sl .ie-st-h .i{display:none}
+  .ie-steps.sl .ie-st b{margin-top:8px}
+}
