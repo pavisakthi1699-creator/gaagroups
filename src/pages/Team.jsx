@@ -10,8 +10,14 @@ const WORDS = [
   { t: "w", cls: "w-c", label: "Talent" },
 ];
 /* Partners section: edit this list (names as in src/data/team.json) to change who is shown, in this order */
-const PARTNER_NAMES = ["Rose Agarwal", "Chetana N S", "Apoorva G", "M Mahesh", "Athira Augustine"];
-const PARTNERS = PARTNER_NAMES.map((n) => TEAM.find((p) => p.name === n)).filter(Boolean);
+/* Partners section. Add each partner's LinkedIn address in linkedin: "" to make the icon clickable. */
+const PARTNER_CARDS = [
+  { name: "Aditi Sharma", role: "Partner – Corporate & Transactions", text: "Advises on corporate structuring, fundraising, M&A and strategic corporate actions.", photo: "/images/partners/aditi-sharma.webp", linkedin: "" },
+  { name: "Karan Mehta", role: "Partner – Regulatory & NBFC", text: "Focuses on NBFC regulation, RBI compliance, governance and risk advisory.", photo: "/images/partners/karan-mehta.webp", linkedin: "" },
+  { name: "Nihal Desai", role: "Partner – Global Business & FEMA", text: "Leads India entry, FEMA advisory and cross-border compliance for international clients.", photo: "/images/partners/nihal-desai.webp", linkedin: "" },
+  { name: "Priya Nair", role: "Partner – Compliance & Governance", text: "Oversees secretarial compliance, corporate governance and regulatory advisory.", photo: "/images/partners/priya-nair.webp", linkedin: "" },
+  { name: "Vikram Rao", role: "Partner – Finance & Operations", text: "Drives finance, accounting, taxation and operational excellence across the Group.", photo: "/images/partners/vikram-rao.webp", linkedin: "" },
+];
 const POOL = TEAM.map((p) => ({ t: "p", src: p.photo, name: p.name, role: p.role, co: p.company }));
 
 function shuffle(a) {
@@ -122,25 +128,41 @@ export default function Team() {
           <i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" /></svg></i>
         </a>
       </section>
-      <section className="pt" id="partners">
-        <div className="ff-in">
-          <div className="ff-hd">
-            <div><span className="ff-eye">Leadership</span><h2 className="ff-h2"><span>Partners and</span><span>practice <em className="hw-o">leads.</em></span></h2></div>
-            <p className="ff-p">The senior professionals who lead our advisory, finance, audit and people practices, and stay involved in your work from the first conversation.</p>
+      <section className="pp" id="partners">
+        <div className="pp-hero">
+          <img className="pp-bg" src="/images/partners/partners-group.webp" alt="The partners of GAA Group" width="1774" height="887" loading="lazy" />
+          <svg className="pp-line" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path d="M-20 560 C 320 540 520 520 760 440 S 1180 300 1460 140" /></svg>
+          <div className="pp-in pp-hero-in">
+            <span className="pp-eye">Our partners</span>
+            <h2 className="pp-h">The Partners<br />Behind GAA</h2>
+            <p className="pp-lead">A leadership team that combines deep regulatory expertise, hands-on execution and a shared commitment to building a trusted, long-term advisory platform.</p>
+            <a className="pp-btn" href="#pp-cards" onClick={(e) => { e.preventDefault(); const t = document.getElementById("pp-cards"); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 90, behavior: "smooth" }); }}>Meet the Partners <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" /></svg></a>
           </div>
-          <div className="pt-g">
-            {PARTNERS.map((p) => (
-              <article className="pt-c" key={p.name}>
-                <span className="pt-ph" aria-hidden="true" />
-                {p.linkedin && <a className="pt-in" href={p.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${p.name} on LinkedIn`}>in</a>}
-                <div className="pt-b">
-                  <span className="pt-tag">{p.company}</span>
-                  <h3>{p.name}</h3>
-                  <p>{p.role}</p>
-                  <span className="pt-bar" />
-                </div>
+        </div>
+        <div className="pp-in">
+          <div className="pp-cards" id="pp-cards">
+            {PARTNER_CARDS.map((p) => (
+              <article className="pp-c" key={p.name}>
+                <div className="pp-ph"><img src={p.photo} alt={p.name} width="360" height="340" loading="lazy" /></div>
+                <h3>{p.name}</h3>
+                <span className="pp-role">{p.role}</span>
+                <span className="pp-bar" />
+                <p>{p.text}</p>
+                {p.linkedin
+                  ? <a className="pp-in-i" href={p.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${p.name} on LinkedIn`}>in</a>
+                  : <span className="pp-in-i" aria-hidden="true">in</span>}
               </article>
             ))}
+          </div>
+          <div className="pp-common">
+            <h2>Different Expertise.<br />A <em>Common Purpose.</em></h2>
+            <p>Together, we bring a balanced mix of regulatory depth, domain knowledge and execution focus to help businesses navigate complexity, stay compliant and grow with confidence.</p>
+          </div>
+          <div className="pp-vals">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2" /><path d="M3 19a6 6 0 0 1 12 0" /><circle cx="17" cy="9" r="2.6" /><path d="M15.5 14.2A5 5 0 0 1 21 19" /></svg>Hands-on Leadership</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5z" /><path d="m3 13 9 5 9-5" /></svg>Multi-disciplinary Expertise</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12l4-4 4 3 3-2 4 4" /><path d="m7 13 3 3a1.5 1.5 0 0 0 2 0l5-5" /><path d="M22 12l-4-4-2 1" /></svg>Client-first Approach</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16" /><rect x="5" y="13" width="3" height="5" /><rect x="10.5" y="9" width="3" height="9" /><rect x="16" y="5" width="3" height="13" /></svg>Long-term Value Creation</span>
           </div>
         </div>
       </section>

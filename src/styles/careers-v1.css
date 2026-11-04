@@ -80,3 +80,7 @@
   .cv1-facts div,.cv1-facts div+div{padding:16px 0;border-left:0}
   .cv1-facts div+div{border-top:1px solid #ECE6E0}
 }
+/* About-style hero on Careers: a little shorter so the path cards start near the fold */
+.cv1-hz .hz,.cv1-hz .hx-in{min-height:min(100svh,860px)}
+.cv1-roles{padding-top:clamp(40px,5vh,64px)}
+@media(max-width:899px){.cv1-hz .hz,.cv1-hz .hx-in{min-height:0}.cv1-roles{padding-top:32px}}

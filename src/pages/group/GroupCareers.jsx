@@ -68,17 +68,31 @@ export default function GroupCareers() {
 
   return (
     <main className="cv1" id="top">
-      <section className="cv1-hero">
-        <div className="cv1-in">
-          <span className="cv1-eye rv">Careers</span>
-          <h1 className="cv1-h1 rv" style={{ "--d": 1 }}>Grow your career<br />with GAA <em className="hw-o">Group.</em></h1>
-          <p className="cv1-lead rv" style={{ "--d": 2 }}>Whether you are a CS student, a qualified professional, a lawyer or a college student, GAA Group offers practical, mentored work across corporate advisory, compliance, accounting and talent. Choose the path that fits you and apply with your CV.</p>
-          <div className="cv1-btns rv" style={{ "--d": 3 }}>
-            <Link className="cv1-btn pri" to="/contact#careers">Apply now <Arrow /></Link>
-            <Link className="cv1-btn sec" to="#training">About CS Articleship <Arrow /></Link>
+      {/* hero: same layout, type and animation as the About page hero */}
+      <div className="gga cv1-hz">
+        <section className="hz ah2">
+          <div className="hx-in">
+            <div className="hx-main">
+              <span className="hx-eye ah2-eye hr" style={{ "--k": "0" }}>Careers</span>
+              <h1 className="ah2-h1 hr" style={{ "--k": "1" }}><span className="l1">Grow Your Career.</span><span className="l2">Build It With GAA <em className="hw-o">Group.</em></span></h1>
+              <p className="ah2-lead hr" style={{ "--k": "2" }}>Practical, mentored work across corporate advisory, compliance, accounting and talent, for CS students, qualified professionals, lawyers and college students.</p>
+              <div className="ah2-cols hr" style={{ "--k": "3" }}>
+                <p>Whether you are starting your CS articleship, have cleared the Executive level or are a qualified Company Secretary, you work on live client matters alongside practising professionals who review your work and guide you.</p>
+                <p>Lawyers and college students join our advisory, compliance, accounting and HR teams on real projects with a defined learning plan. Choose the path that fits you and apply with your CV.</p>
+              </div>
+              <div className="hx-btns ah2-btns hr" style={{ "--k": "4" }}>
+                <Link className="hw-b pri" to="/contact#careers">Apply Now <Arrow /></Link>
+                <Link className="hw-b sec" to="#training">About CS Articleship <Arrow /></Link>
+              </div>
+            </div>
+            <div className="hx-strip hr" style={{ "--k": "6" }}>
+              <span>GAA Consulting <small>CS, legal and advisory roles</small></span>
+              <span>Filings First <small>Accounts and finance roles</small></span>
+              <span>Hirings First <small>Internships and HR</small></span>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section className="cv1-roles" aria-label="Career paths">
         <div className="cv1-in">
