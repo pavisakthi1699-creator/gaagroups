@@ -101,4 +101,4 @@ if (cfg('send_acknowledgement', true)) {
     '<div style="font:15px/1.6 Arial,sans-serif;color:#222"><p>Hello ' . esc($name) . ',</p><p>Thank you for contacting ' . esc($co) . '. Your ' . $what . ' about <b>' . esc($label) . '</b> has been received and our team will get back to you shortly.</p><p>Reference: #' . $id . '</p><p style="color:#777">' . esc($co) . ', part of GAA Group</p></div>');
 }
 
-json_out(['ok' => true, 'id' => $id, 'routedTo' => $co, 'acknowledged' => $ack]);
+json_out(['ok' => true, 'id' => $id, 'routedTo' => $co, 'acknowledged' => $ack, 'mailed' => $mailed]);

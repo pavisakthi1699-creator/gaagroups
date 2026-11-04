@@ -79,5 +79,10 @@ export async function sendEnquiry(data, file) {
     if (ok) return { ok: true, acknowledged: true };
   }
   if (!res.ok || !res.j.ok) return { ok: false, error: res.j.error || `We could not send your message right now. Please email us at ${MAILBOX}.` };
+  /* saved in the admin panel, but the server could not send the email (mail or SMTP not set up): email it through FormSubmit too */
+  if (res.j.mailed === false) {
+    const sent = await viaMail(data, file);
+    return { ok: true, acknowledged: !!res.j.acknowledged || sent };
+  }
   return { ok: true, acknowledged: !!res.j.acknowledged };
 }
