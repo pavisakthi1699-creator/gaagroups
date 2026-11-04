@@ -4,130 +4,168 @@
   "contact": "india-entry",
   "name": "India Entry Desk",
   "h1": "Your India expansion.\nOne trusted partner.",
-  "lead": "From establishing your Indian entity to managing regulatory compliance, corporate governance, accounting and business operations, GAA Consulting provides coordinated support throughout your India journey.",
+  "lead": "Establishing a business in India takes more than incorporation. From choosing the right entity and working within India's foreign investment rules to appointing directors, opening bank accounts and managing ongoing compliance, GAA Consulting coordinates every step of your India journey.",
   "cta": "Discuss Your India Entry",
-  "whoTitle": "Supporting global businesses\nat every stage of their India journey.",
-  "whoText": "We work with foreign companies, international entrepreneurs, overseas investors and global professional firms looking to establish or expand their presence in India.",
+  "whoTitle": "Built for foreign-owned businesses\nin India.",
+  "whoText": "We work with overseas companies and the advisers who support them, from first entry to running an established Indian entity.",
   "who": [
    "Foreign companies setting up Indian subsidiaries",
-   "International founders and entrepreneurs",
-   "Overseas investors entering the Indian market",
    "Existing foreign-owned Indian entities",
-   "International professional firms",
-   "Global businesses expanding operations in India"
+   "Overseas investors entering the Indian market",
+   "International founders and entrepreneurs",
+   "International law, accounting and advisory firms"
   ],
-  "servicesTitle": "A complete India market entry and operations support.",
+  "servicesTitle": "Complete India market entry and operations support.",
   "services": [
    {
     "icon": "building",
     "title": "India Incorporation & Structuring",
-    "text": "Entity structuring, incorporation, PAN, TAN, initial statutory registrations and corporate documentation."
+    "text": "Assessment of the appropriate structure, whether a wholly owned subsidiary, LLP, branch, liaison or project office, followed by incorporation, PAN, TAN, initial registrations and corporate documentation. Eligibility depends on your business activities and the applicable regulatory conditions."
    },
    {
     "icon": "user",
     "title": "Resident Director Services",
-    "text": "Provision of eligible resident directors, director compliance, board participation and compliance support."
+    "text": "Appointment of a qualified resident director, subject to eligibility, due diligence, consent and agreed responsibilities. Covers DIN and director compliance, board participation and a defined term and scope of engagement."
    },
    {
     "icon": "pin",
-    "title": "Virtual Registered Office Services",
-    "text": "Statutory registered office address, receipt of official correspondence and compliance support."
+    "title": "Registered Office Services",
+    "text": "A statutory registered office address in India, handling and forwarding of official correspondence, and support with address verification by authorities and banks. It is a statutory address, not a place of business for operations."
    },
    {
     "icon": "layers",
     "title": "FEMA & Foreign Investment Compliance",
-    "text": "FDI advisory, FC-GPR, FC-TRS, FLA reporting and other RBI compliance support."
+    "text": "Advice on foreign investment eligibility, entry route and pricing, and the RBI reporting that follows, such as FC-GPR, FC-TRS and the annual FLA return. These filings are event-specific and apply only where the relevant conditions are met."
    },
    {
     "icon": "bank",
-    "title": "Bank Account Opening & Razorpay Integration",
-    "text": "Assistance with Indian bank account opening, KYC coordination and Razorpay merchant account onboarding and integration support."
+    "title": "Bank Account Opening & Payment Gateway Onboarding",
+    "text": "Assistance with opening your Indian corporate bank account, KYC documentation and coordination with the bank, and onboarding support for payment gateways such as Razorpay. Account and merchant approvals rest with the respective institutions."
    },
    {
     "icon": "doc",
-    "title": "Financial, Taxation & Audit Support",
-    "text": "Financial reporting, GST, TDS, income-tax compliance, statutory audit coordination and tax advisory."
+    "title": "Taxation & Audit Support",
+    "text": "Tax registrations, recurring GST, TDS and income-tax compliance, tax advisory and coordination of the statutory audit. The audit itself is carried out by an independent, eligible auditor."
    },
    {
     "icon": "calc",
     "title": "Accounting, Bookkeeping & Payroll",
-    "text": "Bookkeeping, payroll processing, accounts payable and receivable, statutory compliance and MIS reporting."
+    "text": "Monthly bookkeeping and books closure, payroll processing and payslips, statutory deductions, accounts payable and receivable, and management (MIS) reports for your head office."
    },
    {
     "icon": "people",
     "title": "Corporate Governance & Annual Compliance",
-    "text": "Board and shareholder meetings, MCA filings, statutory registers and ongoing secretarial advisory."
+    "text": "Board and shareholder meetings, minutes and resolutions, statutory registers, approval of financial statements and annual MCA filings, managed through a governance calendar for your entity."
    },
    {
     "icon": "bars",
     "title": "Ongoing Corporate & Regulatory Advisory",
-    "text": "Support for corporate restructuring, capital changes, shareholder transactions and other regulatory matters."
+    "text": "Day-to-day corporate and regulatory advice under a retainer. Larger matters such as fundraising, capital restructuring and shareholder transactions are scoped as separate projects."
    }
   ],
   "journeyEyebrow": "Your India journey",
-  "journeyTitle": "From planning to growth. We’re with you at every step.",
+  "journeyTitle": "From planning to growth. We're with you at every step.",
   "steps": [
    {
     "icon": "bulb",
     "title": "Plan",
-    "text": "Understand your business goals, structure and regulatory requirements."
+    "text": "Confirm the right entry route for your business before anything is filed.",
+    "items": [
+     "Entity structure and entry route",
+     "FDI eligibility and sector conditions",
+     "Shareholder and director requirements",
+     "Initial tax considerations"
+    ]
    },
    {
     "icon": "doc",
     "title": "Incorporate",
-    "text": "Set up your Indian entity and complete initial registrations."
+    "text": "Set up your Indian entity and its statutory foundation.",
+    "items": [
+     "Name approval",
+     "Incorporation documents and filings",
+     "PAN and TAN",
+     "Statutory registers and records"
+    ]
    },
    {
     "icon": "gear",
     "title": "Operationalise",
-    "text": "Assist with banking, Razorpay integration, accounting and payroll."
+    "text": "Make the entity ready to receive funds and start trading.",
+    "items": [
+     "Bank account KYC and opening",
+     "Capital infusion and RBI reporting",
+     "GST evaluation and accounting setup",
+     "Payment gateway onboarding"
+    ]
    },
    {
     "icon": "shield",
     "title": "Comply",
-    "text": "Manage ongoing statutory and regulatory compliance."
+    "text": "Keep the entity in good standing, year after year.",
+    "items": [
+     "MCA filings and governance calendar",
+     "FEMA reporting, where applicable",
+     "Tax, audit and payroll obligations",
+     "Other applicable registrations"
+    ]
    },
    {
     "icon": "bars",
     "title": "Grow",
-    "text": "Provide continued support as your business expands in India."
+    "text": "Support the next stage of your Indian business.",
+    "items": [
+     "Additional capital and new investors",
+     "Restructuring and expansion",
+     "Shareholder transactions",
+     "Continuing advisory"
+    ]
    }
   ],
   "plans": [
    {
     "icon": "plane",
     "title": "India Incorporation",
-    "subtitle": "Essential setup support",
+    "subtitle": "Establish your Indian entity",
+    "type": "One-time project",
     "points": [
-     "Incorporation and structuring",
-     "PAN, TAN and initial registrations",
-     "Basic statutory setup"
+     "Entry route and structure confirmation",
+     "Incorporation and initial registrations",
+     "PAN, TAN and statutory records"
     ],
+    "extras": "Resident director, registered office",
+    "cta": "Request Incorporation Proposal",
     "popular": false
    },
    {
     "icon": "building",
     "title": "India Market Entry",
-    "subtitle": "Complete setup solution",
+    "subtitle": "Establish and operationalise",
+    "type": "Implementation project",
     "points": [
-     "Incorporation and statutory registrations",
-     "FEMA and regulatory compliance",
-     "Bank account and Razorpay integration",
+     "Everything in India Incorporation",
+     "Bank account opening assistance",
+     "Capital infusion and FEMA reporting",
      "Resident director and registered office",
-     "Initial finance and compliance setup"
+     "Accounting and operational readiness"
     ],
+    "extras": "Payroll, GST and other registrations",
+    "cta": "Plan My India Entry",
     "popular": true
    },
    {
     "icon": "bars",
     "title": "India Operations",
-    "subtitle": "Ongoing support",
+    "subtitle": "Run your Indian entity",
+    "type": "Monthly or annual retainer",
     "points": [
      "Accounting, bookkeeping and payroll",
-     "Financial, tax and audit support",
-     "Corporate governance and annual compliance",
-     "Regulatory and advisory support"
+     "Tax compliance and audit coordination",
+     "Corporate governance and annual filings",
+     "Ongoing regulatory advisory"
     ],
+    "extras": "Transactions, restructuring, specialised advisory",
+    "cta": "Discuss Ongoing Support",
     "popular": false
    }
   ],
@@ -135,15 +173,15 @@
   "why": [
    {
     "icon": "user",
-    "text": "Corporate and regulatory expertise under one roof"
+    "text": "Company secretarial, FEMA, accounting and tax support under one roof"
    },
    {
     "icon": "people",
-    "text": "Senior-led supervision of key matters"
+    "text": "Senior professionals supervise key filings and decisions"
    },
    {
     "icon": "gear",
-    "text": "Practical experience with Indian statutory and regulatory processes"
+    "text": "One engagement contact coordinating every team on your matter"
    },
    {
     "icon": "infinity",
@@ -153,61 +191,160 @@
   "faqTitle": "Common questions\non India entry.",
   "faq": [
    {
-    "q": "Can a foreign company establish a wholly owned subsidiary in India?",
-    "a": "Yes. In most sectors a foreign company can hold 100% of an Indian private limited company under the automatic route, subject to India's FDI policy, sectoral caps and FEMA reporting. We confirm the route that applies to your sector before incorporation."
+    "q": "Can a foreign company own 100% of an Indian subsidiary?",
+    "a": "In many sectors, yes, under the automatic route. Whether 100% ownership is permitted, and whether government approval is needed, depends on the sector, the investor's country, beneficial ownership and India's FDI policy. Investors from countries that share a land border with India need prior government approval. We confirm the applicable route before incorporation."
    },
    {
-    "q": "Does GAA provide resident director services?",
-    "a": "Yes. Every Indian company needs at least one director who is resident in India. We can provide an eligible resident director and support the related board and compliance responsibilities."
+    "q": "Should we set up a subsidiary, LLP, branch office or liaison office?",
+    "a": "It depends on what you plan to do in India. A subsidiary can carry on most business activities. A liaison office can only undertake representative activities and cannot earn income, while branch and project offices have defined permitted activities and need approval through an authorised bank. We recommend the structure after understanding your activities, ownership and plans."
    },
    {
-    "q": "Can you assist with bank account opening and Razorpay integration?",
-    "a": "Yes. We coordinate account opening and KYC with Indian banks and support Razorpay merchant onboarding and integration so you can start collecting payments."
+    "q": "How long does it take to incorporate an Indian company?",
+    "a": "Typically two to three weeks once complete, correctly executed documents are available. Preparing, notarising and apostilling documents abroad often takes longer than the filing itself, so we start with a clear document checklist."
    },
    {
-    "q": "What are the ongoing compliance requirements after incorporation?",
-    "a": "Typically board and shareholder meetings, annual MCA filings, statutory registers, GST and TDS returns, income-tax filings, statutory audit and FEMA reporting such as the annual FLA return. We set up a compliance calendar for your entity."
+    "q": "Can the entire incorporation be completed remotely?",
+    "a": "In most cases, yes. Foreign shareholders and directors sign documents in their own country, have them notarised and apostilled, and courier or share them with us. Digital signatures are obtained online with verification. You do not need to travel to India to incorporate."
    },
    {
-    "q": "Can we engage GAA for only specific services?",
-    "a": "Yes. You can engage us for a single service, such as incorporation or a resident director, or for a complete market entry and ongoing operations package."
+    "q": "What documents do foreign shareholders and directors need to provide?",
+    "a": "Typically a passport and recent address proof for individuals, and incorporation documents, a board resolution and beneficial ownership details for a corporate shareholder. Documents executed outside India usually need notarisation and an apostille. We share an exact checklist for your structure."
+   },
+   {
+    "q": "Is an Indian resident director mandatory?",
+    "a": "Yes, for a company. Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for 182 days or more during the financial year. For a newly incorporated company the requirement applies proportionately. We can propose a resident director, subject to eligibility, due diligence, consent and agreed responsibilities."
+   },
+   {
+    "q": "How do we fund the Indian subsidiary and report the investment?",
+    "a": "Share capital is remitted from abroad into the company's Indian bank account through banking channels, and shares are issued in line with the pricing rules. The company then reports the allotment to the RBI in Form FC-GPR within 30 days. Later transfers of shares between residents and non-residents are reported in Form FC-TRS."
+   },
+   {
+    "q": "How long does it take to open a corporate bank account?",
+    "a": "Usually one to three weeks after incorporation, depending on the bank and its KYC review of foreign shareholders, directors and beneficial owners. We prepare the documentation and coordinate with the bank, but approval rests with the bank."
+   },
+   {
+    "q": "Can we start operations immediately after incorporation?",
+    "a": "Not always. Incorporation creates the company, but it also needs a bank account, receipt of share capital, a declaration of commencement of business filed within 180 days, and any registrations its activities require, such as GST. We plan these steps so you know when the entity can actually begin trading."
+   },
+   {
+    "q": "What are the annual compliance and audit obligations?",
+    "a": "Typically board and shareholder meetings, statutory registers, annual MCA filings, statutory audit by an independent auditor, income-tax returns, and GST and TDS returns where registered. FEMA filings such as the annual FLA return apply where the entity has foreign investment. We set up a compliance calendar for your entity."
+   },
+   {
+    "q": "Can GAA manage our accounting, payroll, tax and secretarial compliance after incorporation?",
+    "a": "Yes. Through our India Operations engagement we manage accounting, payroll, tax compliance, audit coordination and secretarial compliance under one team, with regular reporting to your head office. You can also engage us for specific services only."
    }
   ],
   "focus": {
-   "title": "Bank Account Opening &\nRazorpay Integration",
-   "text": "End-to-end support for setting up your Indian corporate bank account and integrating Razorpay for seamless collections and payments.",
+   "tag": "Start your India journey",
+   "title": "Planning to establish or expand\nyour business in India?",
+   "text": "Tell us about your proposed Indian operations. We will help you evaluate the right structure, regulatory requirements and ongoing compliance needs.",
+   "btn": "Plan Your India Entry",
+   "note": "No obligation to engage. Scope and fees follow an initial assessment.",
    "features": [
     {
-     "icon": "bank",
-     "text": "Corporate bank\naccount opening support"
+     "icon": "building",
+     "text": "Entity structure\nassessment"
     },
     {
-     "icon": "id",
-     "text": "KYC documentation\nand bank coordination"
+     "icon": "shield",
+     "text": "Regulatory\nrequirements"
     },
     {
-     "icon": "plane",
-     "text": "Razorpay merchant\naccount onboarding"
+     "icon": "doc",
+     "text": "Implementation\nplan"
     },
     {
-     "icon": "card",
-     "text": "Payment gateway\nintegration & collections setup"
+     "icon": "calc",
+     "text": "Ongoing compliance\nneeds"
     }
    ],
    "screen": {
-    "title": "Payments",
-    "k1": "Collected",
-    "v1": "₹ 4,82,600",
-    "k2": "Settled",
-    "v2": "₹ 4,51,200",
+    "title": "India entry plan",
+    "k1": "Entity",
+    "v1": "Pvt Ltd",
+    "k2": "Stage",
+    "v2": "Operationalise",
     "chips": [
-     "Card",
-     "UPI",
-     "Net banking"
+     "Plan",
+     "Incorporate",
+     "Comply"
     ]
    }
   },
-  "hl": "India"
+  "hl": "India",
+  "journeyNote": "Incorporation, bank onboarding and commencement of business are separate milestones. Each depends on documents, approvals and the institutions involved, so we plan them in sequence.",
+  "servicesText": "Engage us for a single service or a complete solution. Each service is scoped to your business activity, ownership structure and the regulatory conditions that apply to it.",
+  "plansTitle": "Three ways to\nwork with us.",
+  "plansText": "Each option is scoped to your business, industry and plans. Services can be combined or added as your needs change.",
+  "plansNote": "Professional fees depend on the agreed scope. Government fees, taxes, notarisation and apostille costs, bank charges and other third-party costs are charged separately at actuals.",
+  "timeline": {
+   "eyebrow": "Timelines & documents",
+   "title": "What to expect,\nand what we will need.",
+   "text": "Indicative timelines run from the date complete, correctly executed documents are available. Actual timelines depend on the authorities, banks and other institutions involved.",
+   "steps": [
+    {
+     "t": "Structuring and document preparation",
+     "r": "1–2 weeks",
+     "d": "Depends on how quickly documents are notarised and apostilled abroad"
+    },
+    {
+     "t": "Incorporation",
+     "r": "2–3 weeks",
+     "d": "Subject to name approval and MCA processing"
+    },
+    {
+     "t": "Bank account opening",
+     "r": "1–3 weeks",
+     "d": "Subject to the bank's KYC review of foreign shareholders and directors"
+    },
+    {
+     "t": "Capital infusion and FDI reporting",
+     "r": "Within 30 days of allotment",
+     "d": "FC-GPR is filed after shares are allotted against funds received"
+    },
+    {
+     "t": "Operational registrations",
+     "r": "1–3 weeks",
+     "d": "GST and other registrations, based on business activity"
+    }
+   ],
+   "docs": [
+    {
+     "g": "Foreign corporate shareholder",
+     "items": [
+      "Certificate of incorporation and constitutional documents",
+      "Board resolution approving the investment and authorising a representative",
+      "Proof of registered address",
+      "Details of ultimate beneficial owners"
+     ]
+    },
+    {
+     "g": "Foreign individual directors and shareholders",
+     "items": [
+      "Passport",
+      "Recent proof of residential address",
+      "Photograph and contact details"
+     ]
+    },
+    {
+     "g": "Indian resident director",
+     "items": [
+      "PAN and Aadhaar",
+      "Proof of address",
+      "Consent to act as director"
+     ]
+    },
+    {
+     "g": "Registered office",
+     "items": [
+      "Proof of address, such as a recent utility bill",
+      "No-objection letter from the property owner"
+     ]
+    }
+   ],
+   "note": "Documents executed outside India usually need to be notarised and apostilled, or consularised where the country is not a party to the Hague Convention."
+  }
  },
  {
   "slug": "corporate-advisory",

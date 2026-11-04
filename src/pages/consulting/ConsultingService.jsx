@@ -57,9 +57,11 @@ export default function ServicePage({ slug }) {
                 <div className="ie-st-h"><span className="ie-n">{n(i)}</span><Icon name={s.icon} /></div>
                 <b>{s.title}</b>
                 <p>{s.text}</p>
+                {s.items && <ul className="ie-st-l">{s.items.map((x) => <li key={x}>{x}</li>)}</ul>}
               </li>
             ))}
           </ol>
+          {d.journeyNote && <p className="ie-note"><Icon name="bell" />{d.journeyNote}</p>}
         </div>
       </section>
 
@@ -67,7 +69,7 @@ export default function ServicePage({ slug }) {
         <div className="ie-in"><div className="ie-panel">
           <span className="ie-eye">Our services</span>
           <h2 className="ie-h2">{d.servicesTitle}</h2>
-          <p className="ie-p">Choose individual services or a comprehensive solution. Our team supports you from incorporation to ongoing operations.</p>
+          <p className="ie-p">{d.servicesText || "Choose individual services or a comprehensive solution. Our team supports you from incorporation to ongoing operations."}</p>
           <div className="ie-cards">
             {d.services.map((c, i) => (
               <article className="ie-card" key={c.title}>
@@ -85,8 +87,8 @@ export default function ServicePage({ slug }) {
       <section className="ie-sec ie-eng">
         <div className="ie-in"><div className="ie-panel">
           <div className="ie-2 ie-eng-h">
-            <div><span className="ie-eye">Engagement options</span><h2 className="ie-h2">Flexible engagement options<br />to suit your requirements.</h2></div>
-            <p className="ie-p">Choose an individual service or an end-to-end solution.<br />We will tailor the scope based on your business, industry and plans.</p>
+            <div><span className="ie-eye">Engagement options</span><h2 className="ie-h2">{d.plansTitle ? <Lines text={d.plansTitle} /> : <>Flexible engagement options<br />to suit your requirements.</>}</h2></div>
+            <p className="ie-p">{d.plansText || <>Choose an individual service or an end-to-end solution.<br />We will tailor the scope based on your business, industry and plans.</>}</p>
           </div>
           <div className="ie-plans">
             {d.plans.map((p) => (
@@ -95,13 +97,46 @@ export default function ServicePage({ slug }) {
                 <Icon name={p.icon} />
                 <h3>{p.title}</h3>
                 <span className="ie-sub">{p.subtitle}</span>
+                {p.type && <span className="ie-type">{p.type}</span>}
                 <ul>{p.points.map((x) => <li key={x}><Icon name="check" />{x}</li>)}</ul>
-                <Link className={`ie-btn${p.popular ? " pri" : ""}`} to={contact}>Discuss This Option <Icon name="arrow" /></Link>
+                {p.extras && <p className="ie-extra"><b>Optional:</b> {p.extras}</p>}
+                <Link className={`ie-btn${p.popular ? " pri" : ""}`} to={contact}>{p.cta || "Discuss This Option"} <Icon name="arrow" /></Link>
               </article>
             ))}
           </div>
+          {d.plansNote && <p className="ie-note"><Icon name="bell" />{d.plansNote}</p>}
         </div></div>
       </section>
+
+      {d.timeline && (
+        <section className="ie-sec ie-tl">
+          <div className="ie-in">
+            <div className="ie-2 ie-tl-h">
+              <div><span className="ie-eye">{d.timeline.eyebrow}</span><h2 className="ie-h2"><Lines text={d.timeline.title} /></h2></div>
+              <p className="ie-p">{d.timeline.text}</p>
+            </div>
+            <div className="ie-tl-g">
+              <div className="ie-tl-box">
+                <h3><Icon name="clock" />Indicative timelines</h3>
+                <ol className="ie-tl-l">
+                  {d.timeline.steps.map((t, i) => (
+                    <li key={t.t}><span className="ie-n">{n(i)}</span><div><b>{t.t}</b><small>{t.d}</small></div><em>{t.r}</em></li>
+                  ))}
+                </ol>
+              </div>
+              <div className="ie-tl-box">
+                <h3><Icon name="doc" />Documents required</h3>
+                <div className="ie-docs">
+                  {d.timeline.docs.map((g) => (
+                    <div key={g.g}><b>{g.g}</b><ul>{g.items.map((x) => <li key={x}><Icon name="check" />{x}</li>)}</ul></div>
+                  ))}
+                </div>
+                {d.timeline.note && <p className="ie-tl-note">{d.timeline.note}</p>}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="ie-sec ie-why">
         <div className="ie-in ie-why-in">
@@ -131,11 +166,12 @@ export default function ServicePage({ slug }) {
         <div className="ie-in"><div className="ie-dark">
           <div className="ie-dark-top">
             <div className="ie-dark-l">
-              <span className="ie-tag">Service focus</span>
+              <span className="ie-tag">{d.focus.tag || "Service focus"}</span>
               <h2><Lines text={d.focus.title} /></h2>
               <p>{d.focus.text}</p>
               <div className="ie-btns">
-                <Link className="ie-btn pri" to={contact}>Discuss This Service <Icon name="arrow" /></Link>
+                <Link className="ie-btn pri" to={contact}>{d.focus.btn || "Discuss This Service"} <Icon name="arrow" /></Link>
+                {d.focus.note && <small className="ie-fnote">{d.focus.note}</small>}
               </div>
             </div>
             <div className="ie-dark-r" aria-hidden="true">

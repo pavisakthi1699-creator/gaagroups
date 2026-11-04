@@ -50,10 +50,13 @@
 
 /* ---- Our Team: hover enlarges the photo and shows name + location ---- */
 .gtm .hm-t{transition:opacity .7s calc(var(--k) * .035s),transform .8s var(--ez) calc(var(--k) * .035s),scale .45s cubic-bezier(.22,1,.36,1),box-shadow .45s}
-@media(hover:hover){
-  .gtm .hm.in .hm-t:hover{scale:1.22;z-index:6;box-shadow:0 26px 50px -18px rgba(0,0,0,.45)}
-  .gtm .hm-t:hover img{transform:none}
+@media(hover:hover) and (min-width:900px){
+  .gtm .hm.in .hm-t:hover{scale:1.1;z-index:6;background:#fff;box-shadow:0 0 0 1px #ece7e2,0 22px 40px -18px rgba(0,0,0,.4)}
+  .gtm .hm-t img{transition:filter .5s,inset .35s cubic-bezier(.22,1,.36,1),border-radius .35s}
+  .gtm .hm-t:hover img{transform:none;inset:6px 6px 38px 6px;width:auto;height:auto;border-radius:8px}
+  .gtm .hm-t:hover figcaption{left:0;right:0;bottom:0;height:38px;padding:0 10px;border-radius:0;background:#fff;display:flex;flex-direction:column;justify-content:center}
 }
+
 .gtm .hm-t figcaption{text-align:left}
 .gtm .hm-t figcaption b{font-size:12.5px}
 .gtm .hm-t figcaption small{display:flex;align-items:center;gap:4px;margin-top:2px;font:500 10.5px "Poppins",sans-serif;color:#E0612F}
@@ -126,3 +129,82 @@
   .gga .au-dial{width:min(66vw,400px)!important;margin-left:auto;margin-right:auto}
   .gga .au-lb{--rad:calc(min(66vw,400px) * .41)!important}
 }
+
+/* ===== Nov 4 (2) ===== */
+/* About connected: right column back to a compact size */
+@media(min-width:900px){
+  .gga .lc-r{gap:20px;padding:20px 0}
+  .gga .lc-dot{width:62px;height:62px}
+  .gga .lc-rail{left:30px;top:36px;bottom:36px}
+  .gga .lc-st{font-size:9.5px;padding:4px 10px}
+  .gga .lc-co{font-size:13px}
+  .gga .lc-body h3{margin-top:8px;font-size:21px}
+  .gga .lc-body p{font-size:14px;line-height:1.6}
+  .gga .lc-hand{font-size:12.5px;margin-top:8px}
+}
+
+/* Footer: plain black, shorter, smaller type */
+.sf{background:#000}
+.sf-art{display:none}
+.sf-in{padding-top:clamp(24px,2.4vw,34px)}
+.sf-logo img{width:clamp(96px,7vw,124px)}
+.sf-bar{width:52px;height:3px;margin:8px 0 14px}
+.sf-cos img{height:clamp(22px,1.8vw,30px)}
+.sf-cos i{height:clamp(22px,1.8vw,30px)}
+.sf-col h4{font-size:clamp(15px,1.15vw,19px)}
+.sf-col h4::after{width:38px;height:3px;margin:7px 0 10px}
+.sf-col nav{gap:clamp(5px,.45vw,7px)}
+.sf-col nav a,.sf-col nav .sf-soon{font-size:clamp(12.5px,.85vw,14.5px);gap:9px}
+.sf-col nav svg{width:16px;height:16px}
+.sf-get address{gap:clamp(5px,.45vw,7px)}
+.sf-get address a,.sf-get address span{font-size:clamp(12.5px,.85vw,14.5px);gap:10px}
+.sf-get address svg{width:19px;height:19px}
+.sf-in-i{width:19px;font-size:20px}
+.sf-cta{height:clamp(38px,2.8vw,44px);font-size:clamp(13.5px,.95vw,16px)}
+.sf-cta svg{width:18px;height:18px}
+.sf-bot{margin-top:clamp(14px,1.4vw,20px);padding:9px 0 11px;font-size:clamp(11.5px,.8vw,13.5px)}
+@media(max-width:640px){.sf-in{padding-top:24px}.sf-col h4{font-size:15px}.sf-top{row-gap:18px}}
+
+/* Service pages: journey deliverables, plan details, timelines and documents */
+.ie-st-l{list-style:none;margin-top:12px;display:flex;flex-direction:column;gap:6px}
+.ie-st-l li{position:relative;padding-left:14px;font:400 13.5px/1.45 "Poppins",sans-serif;color:#3f3f45}
+.ie-st-l li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:#E98A45}
+.ie-st:hover{background:transparent!important;box-shadow:none!important;transform:none!important}
+.ie-note{margin-top:28px;display:flex;align-items:flex-start;gap:12px;padding:14px 18px;border-radius:12px;background:#FFF6F0;box-shadow:inset 0 0 0 1px #F6DCCB;font:400 14.5px/1.6 "Poppins",sans-serif;color:#3f3f45}
+.ie-note .i{flex:none;width:20px;height:20px;margin-top:2px;color:#E0612F}
+.ie-type{align-self:flex-start;margin-top:12px;padding:4px 12px;border-radius:999px;background:#F6F1EC;font:600 12px "Poppins",sans-serif;letter-spacing:.04em;color:#5f5f66}
+.ie-extra{margin:-12px 0 24px;padding-top:14px;border-top:1px dashed #EADBD0;font:400 14px/1.5 "Poppins",sans-serif;color:#5f5f66}
+.ie-extra b{font-weight:600;color:#2a2a2e}
+.ie-plan:hover{transform:none!important}
+.ie-plan:hover>.i{transform:none}
+.ie-tl-h{align-items:end}
+.ie-tl-g{margin-top:36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px}
+.ie-tl-box{padding:30px 30px 28px;border-radius:16px;background:#fff;box-shadow:0 0 0 1px #F0E6DE,0 18px 40px -34px rgba(80,40,20,.35)}
+.ie-tl-box h3{display:flex;align-items:center;gap:12px;font:700 20px "Outfit",sans-serif;letter-spacing:-.01em}
+.ie-tl-box h3 .i{width:26px;height:26px;color:#E0612F}
+.ie-tl-l{list-style:none;margin-top:18px}
+.ie-tl-l li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;padding:14px 0;border-top:1px solid #F1E9E2}
+.ie-tl-l .ie-n{transform:none}
+.ie-tl-l b{display:block;font:600 15.5px "Outfit",sans-serif}
+.ie-tl-l small{display:block;margin-top:2px;font:400 13px/1.45 "Poppins",sans-serif;color:#6a6a72}
+.ie-tl-l em{font:600 13.5px "Poppins",sans-serif;font-style:normal;color:#C9461F;white-space:nowrap;text-align:right}
+.ie-docs{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:20px 26px}
+.ie-docs b{display:block;font:600 15px "Outfit",sans-serif}
+.ie-docs ul{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:7px}
+.ie-docs li{display:flex;gap:8px;font:400 13.5px/1.45 "Poppins",sans-serif;color:#3f3f45}
+.ie-docs li .i{flex:none;width:17px;height:17px;margin-top:1px;color:#E0612F}
+.ie-tl-note{margin-top:20px;padding-top:14px;border-top:1px solid #F1E9E2;font:400 13px/1.55 "Poppins",sans-serif;color:#6a6a72}
+.ie-fnote{display:block;flex-basis:100%;margin-top:2px;font:400 12px "Poppins",sans-serif;color:#aab0bd}
+@media(min-width:900px){.ie-focus .ie-btns{align-items:center}.ie-focus .ie-fnote{flex-basis:auto;max-width:17em;line-height:1.35}}
+@media(max-width:899px){
+  .ie-tl-g,.ie-docs{grid-template-columns:1fr}
+  .ie-tl-box{padding:22px 18px}
+  .ie-tl-l li{grid-template-columns:auto minmax(0,1fr);gap:4px 12px}
+  .ie-tl-l em{grid-column:2;text-align:left}
+}
+@media(min-width:900px){
+  .ie-focus .ie-dark-top{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr)}
+  .ie-focus .ie-dark p{max-width:44em}
+  .ie-focus .ie-fnote{max-width:none;white-space:nowrap}
+}
+.ie-ft{font-style:normal}
