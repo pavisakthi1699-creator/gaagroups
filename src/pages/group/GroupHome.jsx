@@ -45,14 +45,11 @@ export default function GroupHome() {
       <p className="gc-sub">GAA Group brings together advisory, business support and talent expertise through three specialist companies, connecting the right teams around your needs.</p></div>
     <div className="gc-grid"><Link className="gc-c" to="/gaa-consulting" style={{"--k": "0"}}>
         <span className="gc-lg"><img src="/images/group/c5505df3de.webp" alt="GAA Consulting logo" /></span>
-        <span className="gc-k">Advisory</span><b className="gc-n">GAA Consulting</b><span className="gc-d">Corporate and transaction advisory, India entry and NBFC matters.</span>
-        <span className="gc-x">Explore GAA Consulting <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></span></Link><Link className="gc-c" to="/filings-first" style={{"--k": "1"}}>
+        <span className="gc-k">Advisory</span><b className="gc-n">GAA Consulting</b><span className="gc-d">Corporate and transaction advisory, India entry and NBFC matters.</span></Link><Link className="gc-c" to="/filings-first" style={{"--k": "1"}}>
         <span className="gc-lg"><img src="/images/group/3d314fc428.png" alt="Filings First logo" /></span>
-        <span className="gc-k">Business Support</span><b className="gc-n">Filings First</b><span className="gc-d">Accounting, tax, statutory filings and ongoing business support.</span>
-        <span className="gc-x">Explore Filings First <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></span></Link><Link className="gc-c" to="/hirings-first" style={{"--k": "2"}}>
+        <span className="gc-k">Business Support</span><b className="gc-n">Filings First</b><span className="gc-d">Accounting, tax, statutory filings and ongoing business support.</span></Link><Link className="gc-c" to="/hirings-first" style={{"--k": "2"}}>
         <span className="gc-lg"><img src="/images/group/e20d83fa50.webp" alt="Hirings First logo" /></span>
-        <span className="gc-k">Talent &amp; People</span><b className="gc-n">Hirings First</b><span className="gc-d">Recruitment, workforce solutions and HR support.</span>
-        <span className="gc-x">Explore Hirings First <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></span></Link></div>
+        <span className="gc-k">Talent &amp; People</span><b className="gc-n">Hirings First</b><span className="gc-d">Recruitment, workforce solutions and HR support.</span></Link></div>
     <div className="gc-nav" aria-label="Browse companies"><span className="gc-dots">{[0, 1, 2].map((k) => <i key={k} data-k={k} />)}</span><button type="button" className="gc-prev" aria-label="Previous company"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg></button><button type="button" className="gc-next" aria-label="Next company"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button></div>
     <div className="gc-foot"><b>Connected expertise. Coordinated around your business.</b><Link className="gc-cta" to="/contact">Talk to our team <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></Link></div>
   </div>

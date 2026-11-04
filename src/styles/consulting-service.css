@@ -207,11 +207,6 @@
 .ie-q p{padding-left:14px}
 
 /* service focus (CTA) keeps its design; small hover touches */
-.ie-dark-f span{transition:background .35s}
-.ie-dark-f span:hover{background:rgba(255,255,255,.04)}
-.ie-dark-f span:hover .i{animation:ie-pop .5s;color:#F6A97F}
-.ie-lap{transition:transform .8s cubic-bezier(.22,1,.36,1)}
-.ie-dark:hover .ie-lap{transform:perspective(1200px) rotateY(-6deg) rotateX(2deg)}
 
 @media (prefers-reduced-motion: reduce){.ie-hero-bg img,.ie-pop{animation:none!important}}
 @media(max-width:899px){

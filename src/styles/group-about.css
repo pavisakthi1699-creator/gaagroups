@@ -246,7 +246,7 @@
 .gga .hw-o{-webkit-background-clip:text;background-clip:text;color:transparent}
 
 /* ================= changes ================= */
-@media(min-width:900px){.gga .lc-pts{display:none}}
+
 @media(max-width:899px){
   .gga .ah2-h1{font-size:calc(0.86 * clamp(30px,8.6vw,42px))!important}
   .gga .hz{padding-top:88px!important;padding-bottom:20px!important}

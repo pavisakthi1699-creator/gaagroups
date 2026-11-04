@@ -163,18 +163,4 @@
 .ff-row-st:hover .ff-n{color:inherit}
 .hf-bx-st:hover{transform:none;background:#FBF8F4;box-shadow:none}
 .hf-bx-st:hover .ff-ic{background:inherit;color:inherit;transform:none}
-/* "Service focus" CTA: one compact 200px band */
-.ie-focus .ie-dark{height:200px;display:flex;align-items:center}
-.ie-focus .ie-dark-top{display:block;width:100%;padding:0 clamp(36px,4vw,64px)}
-.ie-focus .ie-dark-l{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto auto;column-gap:40px;align-items:center}
-.ie-focus .ie-tag{grid-column:1;justify-self:start;padding:5px 14px;font-size:11.5px}
-.ie-focus .ie-dark h2{grid-column:1;margin-top:10px;font-size:clamp(24px,2vw,30px);line-height:1.15}
-.ie-focus .ie-dark h2 br{display:none}
-.ie-focus .ie-dark p{grid-column:1;margin-top:6px;max-width:58em;font-size:14.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.ie-focus .ie-btns{grid-column:2;grid-row:1/4;margin:0}
-@media(max-width:899px){
-  .ie-focus .ie-dark{height:auto;min-height:200px;padding:26px 0}
-  .ie-focus .ie-dark-top{padding:0 22px}
-  .ie-focus .ie-dark-l{display:block}
-  .ie-focus .ie-btns{margin-top:16px}
-}
+

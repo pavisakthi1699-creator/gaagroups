@@ -50,11 +50,11 @@ export default function Footer() {
             <Link className="sf-logo" to="/" aria-label="GAA Group home"><img src="/images/footer/gaa.png" alt="GAA" width="300" height="134" loading="lazy" /></Link>
             <span className="sf-bar" />
             <div className="sf-cos">
-              <Link to="/gaa-consulting" aria-label="GAA Consulting"><img src="/images/footer/gaa-consulting.png" alt="GAA Consulting" loading="lazy" /></Link>
+              <Link to="/gaa-consulting" aria-label="GAA Consulting"><img src="/images/footer/gaa-consulting-w.png" alt="GAA Consulting" loading="lazy" /></Link>
               <i />
-              <Link to="/filings-first" aria-label="Filings First"><img src="/images/footer/filings-first.png" alt="Filings First" loading="lazy" /></Link>
+              <Link to="/filings-first" aria-label="Filings First"><img src="/images/footer/filings-first-w.png" alt="Filings First" loading="lazy" /></Link>
               <i />
-              <Link to="/hirings-first" aria-label="Hirings First"><img src="/images/footer/hirings-first.png" alt="Hirings First" loading="lazy" /></Link>
+              <Link to="/hirings-first" aria-label="Hirings First"><img src="/images/footer/hirings-first-w.png" alt="Hirings First" loading="lazy" /></Link>
             </div>
           </div>
           {COLS.map((c) => (

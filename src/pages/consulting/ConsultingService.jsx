@@ -138,6 +138,26 @@ export default function ServicePage({ slug }) {
                 <Link className="ie-btn pri" to={contact}>Discuss This Service <Icon name="arrow" /></Link>
               </div>
             </div>
+            <div className="ie-dark-r" aria-hidden="true">
+              <div className="ie-lap">
+                <div className="ie-scr">
+                  <div className="ie-scr-h"><b>{d.focus.screen.title}</b><span>Today</span></div>
+                  <div className="ie-scr-k">
+                    <span><small>{d.focus.screen.k1}</small><b>{d.focus.screen.v1}</b></span>
+                    <span><small>{d.focus.screen.k2}</small><b>{d.focus.screen.v2}</b></span>
+                  </div>
+                  <svg viewBox="0 0 300 90">
+                    <path d="M0 70 C40 60 60 30 100 40 S160 75 200 45 S260 15 300 25" fill="none" stroke="#F08A5D" strokeWidth="3" />
+                    <path d="M0 70 C40 60 60 30 100 40 S160 75 200 45 S260 15 300 25 V90 H0Z" fill="rgba(240,138,93,.18)" />
+                  </svg>
+                  <div className="ie-scr-r">{d.focus.screen.chips.map((c) => <span key={c}>{c}</span>)}</div>
+                </div>
+                <div className="ie-base" />
+              </div>
+            </div>
+          </div>
+          <div className="ie-dark-f">
+            {d.focus.features.map((f) => <span key={f.text}><Icon name={f.icon} /><em className="ie-ft"><Lines text={f.text} /></em></span>)}
           </div>
         </div></div>
       </section>

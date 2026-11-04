@@ -1,0 +1,128 @@
+/* ================= Nov 4 change list ================= */
+
+/* ---- Home: Our Services ---- */
+.ggh .os-sub{font-size:calc(.86 * clamp(13px,min(1.15vw,2vh),18px));line-height:1.55;max-width:46em}
+.ggh .os-grid{align-items:start}
+.ggh .os-ch{min-height:0;max-width:none;padding-bottom:14px;font-size:calc(.86 * clamp(13px,min(1.15vw,2vh),17px));font-weight:700;letter-spacing:.16em;color:#D9532B;opacity:1}
+.ggh .os-ch::after{content:"";display:block;width:40px;height:3px;margin-top:12px;border-radius:2px;background:linear-gradient(90deg,#D9532B,#E98A45)}
+.ggh .os-tg,.ggh .os-tg span{color:#D9532B!important}
+.ggh .os-list{margin-top:6px!important}
+.ggh .os-it{padding-top:clamp(12px,1.7vh,18px)!important;padding-bottom:clamp(12px,1.7vh,18px)!important}
+.ggh .os-tx small{max-width:none}
+@media(max-width:899px){
+  .ggh .os-ch{padding-bottom:10px;font-size:12.5px}
+  .ggh .os-ch::after{margin-top:8px}
+  .ggh .os-grid{gap:24px!important}
+}
+
+/* ---- About: How our companies are connected (bigger, fills the left side) ---- */
+@media(min-width:900px){
+  .gga .lc{min-height:0}
+  .gga .lc-in{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)!important;gap:clamp(48px,5vw,96px)!important;align-items:stretch!important;padding-top:120px!important;padding-bottom:80px!important}
+  .gga .lc-l{display:flex;flex-direction:column;justify-content:center}
+  .gga .lc-eye{font-size:54px!important}
+  .gga .lc-h2{font-size:30px!important}
+  .gga .lc-p{max-width:none;font-size:17.5px;line-height:1.75}
+  .gga .lc-pts{margin-top:30px}
+  .gga .lc-pts li{padding:16px 0;font-size:15px}
+  .gga .lc-pts b{font-size:18px;min-width:12em}
+  .gga .lc-pts li:hover{padding-left:0}
+  .gga .lc-list{justify-content:center}
+  .gga .lc-r{gap:28px;padding:30px 0}
+  .gga .lc-dot{width:82px;height:82px}
+  .gga .lc-rail{left:40px;top:44px;bottom:44px}
+  .gga .lc-st{font-size:11px;padding:5px 12px}
+  .gga .lc-co{font-size:15px}
+  .gga .lc-body h3{margin-top:12px;font-size:28px}
+  .gga .lc-body p{font-size:16.5px;max-width:none}
+  .gga .lc-hand{font-size:14.5px}
+}
+
+/* ---- About: circle labels now carry the service lines ---- */
+.gga .au-lb b{font-size:calc(.86 * clamp(17px,min(1.9vw,3.4vh),30px))}
+.gga .au-vb{font-size:calc(.86 * clamp(19px,min(1.7vw,3.2vh),28px))}
+@media(max-width:899px){
+  .gga .au-lb b{font-size:15px}
+  .gga .au-lb i{font-size:8.5px}
+  .gga .au-vb{font-size:17px}
+  .gga .au-legend{flex-direction:column;align-items:center}
+}
+
+/* ---- Our Team: hover enlarges the photo and shows name + location ---- */
+.gtm .hm-t{transition:opacity .7s calc(var(--k) * .035s),transform .8s var(--ez) calc(var(--k) * .035s),scale .45s cubic-bezier(.22,1,.36,1),box-shadow .45s}
+@media(hover:hover){
+  .gtm .hm.in .hm-t:hover{scale:1.22;z-index:6;box-shadow:0 26px 50px -18px rgba(0,0,0,.45)}
+  .gtm .hm-t:hover img{transform:none}
+}
+.gtm .hm-t figcaption{text-align:left}
+.gtm .hm-t figcaption b{font-size:12.5px}
+.gtm .hm-t figcaption small{display:flex;align-items:center;gap:4px;margin-top:2px;font:500 10.5px "Poppins",sans-serif;color:#E0612F}
+.gtm .hm-t figcaption small::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+@media(max-width:899px){
+  .gtm .hm{padding-top:96px!important;padding-bottom:22px!important}
+  .gtm .hm-g{grid-template-rows:104px 104px auto 104px 104px!important;gap:7px!important}
+  .gtm .hm-c{padding:18px 2px!important}
+  .gtm .hm-t figcaption b{font-size:10px}
+  .gtm .hm-t figcaption small{font-size:8.5px}
+}
+
+/* ---- Service focus CTA: original design, 300px tall ---- */
+@media(min-width:900px){
+  .ie-focus .ie-dark{height:300px;display:flex;flex-direction:column}
+  .ie-focus .ie-dark-top{flex:1 1 auto;min-height:0;gap:40px;padding:22px clamp(36px,4vw,64px) 0;overflow:hidden}
+  .ie-focus .ie-tag{padding:5px 14px;font-size:11.5px}
+  .ie-focus .ie-dark h2{margin-top:10px;font-size:clamp(24px,2vw,30px);line-height:1.12}
+  .ie-focus .ie-dark p{margin-top:8px;font-size:14px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .ie-focus .ie-btns{margin-top:14px}
+  .ie-focus .ie-btn{height:44px;padding:0 22px;font-size:14.5px}
+  .ie-focus .ie-dark-r{align-self:stretch;align-items:flex-start;padding-top:4px}
+  .ie-focus .ie-lap{width:min(100%,330px)}
+  .ie-focus .ie-scr{padding:12px;box-shadow:0 0 0 7px #111827,0 30px 60px -30px rgba(0,0,0,.7)}
+  .ie-focus .ie-scr-h{font-size:12.5px}
+  .ie-focus .ie-scr-k{margin-top:8px;gap:8px}
+  .ie-focus .ie-scr-k span{padding:7px 10px}
+  .ie-focus .ie-scr-k small{font-size:10.5px}.ie-focus .ie-scr-k b{font-size:14px;margin-top:2px}
+  .ie-focus .ie-scr svg{height:38px;margin-top:8px}
+  .ie-focus .ie-scr-r{margin-top:6px;gap:6px}.ie-focus .ie-scr-r span{padding:3px 9px;font-size:10.5px}
+  .ie-focus .ie-base{height:10px;margin-top:6px}
+  .ie-focus .ie-dark-f{flex:none}
+  .ie-focus .ie-dark-f span{flex-direction:row;justify-content:center;gap:10px;padding:14px 14px;font-size:13.5px;line-height:1.35;text-align:left}
+  .ie-focus .ie-ft{font-style:normal}
+  .ie-focus .ie-dark-f .i{width:24px;height:24px;flex:none}
+}
+
+/* ---- Contact: remove the empty space between sections ---- */
+.gcu .cu,.gcu .nx{min-height:0!important}
+.gcu .cu-h1 em{display:inline}
+@media(min-width:900px){
+  .gcu .cu-in{padding-top:120px!important;padding-bottom:56px!important;align-items:start!important}
+  .gcu .nx-in{padding-top:56px!important;padding-bottom:64px!important}
+}
+@media(max-width:899px){
+  .gcu .cu-in{padding:92px 20px 36px!important;gap:26px!important}
+  .gcu .nx-in{padding:36px 20px 40px!important}
+}
+
+/* ---- Mobile: one even rhythm between sections ---- */
+@media(max-width:899px){
+  .ggh .os-in,.ggh .wg-in,.ggh .gc-in{padding-top:36px!important;padding-bottom:36px!important}
+  .ggh .gc-foot{margin-top:22px!important}
+  .gga .lc-in,.gga .au-in{padding-top:36px!important;padding-bottom:36px!important}
+  .gga .lc-in{gap:22px!important}
+  .gga .lc-pts{margin-top:16px}
+  .gga .lc-pts li{padding:10px 0}
+  .ie-sec{padding-top:36px!important;padding-bottom:36px!important}
+  .ff-sec{padding-top:36px!important;padding-bottom:36px!important}
+  .fq{padding-top:36px!important;padding-bottom:36px!important}
+}
+@media(max-width:899px){
+  .gga .au-lb i{white-space:normal;width:64px;text-align:center;line-height:1.25}
+  .gga .au-lb b{white-space:normal;width:108px;text-align:center;line-height:1.1}
+  .gga .au-legend{gap:2px}
+  .gga .au-lgd{display:flex;white-space:nowrap;font-size:11px}
+  .gga .au-lgd b{margin-right:4px}
+}
+@media(max-width:899px){
+  .gga .au-dial{width:min(66vw,400px)!important;margin-left:auto;margin-right:auto}
+  .gga .au-lb{--rad:calc(min(66vw,400px) * .41)!important}
+}

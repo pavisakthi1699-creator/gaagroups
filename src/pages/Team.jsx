@@ -28,7 +28,7 @@ function Layer({ it, nx }) {
   return (
     <div className={`ly${nx ? " nx" : ""}`}>
       <img src={it.src} alt={it.name} />
-      <figcaption><b>{it.name}</b><span>{it.role}</span><small>{it.co ? `${it.co} · ` : ""}Bangalore</small></figcaption>
+      <figcaption><b>{it.name}</b><small>Bengaluru</small></figcaption>
     </div>
   );
 }
