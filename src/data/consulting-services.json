@@ -352,64 +352,59 @@
   "contact": "corporate",
   "name": "Corporate Advisory",
   "h1": "Sound corporate decisions.\nStrong governance.",
-  "lead": "From company law and board matters to governance frameworks, agreements and regulatory filings, GAA Consulting advises promoters, boards and management on the corporate decisions that shape your business.",
-  "cta": "Discuss Your Requirement",
-  "whoTitle": "Advising promoters and boards\non everyday and critical corporate matters.",
-  "whoText": "We work with promoters, boards, management teams and company secretaries of private and public companies, LLPs and business groups that need dependable company law and governance support.",
+  "lead": "Corporate decisions shape the ownership, governance, risk exposure and long-term direction of a business. GAA Consulting advises promoters, boards, investors and management teams on company law, corporate structuring, strategic transactions, governance, regulatory matters and complex corporate actions, with practical advice backed by execution.",
+  "cta": "Discuss a Corporate Matter",
+  "whoTitle": "Advising the people who\nmake corporate decisions.",
+  "whoText": "We work with promoters, boards and management teams of private and public companies, LLPs and business groups, from routine corporate matters to complex corporate events.",
   "who": [
-   "Private and public limited companies",
-   "Promoters and founders",
-   "Boards and independent directors",
-   "Family-owned businesses and groups",
-   "LLPs and partnership firms",
-   "Foreign-owned Indian companies"
+   "Promoters and founders — undertaking corporate actions",
+   "Boards and directors — seeking governance advice",
+   "CFOs, general counsel and in-house legal teams",
+   "Investors and businesses — acquisitions and restructuring",
+   "Foreign-owned Indian subsidiaries — local regulatory advisory",
+   "Professional firms — specialist company law execution"
   ],
-  "servicesTitle": "Complete corporate law and governance support.",
+  "servicesTitle": "Corporate advisory with integrated execution.",
   "services": [
    {
     "icon": "building",
-    "title": "Company Law Advisory",
-    "text": "Advice on the Companies Act, 2013, the LLP Act and related rules for day-to-day and strategic corporate matters."
+    "title": "Company Law & Regulatory Advisory",
+    "text": "Interpretation of the Companies Act, 2013, the LLP Act and related rules for proposed decisions, including regulatory applicability, corporate approvals, related-party transactions, inter-corporate loans and investments, managerial remuneration, available exemptions and the consequences of a proposed course of action."
    },
    {
     "icon": "people",
-    "title": "Board & Shareholder Matters",
-    "text": "Board and general meetings, resolutions, notices, minutes and the related approvals and filings."
-   },
-   {
-    "icon": "shield",
-    "title": "Corporate Governance Frameworks",
-    "text": "Board processes, committee structures, policies and governance practices suited to your company’s stage."
-   },
-   {
-    "icon": "doc",
-    "title": "Secretarial Audit",
-    "text": "Secretarial audits and compliance reviews, with clear reporting and support to fix any gaps."
-   },
-   {
-    "icon": "layers",
-    "title": "Agreements & Documentation",
-    "text": "Shareholders’, joint venture and commercial agreements, and corporate documentation."
+    "title": "Board, Shareholder & Governance Advisory",
+    "text": "Advice on board powers, reserved matters, voting requirements, shareholder rights, conflicts of interest and directors' duties, and on the governance implications of strategic decisions, alongside meetings, resolutions, minutes and approvals."
    },
    {
     "icon": "gear",
-    "title": "Changes in Capital & Structure",
-    "text": "Allotments, share transfers, increases in authorised capital and changes to the memorandum and articles."
+    "title": "Capital Structuring & Corporate Actions",
+    "text": "Rights issues, private placements, preferential allotments, share transfers, splits and consolidations, buybacks, capital reductions, conversion of securities and shareholder restructuring, with the approvals, documentation and filings each requires."
    },
    {
-    "icon": "user",
-    "title": "Director & KMP Matters",
-    "text": "Appointment and resignation of directors and key managerial personnel, DIN and KYC, and related filings."
+    "icon": "layers",
+    "title": "Corporate Restructuring & Reorganisation",
+    "text": "Group and ownership reorganisations, changes to the memorandum and articles, registered office, name and objects, and support for mergers, demergers and other structural changes where they form part of the mandate."
    },
    {
-    "icon": "pin",
-    "title": "Registered Office & Name Changes",
-    "text": "Shifting of registered office, change of name or objects, and the approvals involved."
+    "icon": "doc",
+    "title": "Corporate Due Diligence & Transaction Support",
+    "text": "Corporate and secretarial due diligence before an investment, acquisition or exit, covering incorporation records, capital history, filings, approvals and governance, with a findings report and recommended corrective actions."
+   },
+   {
+    "icon": "id",
+    "title": "Agreements & Corporate Documentation",
+    "text": "Shareholders' agreements, share subscription and purchase agreements, joint venture and founder arrangements and corporate resolutions, reviewed for company law and governance consistency, with specialist legal counsel involved where the engagement requires."
+   },
+   {
+    "icon": "shield",
+    "title": "Secretarial Audit & Governance Assurance",
+    "text": "Statutory secretarial audits under Section 204 of the Companies Act, 2013 for companies required to have one, and separate voluntary compliance reviews. Any remediation support is offered as a distinct engagement, keeping the audit independent."
    },
    {
     "icon": "bars",
-    "title": "Regulatory Representation",
-    "text": "Representation before the Registrar of Companies and other authorities on corporate matters, including compounding and adjudication."
+    "title": "Regulatory Representation & Resolution",
+    "text": "Responses to notices from the Registrar of Companies, inspection-related matters, adjudication proceedings, compounding applications, applications for approvals and rectification of historical non-compliance, before the forums where we are authorised to act."
    }
   ],
   "journeyEyebrow": "How we work",
@@ -418,208 +413,330 @@
    {
     "icon": "bulb",
     "title": "Understand",
-    "text": "Understand the matter, your objectives and the timelines involved."
+    "text": "Get clear on what the decision has to achieve.",
+    "items": [
+     "Commercial objective",
+     "Stakeholders involved",
+     "Proposed structure",
+     "Decision deadline"
+    ]
    },
    {
     "icon": "doc",
     "title": "Review",
-    "text": "Review records, documents and the applicable law and rules."
+    "text": "Establish where the company stands today.",
+    "items": [
+     "Existing corporate records",
+     "Applicable laws and rules",
+     "Regulatory restrictions",
+     "Potential exposure"
+    ]
    },
    {
     "icon": "layers",
     "title": "Advise",
-    "text": "Give clear, practical advice and the options available."
+    "text": "Set out the options and our recommendation.",
+    "items": [
+     "Available options",
+     "Legal implications",
+     "Regulatory risks",
+     "Recommended actions"
+    ]
    },
    {
     "icon": "shield",
     "title": "Document",
-    "text": "Prepare resolutions, agreements and filings to put the decision in place."
+    "text": "Put the decision in writing and on record.",
+    "items": [
+     "Approvals and resolutions",
+     "Agreements",
+     "Regulatory applications",
+     "Transaction documents"
+    ]
    },
    {
     "icon": "bars",
     "title": "Support",
-    "text": "Keep governance and compliance on track as your business grows."
+    "text": "See the decision through to completion.",
+    "items": [
+     "Implementation",
+     "Filings and closure",
+     "Ongoing obligations"
+    ]
    }
   ],
   "plans": [
    {
     "icon": "plane",
-    "title": "Advisory on Demand",
-    "subtitle": "Specific matters",
+    "title": "Transaction & Advisory Mandate",
+    "subtitle": "Specific corporate decisions and transactions",
+    "type": "Project-based",
     "points": [
-     "Opinion on corporate law questions",
-     "Review of documents and agreements",
-     "One-off board or shareholder matters"
+     "Opinions and structuring advice",
+     "Approvals and documentation",
+     "Implementation and filings"
     ],
+    "deliverable": "A completed advisory mandate",
+    "extras": "Unrelated transactions and litigation",
+    "extrasLabel": "Not included",
+    "cta": "Discuss a Corporate Matter",
     "popular": false
    },
    {
     "icon": "building",
-    "title": "Corporate Secretarial Retainer",
-    "subtitle": "Ongoing company secretarial support",
+    "title": "Corporate Advisory Retainer",
+    "subtitle": "Ongoing access to advisory support",
+    "type": "Monthly or annual",
     "points": [
-     "Board and general meeting support",
-     "Statutory registers and minutes",
-     "Annual ROC filings",
-     "Event-based filings and approvals",
-     "Governance and compliance calendar"
+     "Periodic advice on corporate matters",
+     "Governance and board support",
+     "Agreed recurring deliverables",
+     "Priority access to the advisory team"
     ],
-    "popular": true
+    "deliverable": "Continuing professional support",
+    "extras": "Major transactions and extraordinary filings, scoped separately",
+    "extrasLabel": "Not included",
+    "cta": "Discuss a Retainer",
+    "popular": true,
+    "badge": ""
    },
    {
     "icon": "bars",
-    "title": "Governance Review",
-    "subtitle": "Compliance health check",
+    "title": "Governance & Compliance Review",
+    "subtitle": "Independent compliance assessment",
+    "type": "Fixed-scope",
     "points": [
-     "Secretarial and compliance review",
-     "Gap analysis and recommendations",
-     "Policy and process updates",
-     "Remediation support"
+     "Records and document review",
+     "Gap and risk assessment",
+     "Findings report",
+     "Prioritised action plan"
     ],
+    "deliverable": "Findings and a remediation roadmap",
+    "extras": "Implementation, unless separately agreed",
+    "extrasLabel": "Not included",
+    "cta": "Request a Review",
     "popular": false
    }
   ],
-  "whyTitle": "A partner you can\nrely on for governance.",
+  "whyTitle": "Advice with\nexecution behind it.",
   "why": [
    {
     "icon": "user",
-    "text": "Company secretaries and legal professionals under one roof"
+    "title": "Professional credibility",
+    "text": "Company secretaries and corporate law professionals focused on company law, governance and regulatory matters."
    },
    {
-    "icon": "people",
-    "text": "Senior-led supervision of key matters"
+    "icon": "layers",
+    "title": "Transaction experience",
+    "text": "Capital transactions, corporate actions, regulatory assignments and governance engagements for private and public companies."
    },
    {
     "icon": "gear",
-    "text": "Practical, documented and filing-ready advice"
+    "title": "Integrated execution",
+    "text": "Advice, documentation, approvals and statutory filings coordinated through defined responsibilities."
    },
    {
     "icon": "infinity",
-    "text": "Continuity from advice to ongoing compliance"
+    "title": "Continuing relationships",
+    "text": "Ongoing governance, secretarial and compliance support beyond individual matters."
    }
   ],
   "faqTitle": "Common questions\non corporate advisory.",
   "faq": [
    {
-    "q": "Do you advise private companies as well as public companies?",
-    "a": "Yes. We advise private and public companies, LLPs and their promoters and boards on company law and governance matters."
+    "q": "Do you advise private, public and listed companies?",
+    "a": "Yes. We advise private and public companies, LLPs and their promoters and boards on company law and governance. For listed companies and regulated entities such as NBFCs, we advise on the company law and governance aspects, with securities-market or sector-specific matters scoped to the applicable requirements."
    },
    {
-    "q": "What does a secretarial audit cover?",
-    "a": "A secretarial audit reviews a company’s compliance with the Companies Act, 2013 and other applicable laws and rules. It is mandatory for certain classes of companies and is a useful health check for others."
+    "q": "What is the difference between a secretarial audit and a compliance review?",
+    "a": "A secretarial audit under Section 204 of the Companies Act, 2013 is mandatory for listed companies and certain larger public companies and companies with significant borrowings. It is carried out by a practising company secretary and reported in Form MR-3. A voluntary compliance review is an internal health check for any company. Remediation support is engaged separately from an audit so that the audit stays independent."
    },
    {
     "q": "Can you take care of our annual ROC filings?",
-    "a": "Yes. We prepare and file the annual return and financial statements with the Registrar of Companies and track event-based filings during the year."
+    "a": "Yes. We prepare and file the annual return and financial statement forms with the Registrar of Companies and track event-based filings during the year. The company's board remains responsible for approving the financial statements, the statutory auditor for the audit, and the company for the accuracy of its disclosures."
    },
    {
-    "q": "Can you help with changes to our share capital or shareholding?",
-    "a": "Yes. We handle allotments, transfers, increases in authorised capital and the related board and shareholder approvals and filings."
+    "q": "What approvals are needed to issue shares to new investors?",
+    "a": "Typically board approval, a special resolution of shareholders for a private placement or preferential allotment, a valuation report where required, an offer letter and the return of allotment filed within the prescribed time. Where the investor is non-resident, FEMA pricing rules and RBI reporting also apply. The exact route depends on the type of issue."
+   },
+   {
+    "q": "Can a loan be converted into equity?",
+    "a": "Often, yes. Where the loan terms include a conversion option approved by special resolution before the loan was taken, conversion follows that route. Otherwise conversion is usually done as a fresh allotment with the related approvals. Loans from non-residents also need to meet FEMA requirements. We assess the available route for your loan."
+   },
+   {
+    "q": "Can we restructure shareholding without transferring business assets?",
+    "a": "In many cases, yes, through share transfers, fresh issues, buybacks or a holding structure, depending on your objective. Each option has different company law, tax, stamp duty and FEMA implications, which we set out before you decide."
+   },
+   {
+    "q": "Can you review a shareholders' agreement or share purchase agreement?",
+    "a": "Yes. We review investment and transaction agreements for company law and governance consistency, including whether the articles need amendment to reflect investor rights. Commercial negotiation and specialist legal drafting are handled with legal counsel where the engagement requires."
+   },
+   {
+    "q": "What should a company do after receiving an ROC notice?",
+    "a": "Do not ignore it. Note the response deadline, collect the records the notice refers to and take advice before replying. Depending on the issue, the right response may be an explanation, rectification of the default, a compounding application or an adjudication process. We can review the notice and prepare the response."
+   },
+   {
+    "q": "What is the difference between compounding and adjudication?",
+    "a": "Compounding under Section 441 applies to certain offences: the company or officer applies to settle the offence by paying a compounding fee. Adjudication under Section 454 applies to defaults that carry a monetary penalty, which an adjudicating officer imposes after a hearing. Which applies depends on the provision breached."
+   },
+   {
+    "q": "Can you undertake secretarial due diligence before an investment?",
+    "a": "Yes. We review the company's incorporation records, capital history, statutory registers, filings and approvals, and report gaps, risks and recommended corrective actions before you invest or acquire."
    },
    {
     "q": "Can we engage you for a single matter?",
-    "a": "Yes. You can engage us for a single opinion or transaction, or on an ongoing retainer."
+    "a": "Yes. You can engage us for a single opinion or corporate action, an ongoing advisory retainer or an independent governance review."
    }
   ],
   "focus": {
-   "title": "Secretarial Audit &\nGovernance Review",
-   "text": "A structured review of your company’s statutory records, filings and board processes, with clear findings and support to close any gaps.",
+   "tag": "Corporate advisory",
+   "title": "Important corporate decisions\ndeserve informed advice.",
+   "text": "Evaluating a transaction, restructuring ownership, strengthening governance or facing a regulatory issue? We help you assess the requirements and next steps.",
+   "btn": "Discuss Your Corporate Matter",
+   "note": "Speak with our advisory team.",
    "features": [
     {
-     "icon": "doc",
-     "text": "Statutory records\nand registers review"
+     "icon": "building",
+     "text": "Company law\nopinions"
     },
     {
-     "icon": "layers",
-     "text": "Filings and\napprovals check"
+     "icon": "gear",
+     "text": "Capital\ntransactions"
     },
     {
      "icon": "people",
-     "text": "Board process\nassessment"
+     "text": "Governance\nand boards"
     },
     {
-     "icon": "shield",
-     "text": "Findings, remediation\nand follow-up"
+     "icon": "bars",
+     "text": "Regulatory\nnotices"
     }
    ],
    "screen": {
-    "title": "Compliance tracker",
-    "k1": "Filings due",
-    "v1": "4",
-    "k2": "Completed",
-    "v2": "26",
+    "title": "Corporate matter",
+    "k1": "Matter",
+    "v1": "Capital raise",
+    "k2": "Stage",
+    "v2": "Approvals",
     "chips": [
-     "AOC-4",
-     "MGT-7",
-     "DIR-3 KYC"
+     "Advise",
+     "Document",
+     "File"
     ]
    }
   },
-  "hl": "governance."
+  "hl": "governance.",
+  "journeyNote": "Not every engagement needs all five stages. A legal opinion may conclude at the advisory stage, while a restructuring may need documentation, implementation and regulatory follow-through.",
+  "servicesText": "Advice on the decisions that shape your company, supported by the approvals, documentation and filings that put them in place. Director and KMP matters, registered office and name changes and other routine approvals are handled within these capabilities.",
+  "matters": {
+   "eyebrow": "Corporate matters we handle",
+   "title": "Typical situations where\nclients bring us in.",
+   "text": "Examples of the decisions and issues on which promoters, boards and management teams engage our corporate advisory team.",
+   "items": [
+    {
+     "icon": "gear",
+     "t": "Bringing in a new investor",
+     "d": "Approvals, valuation, offer documents and filings for issuing shares, including FEMA reporting where the investor is non-resident."
+    },
+    {
+     "icon": "layers",
+     "t": "Converting loans into equity",
+     "d": "Whether and how an outstanding loan can be converted, and the approvals the conversion needs."
+    },
+    {
+     "icon": "people",
+     "t": "Changing ownership between promoters",
+     "d": "Restructuring shareholding through transfers, fresh issues or buybacks without moving business assets."
+    },
+    {
+     "icon": "id",
+     "t": "Reviewing an SHA or SPA",
+     "d": "Checking investment documents against the articles and company law, and the amendments they require."
+    },
+    {
+     "icon": "bars",
+     "t": "Responding to an ROC notice",
+     "d": "Assessing the notice, gathering records and responding, including rectification, compounding or adjudication."
+    },
+    {
+     "icon": "shield",
+     "t": "Strengthening board governance",
+     "d": "Delegation of authority, committee charters, related-party policies and board reporting for a growing company."
+    }
+   ]
+  },
+  "plansTitle": "Advisory mandates,\nretainers and reviews.",
+  "plansText": "Engage us for a specific decision, ongoing advisory access or an independent review. Each engagement has a defined scope, fee model and deliverable.",
+  "plansNote": "Routine corporate secretarial compliance, including board and general meetings, statutory registers and annual and event-based filings, is also available as a separate secretarial retainer."
  },
  {
   "slug": "transactional-advisory",
   "contact": "transactions",
   "name": "Transactional Advisory",
   "h1": "Complex transactions.\nClearly structured.",
-  "lead": "From structuring and due diligence to documentation, approvals and closing, GAA Consulting supports businesses and investors through mergers, acquisitions, investments and restructuring.",
+  "lead": "GAA Consulting provides corporate, regulatory and secretarial advisory support for mergers, acquisitions, investments, business transfers and restructuring. We work with promoters, investors and management teams to assess transaction structures, identify regulatory risks, coordinate documentation and approvals, and manage agreed closing and post-closing compliance.",
   "cta": "Discuss Your Transaction",
-  "whoTitle": "Supporting buyers, sellers and investors\nthrough every stage of a transaction.",
-  "whoText": "We work with promoters, acquirers, investors and boards on transactions of different sizes, coordinating the corporate, regulatory and documentation work each deal needs.",
+  "whoTitle": "Advising businesses and investors\nat critical transaction milestones.",
+  "whoText": "We support businesses, promoters and investors undertaking acquisitions, investments, divestments and corporate restructuring. Our involvement is tailored to the transaction's regulatory complexity, stakeholder requirements and implementation stage.",
   "who": [
-   "Acquirers and strategic buyers",
-   "Promoters and selling shareholders",
-   "Private equity and venture investors",
-   "Companies planning internal restructuring",
-   "Foreign investors acquiring Indian companies",
-   "Family businesses reorganising their holdings"
+   "Acquirers & strategic buyers — acquisition structuring, diligence, approvals and closing",
+   "Promoters & selling shareholders — sale preparation, ownership changes and transaction documentation",
+   "PE, VC & institutional investors — investment diligence, capital issuance and regulatory execution",
+   "Corporate groups — mergers, demergers, business transfers and internal reorganisations",
+   "Foreign investors — Indian acquisitions, FEMA requirements and investment reporting",
+   "Family-owned businesses — ownership restructuring, capital reorganisation and governance"
   ],
-  "servicesTitle": "End-to-end support for transactions and restructuring.",
+  "servicesTitle": "Transactional advisory across every critical stage.",
   "services": [
    {
     "icon": "building",
     "title": "Transaction Structuring",
-    "text": "Choosing the right structure for an acquisition, investment or reorganisation, considering corporate, regulatory and practical aspects."
+    "text": "Evaluate and structure acquisitions, investments, business transfers and corporate reorganisations, considering ownership, capital structure, regulatory requirements, approvals and implementation feasibility."
    },
    {
     "icon": "doc",
-    "title": "Legal & Secretarial Due Diligence",
-    "text": "Review of corporate records, filings, approvals and material contracts, with a clear report of findings and risks."
+    "title": "Corporate, Regulatory & Secretarial Due Diligence",
+    "text": "Corporate and secretarial due diligence covering incorporation records, capital history, statutory filings, governance, regulatory approvals and agreed documents, with a structured report of risks, gaps and recommended corrective actions."
    },
    {
     "icon": "layers",
-    "title": "Mergers & Amalgamations",
-    "text": "Schemes of merger, amalgamation and demerger, with the approvals and filings required under the Companies Act, 2013."
+    "title": "Mergers, Demergers & Amalgamations",
+    "text": "Support through scheme planning, corporate documentation, approval coordination, applicable Tribunal or statutory processes, filings and post-effectiveness compliance."
    },
    {
     "icon": "people",
     "title": "Acquisitions & Share Transfers",
-    "text": "Share purchase transactions and transfers of shares, with the related approvals, filings and register updates."
+    "text": "Corporate and regulatory aspects of share acquisitions and transfers, including ownership restrictions, approval requirements, transaction documentation, closing conditions, statutory records and post-acquisition governance."
    },
    {
     "icon": "gear",
     "title": "Business Transfers & Slump Sales",
-    "text": "Business transfer and slump sale transactions, with the corporate approvals and documentation involved."
+    "text": "Corporate structuring, approval planning, documentation and closing coordination, working with relevant advisers on tax classification, asset and liability transfers, contractual consents and related requirements."
    },
    {
     "icon": "bars",
     "title": "Capital Restructuring",
-    "text": "Reduction, consolidation or reorganisation of share capital and buy-backs, with the required approvals."
+    "text": "Capital reduction, buybacks, share consolidation, splits, security conversions and capital reorganisation, including applicable corporate approvals, statutory procedures, documentation and regulatory filings."
    },
    {
     "icon": "plane",
-    "title": "FEMA & Cross-Border Aspects",
-    "text": "Pricing, reporting and compliance for transactions involving non-residents under FEMA."
+    "title": "FEMA & Cross-Border Transactions",
+    "text": "FEMA and foreign investment requirements for cross-border investments, acquisitions and share transfers, including entry routes, sectoral conditions, pricing guidelines, downstream investment considerations and applicable RBI reporting."
    },
    {
     "icon": "id",
-    "title": "Transaction Documentation",
-    "text": "Term sheets, share purchase and shareholders’ agreements, resolutions and closing documents."
+    "title": "Transaction Documentation & Closing Support",
+    "text": "Term sheets, share subscription and purchase documentation, shareholders' agreements, corporate resolutions, closing checklists and completion records, involving specialist legal counsel where required."
    },
    {
     "icon": "infinity",
-    "title": "Post-Transaction Integration",
-    "text": "Post-closing filings, register updates, board changes and alignment of compliance processes."
+    "title": "Post-Closing Corporate Integration & Compliance",
+    "text": "Post-closing statutory filings, shareholding and board changes, corporate record updates, FEMA reporting and alignment of governance and compliance processes after completion."
+   },
+   {
+    "icon": "calc",
+    "title": "Investment & Fundraising Transactions",
+    "text": "Equity fundraising and investment transactions, including rights issues, private placements, preferential allotments, convertible securities, investment documentation, corporate approvals and applicable statutory and FEMA compliance."
    }
   ],
   "journeyEyebrow": "Transaction journey",
@@ -628,128 +745,164 @@
    {
     "icon": "bulb",
     "title": "Structure",
-    "text": "Agree the transaction structure and plan the steps and approvals."
+    "text": "Evaluate transaction alternatives, ownership implications, regulatory restrictions and applicable approvals. Develop a practical transaction roadmap."
    },
    {
     "icon": "doc",
     "title": "Diligence",
-    "text": "Review records, filings and contracts and report findings and risks."
+    "text": "Examine corporate records, shareholding history, statutory filings, approvals and agreed documentation. Identify compliance gaps, transaction risks and required corrective actions."
    },
    {
     "icon": "layers",
     "title": "Document",
-    "text": "Prepare and negotiate the transaction documents and resolutions."
+    "text": "Prepare and coordinate corporate approvals, transaction documentation, closing checklists and supporting records, with specialist legal counsel where required."
    },
    {
     "icon": "shield",
     "title": "Approve",
-    "text": "Obtain board, shareholder and regulatory approvals."
+    "text": "Identify, prepare for and coordinate applicable board, shareholder, regulatory and third-party approvals required for the transaction."
    },
    {
     "icon": "bars",
     "title": "Close & integrate",
-    "text": "Complete closing, post-closing filings and integration."
+    "text": "Coordinate closing deliverables, statutory filings, changes to corporate records, governance updates and post-transaction regulatory compliance."
    }
   ],
   "plans": [
    {
     "icon": "plane",
-    "title": "Due Diligence",
-    "subtitle": "Focused review",
+    "title": "Corporate & Regulatory Due Diligence",
+    "subtitle": "Identify corporate and regulatory risks before committing to a transaction.",
     "points": [
-     "Corporate and secretarial review",
-     "Approvals and filings check",
-     "Report of findings and risks"
+     "Review corporate records, ownership and statutory compliance",
+     "Examine material approvals and agreed documentation",
+     "Identify gaps, irregularities and potential exposures",
+     "Deliver a structured findings and risk report",
+     "Recommend corrective actions and closing considerations"
     ],
+    "cta": "Discuss Due Diligence",
     "popular": false
    },
    {
     "icon": "building",
-    "title": "End-to-End Transaction Support",
-    "subtitle": "Complete transaction solution",
+    "title": "Transaction Advisory & Execution",
+    "subtitle": "Coordinated corporate and regulatory support from planning through closing.",
     "points": [
-     "Structuring and transaction planning",
-     "Legal and secretarial due diligence",
-     "Documentation and approvals",
-     "FEMA and regulatory compliance",
-     "Closing and post-closing filings"
+     "Transaction structuring and regulatory assessment",
+     "Corporate and secretarial due diligence",
+     "Transaction documentation and approval coordination",
+     "FEMA and applicable regulatory compliance",
+     "Closing management and statutory filings",
+     "Post-closing corporate and governance support"
     ],
-    "popular": true
+    "cta": "Discuss Your Transaction",
+    "popular": true,
+    "badge": ""
    },
    {
     "icon": "bars",
-    "title": "Restructuring Support",
-    "subtitle": "Internal reorganisation",
+    "title": "Corporate Restructuring & Reorganisation",
+    "subtitle": "Plan and implement structural changes with regulatory clarity.",
     "points": [
-     "Mergers, demergers and amalgamations",
-     "Capital reduction and buy-backs",
-     "Business transfers",
-     "Approvals and filings"
+     "Merger, amalgamation and demerger support",
+     "Capital restructuring, reduction and buybacks",
+     "Business transfers and group reorganisations",
+     "Corporate and regulatory approval planning",
+     "Scheme documentation and statutory procedures",
+     "Post-restructuring compliance and records updates"
     ],
+    "cta": "Plan Your Restructuring",
     "popular": false
    }
   ],
-  "whyTitle": "A partner you can\nrely on for every deal.",
+  "whyTitle": "Expertise behind\nevery transaction.",
   "why": [
    {
     "icon": "user",
-    "text": "Corporate, regulatory and secretarial expertise under one roof"
+    "title": "Specialist corporate & regulatory expertise",
+    "text": "An ICSI peer-reviewed practising Company Secretary firm providing focused support on company law, governance, FEMA and statutory transaction requirements."
    },
    {
     "icon": "people",
-    "text": "Senior-led supervision of every transaction"
+    "title": "Senior professional oversight",
+    "text": "Transaction assignments are supervised by experienced professionals, with defined responsibilities for review, documentation, approvals and coordination."
    },
    {
     "icon": "gear",
-    "text": "Thorough diligence and careful documentation"
+    "title": "Structured diligence & execution",
+    "text": "From compliance risk reports to approval matrices and closing checklists, our work is supported by documented processes and defined deliverables."
    },
    {
     "icon": "infinity",
-    "text": "Support from structuring through post-closing"
+    "title": "Continuity beyond closing",
+    "text": "Our team supports post-transaction filings, corporate governance changes and continuing regulatory compliance under agreed engagements."
    }
   ],
   "faqTitle": "Common questions\non transactions.",
   "faq": [
    {
-    "q": "What does legal and secretarial due diligence cover?",
-    "a": "It reviews a company’s incorporation documents, statutory registers, filings, approvals, shareholding history and material contracts to identify gaps and risks before a transaction."
+    "q": "What does corporate and secretarial due diligence cover?",
+    "a": "Our review examines incorporation records, constitutional documents, shareholding history, statutory registers, MCA filings, board and shareholder approvals, governance records and other agreed corporate documents. We provide a findings report highlighting identified gaps, risks and recommended corrective actions. Tax, litigation, intellectual property and other specialist reviews may be undertaken separately."
    },
    {
-    "q": "Do you handle mergers and demergers under the Companies Act?",
-    "a": "Yes. We support schemes of merger, amalgamation and demerger, including the documentation, approvals and filings involved, working with other advisers where required."
+    "q": "Do you support mergers and demergers under the Companies Act?",
+    "a": "Yes. We support the corporate and regulatory aspects of mergers, amalgamations and demergers, including transaction planning, scheme-related documentation, approval coordination, applicable statutory procedures, filings and post-transaction compliance. The process depends on the transaction structure and applicable legal route."
    },
    {
-    "q": "Can you help with transactions involving foreign investors?",
-    "a": "Yes. We advise on FEMA aspects such as pricing guidelines and reporting for share transfers and investments involving non-residents."
+    "q": "Can GAA assist with transactions involving foreign investors?",
+    "a": "Yes. We advise on applicable FEMA and foreign investment requirements, including entry routes, sectoral conditions, pricing guidelines, corporate approvals and reporting obligations for investments and share transfers involving non-residents."
    },
    {
-    "q": "Do you prepare the transaction documents?",
-    "a": "Yes. We prepare and review term sheets, share purchase and shareholders’ agreements and the resolutions needed to complete the transaction."
+    "q": "Does GAA prepare transaction documentation?",
+    "a": "We prepare and coordinate corporate resolutions, approvals, transaction checklists, closing records and agreed transaction documentation. Depending on the nature of the assignment, specialist legal counsel may be involved in contractual drafting, negotiation and legal review."
    },
    {
-    "q": "Can we engage you only for due diligence?",
-    "a": "Yes. You can engage us for due diligence alone, a specific part of the transaction, or end-to-end support."
+    "q": "Can we engage GAA only for due diligence?",
+    "a": "Yes. You may engage us for corporate and secretarial due diligence, a specific transaction stage or a coordinated transaction mandate. The scope, deliverables, timelines and professional fees are agreed before commencement."
+   },
+   {
+    "q": "Can GAA assist with private placements and investment rounds?",
+    "a": "Yes. We support applicable corporate and regulatory requirements for equity investments, including private placements, preferential allotments, rights issues, convertible instruments, corporate approvals, statutory filings and FEMA reporting where applicable."
+   },
+   {
+    "q": "How long does corporate due diligence take?",
+    "a": "The timeline depends on the company's size, corporate history, volume of records, review scope and availability of documents. Following an initial assessment, we provide an indicative work plan and expected completion schedule."
+   },
+   {
+    "q": "What is the difference between a share acquisition and a business transfer?",
+    "a": "A share acquisition involves acquiring ownership interests in a company, whereas a business transfer involves transferring an identified business or undertaking under an agreed structure. The legal, tax, contractual, regulatory and approval implications differ. The appropriate approach depends on the transaction objectives and circumstances."
+   },
+   {
+    "q": "What happens between signing and closing?",
+    "a": "Depending on the transaction, this stage may involve satisfying conditions precedent, obtaining approvals, completing documentation, resolving diligence findings, coordinating consideration and confirming closing deliverables. GAA supports the agreed corporate and regulatory components of this process."
+   },
+   {
+    "q": "What support is available after transaction closing?",
+    "a": "We assist with applicable statutory filings, updates to registers and corporate records, board and shareholder changes, FEMA reporting and continuing governance or compliance requirements. Ongoing services may be provided under a separate engagement."
    }
   ],
   "focus": {
-   "title": "Legal & Secretarial\nDue Diligence",
-   "text": "A clear picture of the company you are investing in or acquiring, from its statutory records and filings to approvals and key contracts.",
+   "tag": "Transactional advisory",
+   "title": "Planning a transaction?\nStart with the right structure.",
+   "text": "Acquiring a business, raising capital, restructuring ownership or evaluating an investment? Understand the corporate and regulatory requirements first.",
+   "btn": "Discuss Your Transaction",
+   "note": "Receive a clearly defined scope and implementation approach.",
    "features": [
     {
-     "icon": "doc",
-     "text": "Statutory records\nand filings review"
+     "icon": "layers",
+     "text": "Transaction\nstructure"
     },
     {
      "icon": "shield",
-     "text": "Approvals and\ncompliance check"
+     "text": "Regulatory\nrequirements"
     },
     {
-     "icon": "layers",
-     "text": "Shareholding and\ncapital history"
+     "icon": "doc",
+     "text": "Approvals and\ndocumentation"
     },
     {
-     "icon": "id",
-     "text": "Findings report\nand risk summary"
+     "icon": "bars",
+     "text": "Closing and\ncompliance"
     }
    ],
    "screen": {
@@ -765,7 +918,24 @@
     ]
    }
   },
-  "hl": "structured."
+  "hl": "structured.",
+  "features": [
+   [
+    "layers",
+    "Transaction structuring\n& advisory"
+   ],
+   [
+    "shield",
+    "Diligence & regulatory\nrisk review"
+   ],
+   [
+    "doc",
+    "Documentation,\napprovals & closing"
+   ]
+  ],
+  "servicesText": "From investment and acquisition planning to corporate restructuring and post-closing compliance, GAA Consulting provides focused corporate, regulatory and secretarial support. Engage us for a specific requirement or a coordinated mandate covering structuring, due diligence, documentation, approvals and completion.",
+  "plansTitle": "Flexible transaction mandates.\nDefined responsibilities.",
+  "plansText": "Engage GAA Consulting for a focused diligence assignment, coordinated transaction execution or a corporate restructuring project. Every mandate is scoped around the transaction, applicable regulatory requirements and agreed deliverables."
  },
  {
   "slug": "fundraising-advisory",

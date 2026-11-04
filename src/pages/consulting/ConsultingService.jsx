@@ -39,7 +39,7 @@ export default function ServicePage({ slug }) {
               <Link className="ie-btn pri" to={contact}>{d.cta} <Icon name="arrow" /></Link>
             </div>
             <div className="ie-feats">
-              {FEATURES.map(([icon, text]) => (
+              {(d.features || FEATURES).map(([icon, text]) => (
                 <span key={icon}><Icon name={icon} /><Lines text={text} /></span>
               ))}
             </div>
@@ -84,6 +84,20 @@ export default function ServicePage({ slug }) {
         </div></div>
       </section>
 
+      {d.matters && (
+        <section className="ie-sec ie-mat">
+          <div className="ie-in">
+            <div className="ie-2 ie-tl-h">
+              <div><span className="ie-eye">{d.matters.eyebrow}</span><h2 className="ie-h2"><Lines text={d.matters.title} /></h2></div>
+              <p className="ie-p">{d.matters.text}</p>
+            </div>
+            <ul className="ie-mat-g">
+              {d.matters.items.map((m) => <li key={m.t}><Icon name={m.icon || "check"} /><div><b>{m.t}</b><p>{m.d}</p></div></li>)}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <section className="ie-sec ie-eng">
         <div className="ie-in"><div className="ie-panel">
           <div className="ie-2 ie-eng-h">
@@ -93,13 +107,14 @@ export default function ServicePage({ slug }) {
           <div className="ie-plans">
             {d.plans.map((p) => (
               <article className={`ie-plan${p.popular ? " pop" : ""}`} key={p.title}>
-                {p.popular && <span className="ie-pop">Most Popular</span>}
+                {p.popular && p.badge !== "" && <span className="ie-pop">{p.badge || "Most Popular"}</span>}
                 <Icon name={p.icon} />
                 <h3>{p.title}</h3>
                 <span className="ie-sub">{p.subtitle}</span>
                 {p.type && <span className="ie-type">{p.type}</span>}
                 <ul>{p.points.map((x) => <li key={x}><Icon name="check" />{x}</li>)}</ul>
-                {p.extras && <p className="ie-extra"><b>Optional:</b> {p.extras}</p>}
+                {p.deliverable && <p className="ie-extra ie-deliv"><b>Key deliverable:</b> {p.deliverable}</p>}
+                {p.extras && <p className="ie-extra"><b>{p.extrasLabel || "Optional"}:</b> {p.extras}</p>}
                 <Link className={`ie-btn${p.popular ? " pri" : ""}`} to={contact}>{p.cta || "Discuss This Option"} <Icon name="arrow" /></Link>
               </article>
             ))}
@@ -142,7 +157,7 @@ export default function ServicePage({ slug }) {
         <div className="ie-in ie-why-in">
           <div><span className="ie-eye">Why GAA</span><h2 className="ie-h2"><Lines text={d.whyTitle} /></h2></div>
           <div className="ie-why-g">
-            {d.why.map((w) => <div className="ie-why-i" key={w.text}><Icon name={w.icon} /><span>{w.text}</span></div>)}
+            {d.why.map((w) => <div className={`ie-why-i${w.title ? " ie-why-t" : ""}`} key={w.text}><Icon name={w.icon} />{w.title && <b>{w.title}</b>}<span>{w.text}</span></div>)}
           </div>
         </div>
       </section>
@@ -155,7 +170,7 @@ export default function ServicePage({ slug }) {
             <p className="ie-p">{d.whoText}</p>
           </div>
           <ul className="ie-checks">
-            {d.who.map((w) => <li key={w}><Icon name="check" />{w}</li>)}
+            {d.who.map((w) => { const [t, x] = w.split(" — "); return <li key={w}><Icon name="check" />{x ? <span><b>{t}</b> {x}</span> : w}</li>; })}
           </ul>
         </div>
       </section>
