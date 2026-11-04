@@ -1119,3 +1119,14 @@
 .ie-extra + .ie-extra{margin-top:-18px}
 @media(max-width:899px){.ie-mat-g{grid-template-columns:1fr}}
 @media(min-width:900px) and (max-width:1180px){.ie-mat-g{grid-template-columns:1fr 1fr}}
+.is-off{cursor:default}
+/* links to pages that are not live yet: no arrows, no hover */
+.ggh .os-it.is-off i,.sf-col nav .is-off svg,.gcu .nx-cos .is-off svg,.ff-row.is-off > .i{visibility:hidden}
+.ggh .os-it.is-off:hover{background:transparent}
+.ggh .os-it.is-off::before{display:none}
+.ggh .os-it.is-off:hover b,.ggh .os-it.is-off:hover small{color:inherit;transform:none}
+.sf-col nav .is-off:hover{color:var(--muted)}
+.gcu .nx-cos .is-off:hover{transform:none}
+.sf-col nav .is-off{white-space:nowrap;display:inline-flex;align-items:center;gap:9px;font:400 clamp(12.5px,.85vw,14.5px)/1.2 "Poppins",sans-serif;color:var(--muted)}
+.sf-cos .is-off{display:block}
+@media(max-width:640px){.sf-col nav .is-off{display:block;white-space:normal;font-size:13.5px}}

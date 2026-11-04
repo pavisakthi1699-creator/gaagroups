@@ -74,8 +74,16 @@ export function RouterProvider({ url, children }) {
 }
 
 /* <Link to="/careers"> or <Link to="#services">: internal addresses move without a page reload */
+/* Pages that are not live yet: links to them show as plain text and cannot be clicked */
+export const OFF_PATHS = ["/filings-first", "/hirings-first"];
+export const isOff = (to) => typeof to === "string" && OFF_PATHS.some((p) => to === p || to.startsWith(p + "/") || to.startsWith(p + "#"));
+
 export function Link({ to, children, onClick, ...rest }) {
   const { navigate } = useRouter();
+  if (isOff(to)) {
+    const { className, ...other } = rest;
+    return <span className={`${className ? className + " " : ""}is-off`} aria-disabled="true" {...other}>{children}</span>;
+  }
   const internal = to.startsWith("/") || to.startsWith("#");
   const handle = (e) => {
     if (onClick) onClick(e);

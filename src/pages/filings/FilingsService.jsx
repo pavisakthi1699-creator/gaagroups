@@ -7,7 +7,7 @@ import Faq from "../../components/Faq";
 import useReveal from "../../lib/useReveal";
 
 const n2 = (i) => String(i + 1).padStart(2, "0");
-const STATUS = (s) => (/done|filed/i.test(s) ? "ok" : /review|progress/i.test(s) ? "wip" : "due");
+const STATUS = (s) => (/done|filed|complete|tracked/i.test(s) ? "ok" : /review|progress|scheduled/i.test(s) ? "wip" : "due");
 
 /* Animated status board shown in the hero */
 function Board({ b }) {
@@ -101,7 +101,7 @@ export default function ServicePage({ slug }) {
             <p className="sv-lead">{d.lead}</p>
             <div className="ff-btns">
               <Link className="ff-btn pri" to={contact}>{d.cta} <Icon name="arrow" /></Link>
-              <Link className="ff-btn" to="#scope">See What's Included <Icon name="arrow" /></Link>
+              <Link className="ff-btn" to="#scope">{d.cta2 || "See What's Included"} <Icon name="arrow" /></Link>
             </div>
           </div>
           <div className="sv-hero-r"><Board b={d.board} /></div>
@@ -109,7 +109,7 @@ export default function ServicePage({ slug }) {
         <div className="sv-strip">
           <div className="ff-in sv-strip-in">
             {d.promises.map((p) => <span key={p}><Icon name="check" />{p}</span>)}
-            <span><Icon name="layers" />Part of GAA Group</span>
+            <span><Icon name={(d.promise4 || ["layers"])[0]} />{(d.promise4 || [0, "Part of GAA Group"])[1]}</span>
           </div>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function ServicePage({ slug }) {
         <div className="ff-in">
           <div className="ff-hd">
             <div><span className="ff-eye">Who it's for</span><h2 className="ff-h2">{d.audienceTitle}</h2></div>
-            <p className="ff-p">If you recognise your business here, we already know the filings, the deadlines and the questions you will have.</p>
+            <p className="ff-p">{d.audienceText || "If you recognise your business here, we already know the filings, the deadlines and the questions you will have."}</p>
           </div>
           <div className="sv-aud-g">
             {d.audience.map((a, i) => (
@@ -161,8 +161,8 @@ export default function ServicePage({ slug }) {
         <div className="ff-in">
           <div className="ff-hd c">
             <span className="ff-eye c">How we work</span>
-            <h2 className="ff-h2">Five steps. One accountable team.</h2>
-            <p className="ff-p">You always know what we need from you, what you get back and who is looking after it.</p>
+            <h2 className="ff-h2">{d.howTitle || "Five steps. One accountable team."}</h2>
+            <p className="ff-p">{d.howText || "You always know what we need from you, what you get back and who is looking after it."}</p>
           </div>
           <Steps steps={d.steps} slug={slug} />
         </div>
@@ -172,7 +172,7 @@ export default function ServicePage({ slug }) {
       <section className="ff-sec sv-dates">
         <div className="ff-in">
           <div className="ff-hd">
-            <div><span className="ff-eye">Key dates we track</span><h2 className="ff-h2">{d.datesTitle}</h2></div>
+            <div><span className="ff-eye">Key dates we track</span><h2 className="ff-h2">{d.datesTitle}</h2>{d.datesText && <p className="ff-p" style={{ marginTop: 14, maxWidth: "46em" }}>{d.datesText}</p>}</div>
             <Link className="ff-lk" to="/insights#planner">Open the full due date planner <Icon name="arrow" /></Link>
           </div>
           <ol className="sv-tl">
@@ -195,14 +195,14 @@ export default function ServicePage({ slug }) {
           <div className="ff-hd c">
             <span className="ff-eye c">Engagement options</span>
             <h2 className="ff-h2">{d.plansTitle}</h2>
-            <p className="ff-p">Every engagement starts with a fixed scope and fee, agreed in writing. Start with one option and move up as you grow.</p>
+            <p className="ff-p">{d.plansText || "Every engagement starts with a fixed scope and fee, agreed in writing. Start with one option and move up as you grow."}</p>
           </div>
           <div className="sv-mx rv" role="table" aria-label="Engagement options compared">
             <div className="sv-mx-r sv-mx-h" role="row">
               <span role="columnheader" className="sv-mx-k">What's covered</span>
               {d.plans.map((p, i) => (
                 <span role="columnheader" key={p} className={i === d.popular ? "pop" : ""}>
-                  {i === d.popular && <em>Most chosen</em>}
+                  {i === d.popular && d.popularLabel !== "" && <em>{d.popularLabel || "Most chosen"}</em>}
                   <b>{p}</b><small>{d.planSubs[i]}</small>
                 </span>
               ))}
@@ -221,7 +221,7 @@ export default function ServicePage({ slug }) {
               <span className="sv-mx-k" />
               {d.plans.map((p, i) => (
                 <span key={p} className={i === d.popular ? "pop" : ""}>
-                  <Link className={`ff-btn${i === d.popular ? " pri" : ""}`} to={contact}>Choose <Icon name="arrow" /></Link>
+                  <Link className={`ff-btn${i === d.popular ? " pri" : ""}`} to={contact}>{(d.planCtas || [])[i] || "Choose"} <Icon name="arrow" /></Link>
                 </span>
               ))}
             </div>
@@ -230,6 +230,17 @@ export default function ServicePage({ slug }) {
       </section>
 
       <Faq faq={d.faq} title={"Answers before\nyou ask"} contact={contact} company="the Filings First team" />
+
+      {d.closing && (
+        <section className="sv-close">
+          <div className="ff-in">
+            <div className="sv-close-box rv">
+              <div><h2 className="ff-h2">{d.closing.title}</h2><p className="ff-p">{d.closing.text}</p></div>
+              <div className="ff-btns"><Link className="ff-btn pri" to={contact}>{d.closing.cta} <Icon name="arrow" /></Link><Link className="ff-btn" to="/contact">{d.closing.cta2} <Icon name="arrow" /></Link></div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 8. other services */}
       <section className="sv-more">

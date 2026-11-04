@@ -942,194 +942,222 @@
   "contact": "fundraising",
   "name": "Fundraising Advisory",
   "h1": "Raise with confidence.\nClose with clarity.",
-  "lead": "From preparing your company for investment to term sheets, shareholders’ agreements, share allotments and FEMA reporting, GAA Consulting supports founders and companies through every stage of a fundraise.",
+  "lead": "GAA Consulting provides end-to-end corporate, regulatory and secretarial advisory support for fundraising and investment transactions. From investment readiness and capital structuring to investor documentation, statutory approvals, share allotments and post-investment compliance, we help founders, promoters and investors navigate each stage of the fundraising journey.",
   "cta": "Discuss Your Fundraise",
-  "whoTitle": "Supporting founders and companies\nat every stage of their funding journey.",
-  "whoText": "We work with startups, growing companies and their founders raising capital from angels, venture funds, strategic investors and promoters, as well as investors making those investments.",
+  "whoTitle": "Supporting businesses and investors\nat every stage of capital formation.",
+  "whoText": "We work with founders, promoters, growing businesses and investors undertaking equity investments, capital raises and ownership restructuring.",
   "who": [
-   "Startups raising seed and early-stage rounds",
-   "Growth-stage companies raising venture or private equity",
-   "Founders and promoters",
-   "Companies receiving foreign investment",
-   "Angel and venture investors",
-   "Companies issuing convertible instruments"
+   "First-time founders — preparing for seed funding and early-stage investments",
+   "Growth-stage startups — raising venture capital and private equity",
+   "Established businesses — expansion, strategic investment and capital restructuring",
+   "Foreign investors — investing in Indian companies under applicable FEMA requirements",
+   "Angel & venture investors — evaluating opportunities and corporate documentation",
+   "Promoters & shareholders — managing dilution, ownership changes and investment transactions"
   ],
-  "servicesTitle": "Complete support from readiness to closing.",
+  "servicesTitle": "Fundraising support from preparation to investment completion.",
   "services": [
    {
     "icon": "shield",
-    "title": "Investment Readiness Review",
-    "text": "A review of your corporate records, cap table and compliance so the company is ready for investor due diligence."
+    "title": "Investment Readiness & Corporate Due Diligence",
+    "text": "Review corporate records, shareholding history, statutory filings, governance and regulatory compliance before approaching investors. Identify gaps and recommend corrective measures to improve investment readiness."
    },
    {
     "icon": "bars",
-    "title": "Cap Table & Structuring",
-    "text": "Shareholding structure, choice of instrument and cap table planning for the round."
+    "title": "Cap Table Management & Capital Structuring",
+    "text": "Assess existing shareholding, proposed equity dilution, ownership arrangements and capital structure. Support the selection and implementation of suitable investment instruments, subject to applicable legal and regulatory requirements."
    },
    {
     "icon": "doc",
-    "title": "Term Sheet Review",
-    "text": "Review of the key commercial and legal terms before you sign."
+    "title": "Term Sheet Review & Investment Advisory",
+    "text": "Review proposed investment terms, valuation-related provisions, liquidation preferences, reserved matters, governance rights, exit provisions and other material commercial terms."
    },
    {
-    "icon": "layers",
-    "title": "Shareholders’ & Subscription Agreements",
-    "text": "Drafting and negotiation support for share subscription and shareholders’ agreements."
+    "icon": "id",
+    "title": "Shareholders' & Investment Agreements",
+    "text": "Prepare, review and coordinate share subscription agreements, shareholders' agreements and related investment documentation in coordination with specialist legal counsel where required."
    },
    {
     "icon": "people",
-    "title": "Share Allotment & Private Placement",
-    "text": "Board and shareholder approvals, the private placement process, allotment and ROC filings under the Companies Act, 2013."
+    "title": "Private Placement & Preferential Allotment",
+    "text": "Support private placements, preferential allotments and other applicable share issuance routes, including corporate approvals, offer documentation, allotment procedures and ROC filings under the Companies Act, 2013."
    },
    {
     "icon": "gear",
-    "title": "Convertible Instruments",
-    "text": "Compulsorily convertible preference shares and other convertible instruments, with the related approvals."
+    "title": "Convertible Securities & Investment Instruments",
+    "text": "Support the corporate and regulatory aspects of compulsorily convertible preference shares, convertible debentures and other permitted investment instruments, including documentation and applicable approvals."
    },
    {
     "icon": "plane",
-    "title": "FEMA Compliance for Foreign Investment",
-    "text": "Pricing and reporting requirements for investment received from non-residents."
+    "title": "FEMA & Foreign Investment Compliance",
+    "text": "Advise on foreign investment eligibility, entry routes, sectoral conditions, pricing guidelines, downstream investment implications and applicable RBI reporting requirements."
    },
    {
     "icon": "user",
-    "title": "ESOP Planning",
-    "text": "ESOP schemes, pool sizing and the approvals needed to put them in place."
+    "title": "ESOP Advisory & Employee Incentive Structures",
+    "text": "Support ESOP framework design, pool structuring, scheme documentation, board and shareholder approvals, grants, vesting administration and related corporate compliance."
    },
    {
     "icon": "infinity",
-    "title": "Post-Investment Compliance",
-    "text": "Updating registers, board composition, investor rights and ongoing reporting after the round closes."
+    "title": "Post-Investment & Shareholding Compliance",
+    "text": "Support post-investment statutory filings, shareholding records, investor rights-related corporate processes, board changes, register updates and ongoing compliance obligations."
    }
   ],
   "journeyEyebrow": "Funding journey",
-  "journeyTitle": "From preparation to closing. We’re with you at every step.",
+  "journeyTitle": "From readiness to compliance. We're with you at every step.",
   "steps": [
    {
     "icon": "bulb",
     "title": "Prepare",
-    "text": "Review records, compliance and cap table before you approach investors."
-   },
-   {
-    "icon": "doc",
-    "title": "Structure",
-    "text": "Plan the round, instrument and shareholding."
+    "text": "Assess corporate records, statutory compliance, ownership structure and capitalisation table. Identify gaps and prepare the company for investor due diligence."
    },
    {
     "icon": "layers",
+    "title": "Structure",
+    "text": "Evaluate the proposed funding round, investment instruments, valuation-related considerations, ownership dilution and applicable corporate and regulatory requirements."
+   },
+   {
+    "icon": "doc",
     "title": "Negotiate",
-    "text": "Review the term sheet and agree the investment documents."
+    "text": "Review term sheets, investment rights, governance provisions and key commercial terms. Coordinate transaction documentation with legal advisers."
    },
    {
     "icon": "shield",
     "title": "Close",
-    "text": "Complete approvals, allotment and filings for the round."
+    "text": "Coordinate board and shareholder approvals, investment documentation, receipt of funds, share allotment and applicable statutory filings."
    },
    {
     "icon": "bars",
     "title": "Comply",
-    "text": "Keep reporting, registers and investor obligations up to date."
+    "text": "Maintain updated corporate records, shareholding registers, investor-related governance requirements, FEMA reporting and continuing compliance obligations."
    }
   ],
   "plans": [
    {
     "icon": "plane",
     "title": "Investment Readiness",
-    "subtitle": "Prepare for investors",
+    "subtitle": "Prepare your business for investor due diligence.",
     "points": [
-     "Corporate and compliance review",
-     "Cap table clean-up",
-     "Data room support"
+     "Corporate and secretarial compliance review",
+     "Shareholding and cap table assessment",
+     "Identification of statutory gaps",
+     "Investment readiness recommendations",
+     "Due diligence documentation checklist"
     ],
+    "cta": "Discuss Investment Readiness",
     "popular": false
    },
    {
     "icon": "building",
     "title": "Complete Fundraise Support",
-    "subtitle": "From term sheet to closing",
+    "subtitle": "Coordinated support from investment structuring to closing.",
     "points": [
-     "Term sheet and agreement review",
-     "Subscription and shareholders' agreements",
-     "Allotment and private placement filings",
-     "FEMA reporting for foreign investment",
-     "Post-closing updates"
+     "Funding structure and instrument assessment",
+     "Term sheet and investment document coordination",
+     "Board and shareholder approvals",
+     "Private placement and share allotment support",
+     "FEMA reporting, where applicable",
+     "Post-closing corporate compliance"
     ],
-    "popular": true
+    "cta": "Discuss Your Fundraise",
+    "popular": true,
+    "badge": ""
    },
    {
     "icon": "bars",
-    "title": "Post-Investment Compliance",
-    "subtitle": "Ongoing support",
+    "title": "Post-Investment Compliance Office",
+    "subtitle": "Keep your company and investor-related records compliant.",
     "points": [
-     "Board and investor reporting support",
-     "Statutory registers and filings",
-     "ESOP administration support",
-     "Annual compliance"
+     "Corporate statutory compliance",
+     "Shareholding and register updates",
+     "Board and shareholder meeting support",
+     "ESOP-related corporate compliance",
+     "Applicable foreign investment reporting",
+     "Periodic compliance tracking"
     ],
+    "cta": "Discuss Ongoing Compliance",
     "popular": false
    }
   ],
-  "whyTitle": "A partner you can\nrely on for every round.",
+  "whyTitle": "Expertise behind\nevery funding round.",
   "why": [
    {
-    "icon": "user",
-    "text": "Corporate, secretarial and FEMA expertise under one roof"
-   },
-   {
-    "icon": "people",
-    "text": "Senior-led support through negotiation and closing"
+    "icon": "layers",
+    "title": "Fundraising lifecycle expertise",
+    "text": "Corporate and regulatory support from investment readiness to post-investment compliance."
    },
    {
     "icon": "gear",
-    "text": "Investor-ready records and documentation"
+    "title": "Structured transaction execution",
+    "text": "Defined processes for approvals, documentation, allotment and reporting."
+   },
+   {
+    "icon": "plane",
+    "title": "FEMA & investment compliance",
+    "text": "Practical guidance on domestic and foreign investment requirements."
    },
    {
     "icon": "infinity",
-    "text": "Continuity from one round to the next"
+    "title": "Continuity beyond funding",
+    "text": "Ongoing support for corporate records, governance and investor-related compliance."
    }
   ],
   "faqTitle": "Common questions\non fundraising.",
   "faq": [
    {
-    "q": "When should we start preparing for a fundraise?",
-    "a": "Ideally before you approach investors. A readiness review of your records, filings and cap table helps due diligence go smoothly and avoids delays at closing."
+    "q": "When should a company start preparing for fundraising?",
+    "a": "Ideally, preparation should begin well before approaching investors. Reviewing corporate records, shareholding, statutory compliance and governance helps identify issues that may affect investor due diligence or transaction completion."
    },
    {
-    "q": "Do you help with term sheets and shareholders’ agreements?",
-    "a": "Yes. We review term sheets and draft or review share subscription and shareholders’ agreements, working with you through negotiation."
+    "q": "What documents are required for fundraising?",
+    "a": "Common documents include incorporation records, constitutional documents, shareholding details, statutory registers, financial information, board and shareholder resolutions, material contracts and existing investment agreements. Requirements depend on the funding structure and investor diligence scope."
    },
    {
-    "q": "What filings are needed after shares are allotted?",
-    "a": "Allotments need board and, where applicable, shareholder approvals, the return of allotment and related filings with the Registrar of Companies, and updates to statutory registers. Investment from non-residents also needs FEMA reporting."
+    "q": "Can GAA help with term sheets and investment agreements?",
+    "a": "Yes. We support term sheet review and the preparation, review and coordination of investment documentation, including share subscription and shareholders' agreements, working with specialist legal counsel where necessary."
    },
    {
-    "q": "Can you help set up an ESOP scheme?",
-    "a": "Yes. We help design the scheme, prepare the documents and obtain the approvals needed to put it in place."
+    "q": "What is a cap table and why is it important?",
+    "a": "A capitalisation table records the ownership of a company, including shareholdings and relevant convertible or equity-linked instruments. It helps founders and investors understand ownership, dilution and proposed investment outcomes."
    },
    {
-    "q": "Do you work with investors as well as companies?",
-    "a": "Yes. We can support investors with due diligence and documentation for their investments."
+    "q": "Can GAA assist with private placements and preferential allotments?",
+    "a": "Yes. We support the applicable corporate approval, documentation, allotment and statutory filing processes under the Companies Act, 2013."
+   },
+   {
+    "q": "Can you support foreign investment into Indian companies?",
+    "a": "Yes. We advise on applicable FEMA requirements, foreign investment routes, sectoral conditions, pricing guidelines and reporting obligations."
+   },
+   {
+    "q": "Can you help establish an ESOP scheme?",
+    "a": "Yes. We support ESOP scheme structuring, documentation, applicable corporate approvals and related compliance."
+   },
+   {
+    "q": "Do you provide post-fundraising compliance support?",
+    "a": "Yes. We can assist with shareholding records, statutory registers, corporate approvals, filings, FEMA reporting where applicable and ongoing corporate compliance under an agreed engagement."
    }
   ],
   "focus": {
-   "title": "Share Allotment &\nFEMA Reporting",
-   "text": "Accurate allotment, private placement and foreign investment reporting, so your round closes cleanly and stays compliant.",
+   "tag": "Fundraising advisory",
+   "title": "Planning your next\nfunding round?",
+   "text": "Get the corporate structure, investment documentation and regulatory requirements right before your funding round closes.",
+   "btn": "Discuss Your Fundraise",
+   "note": "From investment readiness to post-investment compliance.",
    "features": [
     {
-     "icon": "people",
-     "text": "Board and shareholder\napprovals"
-    },
-    {
-     "icon": "doc",
-     "text": "Private placement\nand allotment filings"
-    },
-    {
-     "icon": "plane",
-     "text": "Foreign investment\nreporting under FEMA"
+     "icon": "shield",
+     "text": "Investment\nreadiness"
     },
     {
      "icon": "layers",
-     "text": "Register and\ncap table updates"
+     "text": "Capital\nstructuring"
+    },
+    {
+     "icon": "doc",
+     "text": "Investor\ndocumentation"
+    },
+    {
+     "icon": "bars",
+     "text": "Closing and\ncompliance"
     }
    ],
    "screen": {
@@ -1145,71 +1173,88 @@
     ]
    }
   },
-  "hl": "confidence."
+  "hl": "confidence.",
+  "features": [
+   [
+    "shield",
+    "Investment readiness\n& structuring"
+   ],
+   [
+    "doc",
+    "Investor documentation\n& execution"
+   ],
+   [
+    "layers",
+    "Corporate, FEMA &\nregulatory compliance"
+   ]
+  ],
+  "servicesText": "Every fundraising round involves more than securing capital. The underlying corporate structure, investment documentation, approvals and statutory compliance must be aligned. GAA Consulting supports founders, promoters and investors with structured corporate and regulatory advisory throughout the fundraising lifecycle.",
+  "plansTitle": "Fundraising engagements designed\naround your investment stage.",
+  "plansText": "Whether you are preparing for your first investment, completing a funding round or managing investor-related compliance, choose a defined engagement based on your requirements."
  },
  {
   "slug": "nbfc-compliance-office",
   "contact": "nbfc",
   "name": "NBFC Compliance Office",
   "h1": "RBI-ready NBFCs.\nCompliance on time, every time.",
-  "lead": "From NBFC registration and RBI applications to ongoing returns, governance and change-in-control approvals, GAA Consulting helps NBFCs and their promoters stay compliant with RBI and company law requirements.",
+  "lead": "GAA Consulting provides specialised regulatory, corporate and secretarial advisory services for Non-Banking Financial Companies (NBFCs) in India. From registration and RBI licensing support to regulatory reporting, governance frameworks, compliance monitoring and changes in ownership or management, we help NBFCs navigate their regulatory responsibilities throughout their business lifecycle.",
   "cta": "Discuss Your NBFC Requirement",
-  "whoTitle": "Supporting NBFCs and promoters\nacross the regulatory lifecycle.",
-  "whoText": "We work with promoters setting up NBFCs, existing NBFCs of different sizes and categories, and investors acquiring or investing in NBFCs.",
+  "whoTitle": "Supporting NBFCs and financial businesses\nthroughout their regulatory lifecycle.",
+  "whoText": "We work with promoters, directors, management teams and investors involved in establishing, operating, acquiring or expanding NBFC businesses in India.",
   "who": [
-   "Promoters planning to set up an NBFC",
-   "Investment and credit companies",
-   "Lending and microfinance businesses",
-   "NBFCs undergoing a change in control or management",
-   "Investors acquiring NBFCs",
-   "Fintech companies partnering with NBFCs"
+   "NBFC promoters — planning to establish a regulated financial services business",
+   "Investment & credit companies — NBFCs engaged in investment, lending and credit",
+   "Lending & microfinance institutions — structured regulatory and corporate compliance",
+   "Existing NBFCs — continuing RBI reporting, governance and secretarial support",
+   "NBFC investors & acquirers — acquisitions, shareholding changes and approvals",
+   "Fintech & financial services businesses — NBFC partnerships and regulated lending structures"
   ],
-  "servicesTitle": "Complete NBFC registration and compliance support.",
+  "servicesTitle": "Comprehensive regulatory compliance and governance for NBFCs.",
   "services": [
    {
     "icon": "building",
-    "title": "NBFC Registration",
-    "text": "Preparation and filing of the application for a Certificate of Registration with the RBI, and support through the review."
+    "title": "NBFC Registration & RBI Licensing",
+    "text": "Assess the proposed business model, regulatory eligibility, ownership structure and applicable capital requirements. Support preparation and coordination of the Certificate of Registration application and related documentation for submission to the RBI."
    },
    {
     "icon": "people",
-    "title": "Change in Control & Management",
-    "text": "Applications to the RBI for prior approval of changes in shareholding, control or management."
+    "title": "Change in Control, Ownership & Management",
+    "text": "Advise on regulatory requirements arising from changes in shareholding, control or management of NBFCs. Support applicable prior approval applications, corporate documentation, due diligence coordination and post-approval compliance."
    },
    {
     "icon": "doc",
-    "title": "RBI Returns & Reporting",
-    "text": "Periodic returns and statements required by the RBI, prepared and filed on time."
+    "title": "RBI Returns, Regulatory Reporting & Disclosures",
+    "text": "Identify applicable periodic and event-based regulatory returns and reporting requirements. Support preparation, review and submission of applicable returns, statements and disclosures in accordance with the NBFC's regulatory classification."
    },
    {
     "icon": "shield",
-    "title": "Board & Governance Framework",
-    "text": "Board-approved policies, committees and governance practices required for NBFCs."
+    "title": "Board Governance & Regulatory Policies",
+    "text": "Support board and committee governance, policy formulation, approval processes and governance documentation. Assist with applicable board-approved policies and periodic governance reviews."
    },
    {
     "icon": "id",
-    "title": "Fair Practices & KYC Policies",
-    "text": "Fair Practices Code, KYC and anti-money laundering policies and the related processes."
+    "title": "KYC, AML & Fair Practices Compliance",
+    "text": "Support the development, review and updating of applicable KYC, Anti-Money Laundering (AML) and Fair Practices Code policies. Assist with compliance documentation, governance oversight and regulatory process alignment."
    },
    {
     "icon": "layers",
-    "title": "Corporate Secretarial Compliance",
-    "text": "Board and general meetings, statutory registers and ROC filings for the NBFC."
+    "title": "Corporate Secretarial & Companies Act Compliance",
+    "text": "Manage applicable corporate secretarial requirements, including board and shareholder meetings, statutory registers, annual filings, event-based ROC filings and corporate governance documentation."
    },
    {
     "icon": "bars",
-    "title": "Scale-Based Regulation Advisory",
-    "text": "Advice on the requirements that apply to your NBFC under the RBI’s scale-based regulatory framework."
+    "title": "RBI Scale-Based Regulation Advisory",
+    "text": "Advise on the applicable Scale Based Regulation framework, NBFC classification, regulatory obligations and governance requirements. Help management understand regulatory responsibilities based on the NBFC's size, activities and category."
    },
    {
     "icon": "plane",
-    "title": "FEMA for Foreign-Owned NBFCs",
-    "text": "Foreign investment, reporting and compliance for NBFCs with non-resident shareholders."
+    "title": "FEMA & Foreign Investment Compliance for NBFCs",
+    "text": "Support foreign investment-related corporate and regulatory requirements, including applicable entry routes, sectoral conditions, pricing guidelines, investment structuring and RBI reporting."
    },
    {
     "icon": "gear",
-    "title": "Inspection & Regulatory Support",
-    "text": "Support in responding to RBI queries, inspections and compliance observations."
+    "title": "RBI Inspection, Audit & Regulatory Response Support",
+    "text": "Assist with regulatory documentation, compliance records, responses to RBI observations and coordination during regulatory inspections or supervisory reviews. Support the preparation of corrective action plans for identified compliance gaps."
    }
   ],
   "journeyEyebrow": "NBFC journey",
@@ -1218,128 +1263,157 @@
    {
     "icon": "bulb",
     "title": "Assess",
-    "text": "Review eligibility, structure and the category that fits your business."
+    "text": "Assess the proposed business model, regulatory classification, ownership, capital requirements and eligibility for the relevant NBFC category."
    },
    {
     "icon": "doc",
     "title": "Apply",
-    "text": "Prepare and file the application and respond to RBI queries."
+    "text": "Coordinate the Certificate of Registration application, supporting documentation and submission process, including responses to regulatory queries."
    },
    {
     "icon": "gear",
     "title": "Set up",
-    "text": "Put board policies, committees and processes in place."
+    "text": "Establish applicable board-approved policies, governance structures, compliance responsibilities, internal controls and regulatory reporting processes."
    },
    {
     "icon": "shield",
     "title": "Comply",
-    "text": "File RBI returns and meet ongoing compliance on time."
+    "text": "Monitor applicable RBI returns, statutory filings, regulatory disclosures, board requirements and periodic compliance obligations."
    },
    {
     "icon": "bars",
     "title": "Grow",
-    "text": "Support changes in capital, control and scale as you grow."
+    "text": "Support regulatory requirements arising from business expansion, ownership changes, capital restructuring, new activities and changes in management."
    }
   ],
   "plans": [
    {
     "icon": "plane",
-    "title": "NBFC Registration",
-    "subtitle": "Get registered",
+    "title": "NBFC Registration & Licensing",
+    "subtitle": "For promoters planning to establish an NBFC.",
     "points": [
-     "Eligibility and structure review",
-     "Application preparation and filing",
-     "Support through RBI review"
+     "Business model and eligibility assessment",
+     "Regulatory classification and structure review",
+     "Capital and ownership assessment",
+     "RBI application documentation",
+     "Application submission coordination",
+     "Regulatory query response support"
     ],
+    "cta": "Discuss NBFC Registration",
     "popular": false
    },
    {
     "icon": "building",
     "title": "NBFC Compliance Office",
-    "subtitle": "Complete ongoing compliance",
+    "subtitle": "For existing NBFCs requiring continuing compliance support.",
     "points": [
-     "RBI returns and reporting calendar",
-     "Board and committee support",
-     "Policies and governance framework",
+     "RBI compliance calendar",
+     "Applicable periodic regulatory returns",
+     "Board and committee meeting support",
      "Corporate secretarial compliance",
-     "Advice on new regulatory requirements"
+     "Policy and governance documentation",
+     "Regulatory update and compliance review"
     ],
-    "popular": true
+    "cta": "Set Up Your Compliance Office",
+    "popular": true,
+    "badge": ""
    },
    {
     "icon": "bars",
-    "title": "Change in Control",
-    "subtitle": "Transaction support",
+    "title": "Change in Control & Regulatory Advisory",
+    "subtitle": "For NBFCs undergoing ownership, control or management changes.",
     "points": [
-     "Prior approval application to the RBI",
-     "Documentation and due diligence",
-     "Corporate approvals and filings",
-     "Post-approval compliance"
+     "Regulatory applicability assessment",
+     "Shareholding and transaction review",
+     "RBI prior approval requirement assessment",
+     "Supporting corporate documentation",
+     "Application and approval coordination",
+     "Post-approval statutory compliance"
     ],
+    "cta": "Discuss Your Regulatory Requirement",
     "popular": false
    }
   ],
-  "whyTitle": "A partner you can\nrely on for RBI compliance.",
+  "whyTitle": "Regulatory clarity.\nReliable compliance.",
   "why": [
    {
     "icon": "user",
-    "text": "RBI and company law expertise under one roof"
-   },
-   {
-    "icon": "people",
-    "text": "Senior-led supervision of regulatory matters"
+    "title": "Specialised NBFC regulatory understanding",
+    "text": "Focused advisory on RBI regulations, NBFC classification and applicable regulatory requirements."
    },
    {
     "icon": "gear",
-    "text": "A structured compliance calendar for every NBFC"
+    "title": "Structured compliance management",
+    "text": "Organised compliance calendars, reporting schedules, statutory records and defined responsibilities."
+   },
+   {
+    "icon": "people",
+    "title": "Governance & secretarial expertise",
+    "text": "Professional support for board processes, regulatory policies and corporate compliance."
    },
    {
     "icon": "infinity",
-    "text": "Continuity from registration to ongoing compliance"
+    "title": "Continuing regulatory support",
+    "text": "Assistance across registration, operations, regulatory changes and business expansion."
    }
   ],
   "faqTitle": "Common questions\non NBFC compliance.",
   "faq": [
    {
-    "q": "What net owned fund is needed to register an NBFC?",
-    "a": "The RBI prescribes a minimum net owned fund for each category of NBFC, and these requirements have been revised under the scale-based regulatory framework. We confirm the current requirement for your proposed category before you apply."
+    "q": "What is an NBFC and does every financial services business need RBI registration?",
+    "a": "A Non-Banking Financial Company is a company carrying on activities classified as financial activities under applicable RBI regulations. Not every business offering financial services necessarily requires NBFC registration. The regulatory classification depends on the company's principal business activities, structure and applicable exemptions. We recommend an initial regulatory assessment before commencing operations."
+   },
+   {
+    "q": "What is the minimum Net Owned Fund required to register an NBFC?",
+    "a": "The applicable Net Owned Fund requirement depends on the proposed NBFC category and prevailing RBI regulations. Certain categories have different capital requirements. GAA can assess the proposed business model and applicable requirements before the registration process begins."
    },
    {
     "q": "How long does NBFC registration take?",
-    "a": "It depends on the completeness of the application and the RBI’s review. We prepare a complete application and help you respond to any queries to avoid delays."
+    "a": "The timeline depends on the completeness of the application, regulatory eligibility, supporting documents and the RBI's review process. The registration outcome and timeline are subject to RBI assessment and approval."
    },
    {
-    "q": "Does a change in shareholding need RBI approval?",
-    "a": "Prior RBI approval is generally needed for a change in control, for acquisitions of shareholding above the thresholds the RBI specifies, and for certain changes in management. We assess whether approval is needed and handle the application."
+    "q": "What are the ongoing compliance requirements for an NBFC?",
+    "a": "Requirements may include applicable RBI returns, statutory filings, board and committee meetings, regulatory policies, disclosures, KYC and AML obligations, statutory registers and other requirements based on the NBFC's category and activities."
    },
    {
-    "q": "Which returns does an NBFC need to file with the RBI?",
-    "a": "This depends on the NBFC’s category, size and activities. We map the returns that apply to you and maintain a filing calendar."
+    "q": "Does a change in NBFC shareholding require RBI approval?",
+    "a": "Certain changes involving ownership, control or management require prior RBI approval under applicable regulations. The exact requirement depends on the nature and extent of the proposed change. The transaction should be assessed before implementation."
    },
    {
-    "q": "Can you act as our ongoing compliance team?",
-    "a": "Yes. Our NBFC Compliance Office covers RBI reporting, board and governance support and corporate secretarial compliance on a retainer basis."
+    "q": "What is the RBI Scale Based Regulation framework?",
+    "a": "It is a regulatory framework under which NBFCs are classified into different layers based on applicable criteria, including size, activities and regulatory considerations. The obligations applicable to an NBFC depend on its classification and the prevailing RBI framework."
+   },
+   {
+    "q": "Can GAA provide ongoing NBFC compliance support?",
+    "a": "Yes. Subject to the agreed scope, GAA can support regulatory reporting, corporate secretarial requirements, board and governance processes, policy documentation and applicable statutory compliance through an ongoing engagement."
+   },
+   {
+    "q": "Can foreign investors invest in an Indian NBFC?",
+    "a": "Foreign investment may be permitted subject to the applicable FEMA framework, sectoral conditions, entry routes and regulatory requirements. The investment structure and reporting obligations should be assessed before proceeding."
    }
   ],
   "focus": {
-   "title": "NBFC Registration &\nRBI Approvals",
-   "text": "End-to-end support for obtaining your Certificate of Registration and RBI approvals for changes in control or management.",
+   "tag": "NBFC compliance office",
+   "title": "Build a stronger compliance\nframework for your NBFC.",
+   "text": "From RBI registration and regulatory reporting to governance, inspections and ongoing compliance, with a clearly defined compliance engagement.",
+   "btn": "Discuss Your NBFC Requirement",
+   "note": "Speak with our NBFC team.",
    "features": [
     {
-     "icon": "shield",
-     "text": "Eligibility and\nstructure review"
+     "icon": "building",
+     "text": "Registration &\nlicensing"
     },
     {
      "icon": "doc",
-     "text": "Application\npreparation and filing"
-    },
-    {
-     "icon": "id",
-     "text": "RBI queries\nand follow-up"
+     "text": "RBI returns &\nreporting"
     },
     {
      "icon": "people",
-     "text": "Change in control\napprovals"
+     "text": "Governance &\npolicies"
+    },
+    {
+     "icon": "shield",
+     "text": "Inspection\nsupport"
     }
    ],
    "screen": {
@@ -1355,7 +1429,61 @@
     ]
    }
   },
-  "hl": "RBI-ready"
+  "hl": "RBI-ready",
+  "features": [
+   [
+    "building",
+    "NBFC registration &\nregulatory advisory"
+   ],
+   [
+    "shield",
+    "Ongoing RBI &\ncorporate compliance"
+   ],
+   [
+    "doc",
+    "Governance, reporting\n& inspection support"
+   ]
+  ],
+  "servicesText": "Operating an NBFC requires continuous attention to RBI regulations, corporate governance, statutory reporting and internal compliance processes. GAA Consulting supports NBFC promoters, directors and management teams with regulatory advisory, registration support, compliance management and corporate secretarial services aligned with the applicable regulatory framework.",
+  "matters": {
+   "eyebrow": "NBFC regulatory compliance framework",
+   "title": "The regulatory areas\nevery NBFC must monitor.",
+   "text": "An NBFC compliance mandate covers far more than RBI returns. These are the areas we help NBFCs keep on track.",
+   "items": [
+    {
+     "icon": "doc",
+     "t": "RBI regulatory returns",
+     "d": "Applicable periodic and event-based reporting."
+    },
+    {
+     "icon": "people",
+     "t": "Corporate governance",
+     "d": "Board, committees and governance processes."
+    },
+    {
+     "icon": "id",
+     "t": "KYC & AML",
+     "d": "Customer due diligence and policy requirements."
+    },
+    {
+     "icon": "building",
+     "t": "Companies Act",
+     "d": "ROC filings and statutory records."
+    },
+    {
+     "icon": "plane",
+     "t": "FEMA compliance",
+     "d": "Foreign investment and reporting."
+    },
+    {
+     "icon": "shield",
+     "t": "Regulatory reviews",
+     "d": "Inspections, observations and corrective actions."
+    }
+   ]
+  },
+  "plansTitle": "NBFC advisory and compliance\nsupport at every stage.",
+  "plansText": "Whether you are establishing a new NBFC, managing ongoing regulatory obligations or planning a change in ownership or management, GAA Consulting provides clearly scoped professional support based on your regulatory requirements."
  },
  {
   "slug": "startup-compliance-office",

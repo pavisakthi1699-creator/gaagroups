@@ -11,6 +11,7 @@ const LISTS = [
   [".hp-g", ".hp-n"],
   [".hf-tl", ".hf-tl-n"],
   [".gc-proc", ".gc-pr-n"],
+  [".cv1-steps", ".cv1-num"],
 ];
 
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
