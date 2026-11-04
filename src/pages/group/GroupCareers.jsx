@@ -81,14 +81,9 @@ export default function GroupCareers() {
                 <p>Lawyers and college students join our advisory, compliance, accounting and HR teams on real projects with a defined learning plan. Choose the path that fits you and apply with your CV.</p>
               </div>
               <div className="hx-btns ah2-btns hr" style={{ "--k": "4" }}>
-                <Link className="hw-b pri" to="/contact#careers">Apply Now <Arrow /></Link>
-                <Link className="hw-b sec" to="#training">About CS Articleship <Arrow /></Link>
+                <Link className="hw-b pri" to="/contact#careers">Apply for Job <Arrow /></Link>
+                <Link className="hw-b sec" to="/contact#articleship">Apply for CS Articleship <Arrow /></Link>
               </div>
-            </div>
-            <div className="hx-strip hr" style={{ "--k": "6" }}>
-              <span>GAA Consulting <small>CS, legal and advisory roles</small></span>
-              <span>Filings First <small>Accounts and finance roles</small></span>
-              <span>Hirings First <small>Internships and HR</small></span>
             </div>
           </div>
         </section>
