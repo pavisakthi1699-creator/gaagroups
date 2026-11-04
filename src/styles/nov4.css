@@ -1130,3 +1130,8 @@
 .sf-col nav .is-off{white-space:nowrap;display:inline-flex;align-items:center;gap:9px;font:400 clamp(12.5px,.85vw,14.5px)/1.2 "Poppins",sans-serif;color:var(--muted)}
 .sf-cos .is-off{display:block}
 @media(max-width:640px){.sf-col nav .is-off{display:block;white-space:normal;font-size:13.5px}}
+/* Contact "What happens next": company names that are not linked yet keep the same layout */
+.gcu .nx-cos .is-off{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;padding:clamp(16px,2.8vh,26px) clamp(14px,1.6vw,28px);color:#141414;border-left:1px solid #E9DED5}
+.gcu .nx-cos .is-off small{display:block}
+.gcu .nx-cos .is-off b{display:block}
+@media(max-width:899px){.gcu .nx-cos .is-off{padding:16px 0;border-left:0;border-top:1px solid #E9DED5}}

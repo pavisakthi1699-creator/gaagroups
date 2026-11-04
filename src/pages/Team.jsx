@@ -12,12 +12,12 @@ const WORDS = [
 /* Partners section: edit this list (names as in src/data/team.json) to change who is shown, in this order */
 /* Partners section. Add each partner's LinkedIn address in linkedin: "" to make the icon clickable. */
 const PARTNER_CARDS = [
-  { name: "Aditi Sharma", role: "Partner – Corporate & Transactions", text: "Advises on corporate structuring, fundraising, M&A and strategic corporate actions.", photo: "/images/partners/aditi-sharma.webp", linkedin: "" },
-  { name: "Karan Mehta", role: "Partner – Regulatory & NBFC", text: "Focuses on NBFC regulation, RBI compliance, governance and risk advisory.", photo: "/images/partners/karan-mehta.webp", linkedin: "" },
-  { name: "Nihal Desai", role: "Partner – Global Business & FEMA", text: "Leads India entry, FEMA advisory and cross-border compliance for international clients.", photo: "/images/partners/nihal-desai.webp", linkedin: "" },
-  { name: "Priya Nair", role: "Partner – Compliance & Governance", text: "Oversees secretarial compliance, corporate governance and regulatory advisory.", photo: "/images/partners/priya-nair.webp", linkedin: "" },
-  { name: "Vikram Rao", role: "Partner – Finance & Operations", text: "Drives finance, accounting, taxation and operational excellence across the Group.", photo: "/images/partners/vikram-rao.webp", linkedin: "" },
-];
+  { name: "Akshay G", role: "Partner – Regulatory & NBFC", text: "Focuses on NBFC regulation, RBI compliance, governance and risk advisory.", photo: "/images/partners/akshay-g.webp", linkedin: "" },
+  { name: "Akshitha B R", role: "Partner – Corporate & Transactions", text: "Advises on corporate structuring, fundraising, M&A and strategic corporate actions.", photo: "/images/partners/akshitha-b-r.webp", linkedin: "" },
+  { name: "Aroop Prabhu", role: "Partner – Finance & Operations", text: "Drives finance, accounting, taxation and operational excellence across the Group.", photo: "/images/partners/aroop-prabhu.webp", linkedin: "" },
+  { name: "Ravi Keshava K M", role: "Partner – Global Business & FEMA", text: "Leads India entry, FEMA advisory and cross-border compliance for international clients.", photo: "/images/partners/ravi-keshava-k-m.webp", linkedin: "" },
+  { name: "Swathi Yadav", role: "Partner – Compliance & Governance", text: "Oversees secretarial compliance, corporate governance and regulatory advisory.", photo: "/images/partners/swathi-yadav.webp", linkedin: "" },
+]
 const POOL = TEAM.map((p) => ({ t: "p", src: p.photo, name: p.name, role: p.role, co: p.company }));
 
 function shuffle(a) {
@@ -165,7 +165,6 @@ export default function Team() {
       <section className="pp" id="partners">
         <div className="pp-hero">
           <img className="pp-bg" src="/images/partners/partners-group.webp" alt="The partners of GAA Group" width="1774" height="887" loading="lazy" />
-          <svg className="pp-line" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path d="M-20 560 C 320 540 520 520 760 440 S 1180 300 1460 140" /></svg>
           <div className="pp-in pp-hero-in">
             <span className="pp-eye">Our partners</span>
             <h2 className="pp-h">The Partners<br />Behind GAA</h2>
