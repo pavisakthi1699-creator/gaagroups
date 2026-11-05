@@ -72,3 +72,10 @@
   .gtm .pp-arr svg{width:18px;height:18px}
   .gtm .pp-arr button:active{background:linear-gradient(135deg,#D9532B,#E98A45);color:#fff;box-shadow:none}
 }
+/* mobile banner: photo on top, text on the dark area below */
+@media(max-width:899px){
+  .gtm .pp-hero{background:#1b1f29}
+  .gtm .pp-bg{object-fit:cover;object-position:top center}
+  .gtm .pp-hero::before{background:linear-gradient(0deg,rgba(27,31,41,.6) 0%,rgba(27,31,41,0) 40%)}
+  .gtm .pp-hero-in{padding-top:min(76vw,330px);padding-bottom:40px}
+}
