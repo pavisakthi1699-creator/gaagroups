@@ -164,7 +164,7 @@ export default function Team() {
       </section>
       <section className="pp" id="partners">
         <div className="pp-hero">
-          <img className="pp-bg" src="/images/partners/partners-group.webp" alt="The partners of GAA Group" width="1774" height="887" loading="lazy" />
+          <img className="pp-bg" src="/images/partners/partners-group.webp" alt="The partners of GAA Group" width="2174" height="828" loading="lazy" />
           <div className="pp-in pp-hero-in">
             <span className="pp-eye">Our partners</span>
             <h2 className="pp-h">The Partners<br />Behind GAA</h2>

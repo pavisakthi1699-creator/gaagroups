@@ -44,7 +44,7 @@
 @media(max-width:899px){
   .gtm .pp-in{padding:0 18px}
   .gtm .pp-hero{min-height:0;align-items:flex-end}
-  .gtm .pp-bg{object-position:72% center}
+  .gtm .pp-bg{object-position:80% center}
   .gtm .pp-hero::before{background:linear-gradient(0deg,rgba(24,32,42,.97) 0%,rgba(24,32,42,.9) 42%,rgba(24,32,42,.2) 72%,rgba(24,32,42,0) 100%)}
   .gtm .pp-hero-in{padding-top:260px;padding-bottom:40px}
   .gtm .pp-h{font-size:clamp(34px,9vw,44px)}
