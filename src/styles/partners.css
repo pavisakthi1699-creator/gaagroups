@@ -91,3 +91,5 @@
   .gtm .pp-bg{top:auto;bottom:0;height:calc(100vw * 1300 / 780)}
   .gtm .pp-hero-in{padding-top:30px}
 }
+/* keep names, roles and descriptions on the same lines across all five cards */
+@media(min-width:900px){.gtm .pp-role{min-height:2.8em}}
