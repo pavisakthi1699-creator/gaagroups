@@ -79,3 +79,15 @@
   .gtm .pp-hero::before{background:linear-gradient(0deg,rgba(27,31,41,.6) 0%,rgba(27,31,41,0) 40%)}
   .gtm .pp-hero-in{padding-top:min(76vw,330px);padding-bottom:40px}
 }
+/* mobile banner v2: dark area on top for the text, group photo at the bottom */
+@media(max-width:899px){
+  .gtm .pp-hero{align-items:flex-start;min-height:calc(100vw * 1300 / 780)}
+  .gtm .pp-bg{object-position:bottom center}
+  .gtm .pp-hero::before{background:none}
+  .gtm .pp-hero-in{padding-top:36px;padding-bottom:0}
+}
+@media(max-width:899px){
+  .gtm .pp-hero{background:#19202a;min-height:calc(100vw * 1300 / 780 + 90px)}
+  .gtm .pp-bg{top:auto;bottom:0;height:calc(100vw * 1300 / 780)}
+  .gtm .pp-hero-in{padding-top:30px}
+}
