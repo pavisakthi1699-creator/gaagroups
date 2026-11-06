@@ -1275,3 +1275,6 @@
 @media(max-width:899px){
   .ggh .gc-c,.ggh .gc-c:hover{background:#fff!important;border:1px solid #ECECEC!important}
 }
+
+/* Journey step text: justified, hyphenated so narrow desktop columns don't open wide gaps */
+.ie-st p{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
