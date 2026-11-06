@@ -1270,3 +1270,8 @@
 @media(max-width:899px){.ggh .hx-in{justify-content:flex-start!important;height:auto!important}}
 @media(max-width:899px){.ggh .hz{padding-top:74px!important;padding-bottom:0!important}.ggh .hx-in{padding-top:7vw!important}}
 @media(max-width:899px){.ggh .hx-c .hx-note{font-size:max(11px,3vw)!important}.ggh .hx-strip span{font-size:max(10.5px,3vw)!important}}
+
+/* Home section 4 (mobile): plain white company cards, no tinted box */
+@media(max-width:899px){
+  .ggh .gc-c,.ggh .gc-c:hover{background:#fff!important;border:1px solid #ECECEC!important}
+}

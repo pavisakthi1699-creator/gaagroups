@@ -144,8 +144,8 @@ function companySlider(t, root) {
       dots.forEach((d, j) => d.classList.toggle("on", j === i));
     }, 80);
   }, { passive: true });
-  t.every(() => { if (mq.matches && !hold && !document.hidden) go(i + 1); }, 3200);
-  t.every(() => { hold = false; }, 9000);
+  t.every(() => { if (mq.matches && !hold && !document.hidden) go(i + 1); }, 1900);
+  t.every(() => { hold = false; }, 5000);
 }
 
 /* About: the "Three firms" dial */
