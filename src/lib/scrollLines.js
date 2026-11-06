@@ -16,7 +16,7 @@ const LISTS = [
 
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 /* these lists play by themselves (01 -> 02 -> ... -> last, short pause, repeat) once they are on screen */
-const AUTO = [".ie-steps"];
+const AUTO = ["*"]; /* every step line on the site plays by itself */
 const STEP_MS = 1300, HOLD_MS = 1600;
 
 export default function mountScrollLines(root = document) {
@@ -41,7 +41,7 @@ export default function mountScrollLines(root = document) {
       path.appendChild(dot);
       list.prepend(path);
       marks.forEach((m) => m.classList.add("sl-m"));
-      const auto = AUTO.some((sel) => list.matches(sel));
+      const auto = AUTO.some((sel) => sel === "*" || list.matches(sel));
       if (auto) list.classList.add("sl-auto");
       items.push({ list, marks, segs, dot, path, auto, t0: 0 });
     });
