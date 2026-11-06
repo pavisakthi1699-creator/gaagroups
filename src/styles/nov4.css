@@ -1135,3 +1135,21 @@
 .gcu .nx-cos .is-off small{display:block}
 .gcu .nx-cos .is-off b{display:block}
 @media(max-width:899px){.gcu .nx-cos .is-off{padding:16px 0;border-left:0;border-top:1px solid #E9DED5}}
+
+/* ===== Service pages: justified paragraphs, tighter spacing ===== */
+@media(min-width:900px){
+  .ie p,.ie .ie-p,.ie .ie-lead,.ie li p,.fq p{text-align:justify;text-justify:inter-word}
+  .ie .ie-why-i span{text-align:center}
+  .ie-sec{padding-top:clamp(40px,5vh,60px)!important;padding-bottom:clamp(40px,5vh,60px)!important}
+  .ie-sec + .ie-sec{padding-top:0!important}
+  .fq{padding-top:clamp(44px,5vh,64px)!important;padding-bottom:clamp(44px,5vh,64px)!important}
+  .ie-hero-in{min-height:clamp(560px,82vh,760px)!important;padding-bottom:40px!important}
+  .ie-steps,.ie-cards,.ie-plans,.ie-mat-g,.ie-tl-g{margin-top:26px!important}
+  .ie-note{margin-top:20px}
+  .ie-focus{padding-bottom:clamp(44px,5vh,64px)!important}
+}
+@media(max-width:899px){
+  .ie p,.fq p{text-align:left}
+  .ie-sec{padding-top:28px!important;padding-bottom:28px!important}
+  .fq{padding-top:28px!important;padding-bottom:28px!important}
+}
