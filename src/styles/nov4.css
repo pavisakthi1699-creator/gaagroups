@@ -1264,7 +1264,7 @@
   .ggh .hz,.ggh .hx-in{min-height:0!important}
   .ggh .hx-in{padding-top:calc(72px + 7vw)!important}
   .ggh .hx-main{justify-content:flex-start!important}
-  .ggh .hx-c .hx-p{text-align:center!important;text-align-last:auto}
+  /* centred hero para replaced by justified (see below) */
   .ggh .hx-c .hx-note{font-size:3vw!important;white-space:nowrap}
 }
 @media(max-width:899px){.ggh .hx-in{justify-content:flex-start!important;height:auto!important}}
@@ -1278,3 +1278,8 @@
 
 /* Journey step text: justified, hyphenated so narrow desktop columns don't open wide gaps */
 .ie-st p{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+
+/* Home hero paragraph: justified on phones */
+@media(max-width:899px){
+  .ggh .hx-c .hx-p,.ggh .hx-p{text-align:justify!important;text-align-last:left!important;hyphens:auto;-webkit-hyphens:auto}
+}
