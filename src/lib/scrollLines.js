@@ -15,6 +15,9 @@ const LISTS = [
 ];
 
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+/* these lists play by themselves (01 -> 02 -> ... -> last, short pause, repeat) once they are on screen */
+const AUTO = [".ie-steps"];
+const STEP_MS = 1300, HOLD_MS = 1600;
 
 export default function mountScrollLines(root = document) {
   const items = [];
@@ -38,7 +41,9 @@ export default function mountScrollLines(root = document) {
       path.appendChild(dot);
       list.prepend(path);
       marks.forEach((m) => m.classList.add("sl-m"));
-      items.push({ list, marks, segs, dot, path });
+      const auto = AUTO.some((sel) => list.matches(sel));
+      if (auto) list.classList.add("sl-auto");
+      items.push({ list, marks, segs, dot, path, auto, t0: 0 });
     });
   });
   if (!items.length) return () => {};
@@ -48,7 +53,9 @@ export default function mountScrollLines(root = document) {
     raf = 0;
     const vh = window.innerHeight || 800;
     const anchor = vh * 0.62;
-    items.forEach(({ list, marks, segs, dot }) => {
+    let anyAuto = false;
+    items.forEach((it) => {
+      const { list, marks, segs, dot } = it;
       if (!list.isConnected) return;
       const lr = list.getBoundingClientRect();
       if (lr.bottom < -vh || lr.top > vh * 2) return;
@@ -59,7 +66,15 @@ export default function mountScrollLines(root = document) {
       const n = pts.length;
       const vertical = Math.abs(pts[n - 1].y - pts[0].y) > 40;
       let s; // position along the steps, 0 .. n-1
-      if (vertical) {
+      if (it.auto) {
+        const onScreen = lr.top < vh * 0.9 && lr.bottom > vh * 0.1;
+        if (onScreen && !it.t0) it.t0 = performance.now();
+        if (!onScreen) it.t0 = 0;
+        const run = (n - 1) * STEP_MS;
+        const el = it.t0 ? (performance.now() - it.t0) % (run + HOLD_MS) : 0;
+        s = clamp(el / STEP_MS, 0, n - 1);
+        if (onScreen) anyAuto = true;
+      } else if (vertical) {
         if (anchor <= pts[0].vy) s = 0;
         else if (anchor >= pts[n - 1].vy) s = n - 1;
         else {
@@ -85,6 +100,7 @@ export default function mountScrollLines(root = document) {
       dot.style.transform = `translate(${x}px,${y}px)`;
       marks.forEach((m, i) => m.classList.toggle("sl-hit", s >= i - 0.02));
     });
+    if (anyAuto) req();
   };
   const req = () => { if (!raf) raf = requestAnimationFrame(update); };
   window.addEventListener("scroll", req, { passive: true });

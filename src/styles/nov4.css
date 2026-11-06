@@ -1153,3 +1153,5 @@
   .ie-sec{padding-top:28px!important;padding-bottom:28px!important}
   .fq{padding-top:28px!important;padding-bottom:28px!important}
 }
+.sl-auto .sl-seg i,.sl-auto .sl-dot{transition:none}
+.ie-tl-l em:empty{display:none}
