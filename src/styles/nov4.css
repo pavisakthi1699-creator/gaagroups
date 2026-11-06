@@ -1141,7 +1141,7 @@
   .ie p,.ie .ie-p,.ie .ie-lead,.ie li p,.fq p{text-align:justify;text-justify:inter-word}
   .ie .ie-why-i span{text-align:center}
   .ie-sec{padding-top:clamp(40px,5vh,60px)!important;padding-bottom:clamp(40px,5vh,60px)!important}
-  .ie-sec + .ie-sec{padding-top:0!important}
+  .ie-sec + .ie-sec{padding-top:clamp(40px,5vh,60px)!important}
   .fq{padding-top:clamp(44px,5vh,64px)!important;padding-bottom:clamp(44px,5vh,64px)!important}
   .ie-hero-in{min-height:clamp(560px,82vh,760px)!important;padding-bottom:40px!important}
   .ie-steps,.ie-cards,.ie-plans,.ie-mat-g,.ie-tl-g{margin-top:26px!important}
@@ -1155,3 +1155,12 @@
 }
 .sl-auto .sl-seg i,.sl-auto .sl-dot{transition:none}
 .ie-tl-l em:empty{display:none}
+/* every service-page section: same breathing room above the orange label and below the content */
+@media(min-width:900px){
+  .ie-sec,.fq{padding-top:56px!important;padding-bottom:56px!important}
+  .ie-focus{padding-top:8px!important}
+}
+@media(max-width:899px){
+  .ie-sec,.fq{padding-top:36px!important;padding-bottom:36px!important}
+  .ie-focus{padding-top:0!important}
+}
